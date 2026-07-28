@@ -1,0 +1,8 @@
+data/raw/*
+data/processed/*
+data/chunks/*
+*.pyc
+__pycache__/
+rag-env/
+.env
+*.parquet
