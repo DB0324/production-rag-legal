@@ -1,2 +1,7 @@
-chunking_strategy,reranker,recall_at_1,recall_at_5,recall_at_10,recall_at_20,mrr,n_eval
-fixed,none,0.492,0.660,0.712,0.748,0.564,250
+chunking_strategy,reranker,recall_at_1,recall_at_5,recall_at_10,recall_at_20,mrr,ndcg_at_10,n_eval
+fixed,bge-reranker-v2-m3,0.592,0.712,0.736,0.764,0.643,0.673,250
+fixed,none,0.504,0.648,0.696,0.732,0.569,0.607,250
+recursive,bge-reranker-v2-m3,0.580,0.692,0.728,0.756,0.633,0.660,250
+recursive,none,0.536,0.636,0.696,0.744,0.587,0.620,250
+semantic,bge-reranker-v2-m3,0.612,0.712,0.740,0.772,0.657,0.684,250
+semantic,none,0.532,0.640,0.684,0.744,0.587,0.613,250
