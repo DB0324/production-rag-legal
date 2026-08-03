@@ -24,3 +24,10 @@
 **Winner: semantic chunking + bge-reranker-v2-m3.** Reranker gives a consistent
 +0.05-0.09 Recall@1 lift across all three chunking strategies — clear signal,
 not noise. Freezing this config for the generation stage.
+
+## Bug Fix: generation_top_k not respected
+- pipeline.py was passing all rerank_top_k=10 chunks to generation instead of
+  the intended generation_top_k=5, roughly doubling prompt size/cost per query.
+- Fixed: context_chunks = reranked_results[:generation_top_k]
+- Verified: avg input tokens dropped from ~5,200 to ~2,750 per query on 5-question smoke test.
+- Any full_eval runs generated before this fix should be considered invalid/re-run.
