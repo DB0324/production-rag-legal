@@ -31,3 +31,12 @@ not noise. Freezing this config for the generation stage.
 - Fixed: context_chunks = reranked_results[:generation_top_k]
 - Verified: avg input tokens dropped from ~5,200 to ~2,750 per query on 5-question smoke test.
 - Any full_eval runs generated before this fix should be considered invalid/re-run.
+
+## Full Pipeline Run — Semantic + Reranker + Ollama (qwen2.5:7b-instruct)
+- 250/250 questions completed, 0 errors
+- Total tokens: 704,808 in / 49,346 out
+- Total time: 88.4 min (avg 21.2s/query, after fixing the generation_top_k bug)
+- Output: results/raw_outputs_semantic_reranked.json
+- Note: mid-run, saw a temporary slowdown when another user's job consumed
+  most GPU VRAM, causing Ollama to fall back to CPU inference for a period.
+  This is a real shared-infrastructure constraint, noted as a limitation.
