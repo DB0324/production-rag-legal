@@ -40,3 +40,12 @@ not noise. Freezing this config for the generation stage.
 - Note: mid-run, saw a temporary slowdown when another user's job consumed
   most GPU VRAM, causing Ollama to fall back to CPU inference for a period.
   This is a real shared-infrastructure constraint, noted as a limitation.
+
+## Manual Spot-Check: Retrieval-miss vs Hallucination Distinction
+- Q1/Q2 (vague, auto-generated eval questions like "What broader issue...")
+  retrieve WRONG documents, but the model faithfully cites only what it
+  retrieved -- this is a retrieval failure, not a generation hallucination.
+- Q3 (specific, well-formed question) retrieves correctly and generates an
+  answer semantically aligned with gold, using correct citations.
+- Conclusion: vague/generic auto-generated questions in IndicLegalQA are a
+  known limitation of the eval set itself, not necessarily a pipeline flaw.
