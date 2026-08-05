@@ -58,3 +58,14 @@ not noise. Freezing this config for the generation stage.
 - Fixed RAGAS + langchain-community + ragas version conflicts (vertexai import
   stub, CPU-mode embeddings due to shared GPU contention, RunConfig timeout=600s
   max_workers=2 to avoid overwhelming contested GPU).
+
+## Scope Decision: RAGAS evaluated on n=60 subsample, not full n=250
+- Full-scale RAGAS (4 metrics x 250 = up to 1000 LLM judge calls) was
+  attempted but projected 70+ hours due to shared-GPU contention with
+  other users' jobs, with ~50% of calls timing out even at 600s timeout.
+- Killed after 61/1000 jobs (2h16m). Switched to a random n=60 subsample
+  (seed=42) for RAGAS specifically -- a standard practice given LLM-judge
+  cost, and large enough for meaningful aggregate faithfulness/relevancy
+  scores. Retrieval metrics (Recall@k, MRR) remain on the full n=250 set.
+- Noted as a real-world constraint of shared HPC infrastructure in the
+  final report's limitations section.
