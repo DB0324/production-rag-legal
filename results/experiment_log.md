@@ -49,3 +49,12 @@ not noise. Freezing this config for the generation stage.
   answer semantically aligned with gold, using correct citations.
 - Conclusion: vague/generic auto-generated questions in IndicLegalQA are a
   known limitation of the eval set itself, not necessarily a pipeline flaw.
+
+## RAGAS Smoke Test (3 questions, includes the 2 known-vague questions)
+- faithfulness: 0.159, answer_relevancy: 0.697, context_precision: 0.333, context_recall: 0.333
+- Low scores here are consistent with manual spot-check: 2/3 of these questions
+  had retrieval failures (vague auto-generated questions), which RAGAS correctly
+  penalizes on faithfulness/context metrics. Not representative of full-set quality.
+- Fixed RAGAS + langchain-community + ragas version conflicts (vertexai import
+  stub, CPU-mode embeddings due to shared GPU contention, RunConfig timeout=600s
+  max_workers=2 to avoid overwhelming contested GPU).
