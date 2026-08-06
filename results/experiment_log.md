@@ -83,3 +83,16 @@ own LLM-judge (qwen2.5:7b) may be a weak/inconsistent judge for legal text,
 (b) context reconstruction from chunks_used truncates to text_preview (200
 chars) which may be too short for RAGAS to properly assess, (c) genuine
 generation quality issues beyond the known vague-question retrieval misses.
+
+## RAGAS CORRECTED Results (n=60, full chunk text from Qdrant, not truncated preview)
+- faithfulness: 0.754 (was 0.198 with truncated 200-char context -- measurement bug)
+- answer_relevancy: 0.690
+- context_precision: 0.614
+- context_recall: 0.617 (was 0.246 with truncated context)
+- n_samples: 60 (1 sample excluded due to LLM-judge output parsing error, expected
+  occasionally with smaller open judge models)
+- Total runtime: 6h12m on shared/contested GPU (240 LLM-judge calls)
+
+CONCLUSION: The original low scores were an artifact of chunks_used only storing
+a 200-char text_preview instead of full chunk text. After fetching full text from
+Qdrant, scores are consistent with a well-functioning RAG pipeline.

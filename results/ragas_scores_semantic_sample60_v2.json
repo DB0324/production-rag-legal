@@ -1,0 +1,432 @@
+{
+  "aggregate": {
+    "faithfulness": 0.7541468253968254,
+    "answer_relevancy": 0.6900969653204263,
+    "context_precision": 0.6140046295939366,
+    "context_recall": 0.617231638418079,
+    "n_samples": 60
+  },
+  "per_question": [
+    {
+      "question": "What was the Supreme Court's final decision regarding Manimaran's sentence?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7782568854323606,
+      "context_precision": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the argument made by the petitioners against Clause 4.1?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7391346676065552,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the basis of the respondents' application for revocation of leave in the case?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8581911417507242,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "How did the Supreme Court interpret the mandatory nature of prior notice under Rule 29(4) of the Copyright Rules?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.572233828447951,
+      "context_precision": 0.8055555555287036,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the final decision of the Supreme Court in 'M/s. Cheminova India Ltd. & Anr. vs. State of Punjab & Anr.'?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9003793497896314,
+      "context_precision": 0.49999999995,
+      "context_recall": 0.5
+    },
+    {
+      "question": "What is the name of the appellant and the respondents in the case?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.6464268692108481,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What did the Designated TADA Court decide regarding the compliance with Section 20-A(1) of the TADA Act?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7180926366904363,
+      "context_precision": 0.9999999999,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the Supreme Court's final ruling in the case?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.3333333333333333
+    },
+    {
+      "question": "What was the Supreme Court's observation regarding the inclusion of the company as an accused in the complaint?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.68144738531632,
+      "context_precision": 0.699999999965,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What were the main arguments of the appellants against the notification of the 'Elephant Corridor'?",
+      "faithfulness": 0.875,
+      "answer_relevancy": 0.8207209206455875,
+      "context_precision": 0.7555555555303703,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the Supreme Court's decision regarding the High Court's ruling on Raveen Kumar's case?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8968075148971452,
+      "context_precision": 0.99999999995,
+      "context_recall": 0.3333333333333333
+    },
+    {
+      "question": "How did the Supreme Court interpret the provisions of Section 326A IPC?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.814916766917225,
+      "context_precision": 0.9166666666361111,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What did the Supreme Court suggest regarding the standard of proof for the accused under Section 139 of the Act?",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.8824344317470918,
+      "context_precision": 0.99999999998,
+      "context_recall": 0.0
+    },
+    {
+      "question": "On what grounds did the first appellate court support the residents' objections?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the final verdict of the Supreme Court in this case?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Why did the appellants file an application for condonation of delay?",
+      "faithfulness": 0.2,
+      "answer_relevancy": 0.9001210523310267,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What interim order did the Supreme Court issue regarding the possession of the disputed land in the case Monthi Menezes (D) by LR vs. Devaki Amma (D) by LR & Anr.?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What were the findings of the Controlling Authority and the Appellate Authority regarding Netram Sahu's gratuity claim?",
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.8729853321874085,
+      "context_precision": 0.49999999995,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the main issue in the case of North Delhi Municipal Corporation Vs. Harleen Kaur & Ors.?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.999999999999235,
+      "context_precision": 0.49999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the primary issue addressed in the case of Uttar Pradesh Forest Corporation Lucknow & Ors. vs. Vijay Kumar Yadav & Anr.?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9727473164532041,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What were the findings of the first inquiry officer regarding the charges against Jayantibhai Raojibhai Patel?",
+      "faithfulness": 0.3333333333333333,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the main issue in the case of Himachal Pradesh Bus Stand Management and Development Authority (HPBSM&DA) vs The Central Empowered Committee Etc. & Ors.?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7498468274902779,
+      "context_precision": 0.3333333333,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the Supreme Court's decision regarding the applicability of Section 5 of the Limitation Act to appeals under Section 30 of the Act, 1993?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9724088084668279,
+      "context_precision": 0.99999999998,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the outcome of the appeal filed by Parveen @ Sonu?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9257440360359405,
+      "context_precision": 0.7499999999625,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What were the charges against the accused in this case?",
+      "faithfulness": 0.25,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What were the actions taken by Lalta Prasad Tamta regarding the property before selling it to Mohan Chandra Tamta?",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.6755654427166101,
+      "context_precision": 0.8333333332916666,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the main issue in the case of Somesh Chaurasia vs State of M.P. & Anr.?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9999999999992367,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the accused Ramanand @ Nandlal Bharti convicted for?",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.874017774850755,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "How did the Supreme Court view the High Court's setting aside of the Trial Court's extension order?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What were the specific triable issues highlighted by the Supreme Court in this case?",
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.552812564150865,
+      "context_precision": 0.0,
+      "context_recall": 0.3333333333333333
+    },
+    {
+      "question": "What was the ruling of the Special Judge regarding the document presented by Hari Shankar Aggarwal?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.8333333332916666,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the Supreme Court's conclusion regarding the NCLT and NCLAT's handling of the case?",
+      "faithfulness": 0.3333333333333333,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.19999999998,
+      "context_recall": 0.0
+    },
+    {
+      "question": "Why did the petitioner allege that the respondent-father unlawfully detained the children?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7164044107874884,
+      "context_precision": 0.0,
+      "context_recall": 0.5
+    },
+    {
+      "question": "What directions did the Supreme Court give upon remanding the case back for reconsideration?",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.738772823356873,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the High Court's decision regarding the abatement of the suit filed by Maringmei Acham's father?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7844084387793168,
+      "context_precision": 0.94999999997625,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Why did the Supreme Court emphasize the importance of considering both oral and documentary evidence?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8169189582100782,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "How did the High Court respond to the fresh writ petition filed by Dr. Ashok Sinha?",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.7633729074497895,
+      "context_precision": 0.9999999999,
+      "context_recall": 0.3333333333333333
+    },
+    {
+      "question": "What broader legal principles did the Supreme Court discuss in this judgement?",
+      "faithfulness": 0.7142857142857143,
+      "answer_relevancy": 0.818768066951939,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What did the Supreme Court say about the reliability of the prosecutrix's testimony in this case?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8062148429353545,
+      "context_precision": 0.99999999998,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What were the Supreme Court's observations on the requirements for convicting someone under Section 306 IPC?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8678623669170621,
+      "context_precision": 0.8874999999778125,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What did the Supreme Court emphasize about the evidence against Vishwas Bhandari?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8478942652266425,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the contention of the review petitioners regarding their admission to the Glocal Medical College?",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.7771067658599691,
+      "context_precision": 0.3333333333,
+      "context_recall": null
+    },
+    {
+      "question": "What was the main legal issue in the case of The Employees State Insurance Corporation vs. M/s Texmo Industries?",
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.99999999998,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the date of the agreement to sell between FERRODOUS ESTATES and the respondents?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8958720545084654,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the factual background of the case involving Shiv Charan Bansal and the murder of S.N. Gupta?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9673901548321718,
+      "context_precision": 0.32499999998375,
+      "context_recall": 0.5
+    },
+    {
+      "question": "What was the Supreme Court's conclusion about the right to be represented by a lawyer under the Revised Circular dated 01.07.2015?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8499293797172568,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the decision of the Single Judge and Division Bench of the High Court of Tripura regarding the recovery of demurrages by FCI?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8035851627971473,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the outcome of the appeal in the Supreme Court?",
+      "faithfulness": 0.25,
+      "answer_relevancy": 0.8255798683761258,
+      "context_precision": 0.9999999999,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What did the High Court rule regarding the +2 lecturers appointed pursuant to Advertisement No. 1/87?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9056195049533508,
+      "context_precision": 0.94999999997625,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the main allegation against Shiv Shankar Prasad Singh and other accused regarding the misappropriation?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8667666995536342,
+      "context_precision": 0.999999999975,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What were the High Court's findings regarding the applicability of the 1983 Rules to the Board's decision taken in 1975?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7768245777365754,
+      "context_precision": 0.99999999998,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Did Raj Kumar challenge the delay in analyzing the milk sample? If so, what was the court's response?",
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.9092748475236089,
+      "context_precision": 0.9999999999,
+      "context_recall": 0.25
+    },
+    {
+      "question": "What was the Supreme Court's view on the High Court's decision to de-recognize the IEM?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9398535277219509,
+      "context_precision": 0.19999999998,
+      "context_recall": 0.3333333333333333
+    },
+    {
+      "question": "What could be the implications of this judgement for future acid attack cases?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8740178753286472,
+      "context_precision": 0.19999999998,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What were the injuries sustained by Phool Chand in the case of State of Rajasthan vs Banwari Lal?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9184750266603382,
+      "context_precision": 0.8666666666377778,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What did the Supreme Court emphasize regarding the importance of a complete chain of circumstances in convicting someone based on circumstantial evidence?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7633685255846112,
+      "context_precision": 0.99999999998,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the primary relief sought by the Bharatiya Janata Party, West Bengal in their writ petition?",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.9778433994914346,
+      "context_precision": 0.49999999995,
+      "context_recall": 0.0
+    },
+    {
+      "question": "Why did the Supreme Court dismiss Padma Mishra's appeal?",
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.9944330845908128,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the decision of the learned Single Judge regarding the respondent's service?",
+      "faithfulness": 0.14285714285714285,
+      "answer_relevancy": 0.5666017795898927,
+      "context_precision": 0.0,
+      "context_recall": 0.5
+    },
+    {
+      "question": "What was the Supreme Court's view on the High Court's handling of the appeals?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8273670506517751,
+      "context_precision": 0.0,
+      "context_recall": 0.5
+    }
+  ],
+  "input_file": "results/raw_outputs_semantic_reranked_RAGAS_SAMPLE60.json"
+}
