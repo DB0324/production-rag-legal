@@ -69,3 +69,17 @@ not noise. Freezing this config for the generation stage.
   scores. Retrieval metrics (Recall@k, MRR) remain on the full n=250 set.
 - Noted as a real-world constraint of shared HPC infrastructure in the
   final report's limitations section.
+
+## RAGAS Full Results (n=60 subsample, semantic+reranker+Ollama qwen2.5:7b)
+- faithfulness: 0.198
+- answer_relevancy: 0.689
+- context_precision: 0.369
+- context_recall: 0.246
+- n_samples: 60
+
+Notable: faithfulness/context_recall are much lower than retrieval Recall@10
+(0.740) would suggest. Needs failure analysis -- possible causes: (a) RAGAS's
+own LLM-judge (qwen2.5:7b) may be a weak/inconsistent judge for legal text,
+(b) context reconstruction from chunks_used truncates to text_preview (200
+chars) which may be too short for RAGAS to properly assess, (c) genuine
+generation quality issues beyond the known vague-question retrieval misses.
