@@ -131,3 +131,11 @@ independent methods converge, giving confidence in both measurements.
   additional unused LLM-based guard function -- not wired into pipeline.py.
   Left as-is since the numeric threshold is now the primary, reliable guard;
   documented as available future enhancement (ensemble of both signals).
+
+## End-to-End API Verification (final)
+POST /query on "What was the outcome of the appeal in the Supreme Court
+regarding Ramji Singh?" returned a correct, cited answer via the full
+API stack (retrieval -> rerank -> generate), confirming avg_rerank_score
+(0.411) and confidence ("high") both align with the calibrated guardrail.
+Latency breakdown: retrieval 9.97s, rerank 1.82s, generation 17.61s,
+total 29.4s. Project is fully functional end-to-end through the API layer.
