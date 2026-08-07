@@ -96,3 +96,8 @@ generation quality issues beyond the known vague-question retrieval misses.
 CONCLUSION: The original low scores were an artifact of chunks_used only storing
 a 200-char text_preview instead of full chunk text. After fetching full text from
 Qdrant, scores are consistent with a well-functioning RAG pipeline.
+
+## Hallucination Checker: Fixed same truncation bug as RAGAS
+- Applied identical fix (fetch full chunk text from Qdrant by chunk_id)
+- 5-question smoke test: hallucination rate corrected from 77.1% -> 11.4%
+- Reused fetch_full_chunk_texts/detect_strategy_from_input from ragas_eval.py
