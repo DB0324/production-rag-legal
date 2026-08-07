@@ -101,3 +101,15 @@ Qdrant, scores are consistent with a well-functioning RAG pipeline.
 - Applied identical fix (fetch full chunk text from Qdrant by chunk_id)
 - 5-question smoke test: hallucination rate corrected from 77.1% -> 11.4%
 - Reused fetch_full_chunk_texts/detect_strategy_from_input from ragas_eval.py
+
+## Hallucination Checker: FULL results (n=199, semantic+reranker+Ollama)
+- Questions checked: 199 (51 excluded: "insufficient information" responses
+  from the sufficiency guard, consistent with retrieval-miss rate)
+- Total claims: 1441
+- Unsupported claims: 291
+- Overall hallucination rate: 20.2%
+- Tokens used: 3,427,546
+
+Cross-check: RAGAS faithfulness=0.754 (~24.6% unfaithful) and hallucination
+checker's 20.2% unsupported-claims rate are in the same range -- two
+independent methods converge, giving confidence in both measurements.
