@@ -113,3 +113,21 @@ Qdrant, scores are consistent with a well-functioning RAG pipeline.
 Cross-check: RAGAS faithfulness=0.754 (~24.6% unfaithful) and hallucination
 checker's 20.2% unsupported-claims rate are in the same range -- two
 independent methods converge, giving confidence in both measurements.
+
+## Guardrail Bug Found and Fixed: Sufficiency Threshold Was Never Triggering
+- Original SUFFICIENCY_THRESHOLD = -5.0 assumed bge-reranker-v2-m3 produces
+  large negative scores (comment: "bge-reranker scores can be negative").
+  In practice this reranker/setup produces small POSITIVE scores (0.001-0.98
+  range), so avg_score < -5.0 was NEVER true -- the coded guard was dead code.
+- The "Insufficient information" responses seen in earlier guardrail tests
+  were actually produced by the LLM's own judgment (System Prompt Rule 3),
+  not the deterministic threshold check -- a much less reliable mechanism.
+- Calibrated real threshold using 5 known-good vs 5 known-bad questions:
+  GOOD avg scores: 0.41-0.93 | BAD avg scores: 0.004-0.023
+  Set SUFFICIENCY_THRESHOLD = 0.10 (clean separation, wide margin both sides)
+- Re-tested: 5/5 out-of-corpus questions correctly declined via the real
+  threshold now; in-corpus questions (avg_score=0.41) still answer correctly.
+- Note: build_sufficiency_check_prompt() in prompt_templates.py is an
+  additional unused LLM-based guard function -- not wired into pipeline.py.
+  Left as-is since the numeric threshold is now the primary, reliable guard;
+  documented as available future enhancement (ensemble of both signals).

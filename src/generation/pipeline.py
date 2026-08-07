@@ -22,7 +22,7 @@ STRATEGY_CONFIG = {
 }
 
 # Default reranker score threshold below which we trigger "insufficient info"
-SUFFICIENCY_THRESHOLD = -5.0  # bge-reranker scores can be negative; tune after first runs
+SUFFICIENCY_THRESHOLD = 0.10  # calibrated: GOOD questions scored 0.41-0.93 avg, BAD scored 0.004-0.023 avg (see experiment_log.md)
 
 
 def query_pipeline(
