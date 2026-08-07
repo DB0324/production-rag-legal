@@ -116,3 +116,15 @@ Manual spot-checking identified a clear failure taxonomy:
 - Add a staleness/contradiction-detection layer for conflicting precedents
 - Build the caching + cost/latency dashboard (planned but not reached
   given time spent on data pipeline and evaluation debugging)
+
+
+## 10. Guardrail Calibration (post-report finding)
+A follow-up audit found the coded sufficiency threshold (-5.0) never
+actually triggered, since bge-reranker-v2-m3 produces small positive
+scores in this setup, not large negative ones as originally assumed.
+The apparent guardrail behavior in early testing was actually the LLM
+self-declining per its system prompt instructions -- a less reliable
+mechanism than a deterministic score check. Recalibrated the threshold
+to 0.10 using 5 known-good vs 5 known-bad test questions (clean
+separation: GOOD avg 0.41-0.93, BAD avg 0.004-0.023). Re-verified 5/5
+guardrail pass rate with the corrected, deterministic threshold.
