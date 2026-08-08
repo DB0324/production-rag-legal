@@ -152,3 +152,12 @@ total 29.4s. Project is fully functional end-to-end through the API layer.
   undercounted in latency aggregates. Minor, noted for future fix.
 - Added start_api.sh wrapper to prevent LLM_PROVIDER env var mismatches
   on restart (root cause of several earlier debugging sessions today).
+
+## Caching Layer: Implemented and Verified
+- Semantic cache (embed query + cosine similarity, threshold=0.95),
+  file-persisted instead of Redis given no-root HPC constraint
+  (same reasoning as Qdrant local-mode substitution for Docker).
+- Verified: identical query, second call -- total_s dropped from 33.83s
+  to 0.047s (cache hit), confirmed via cache_hit:true in response.
+- Only successful (non-"insufficient information") answers are cached,
+  to avoid caching guardrail declines as if they were confident answers.
