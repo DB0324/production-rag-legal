@@ -139,3 +139,16 @@ API stack (retrieval -> rerank -> generate), confirming avg_rerank_score
 (0.411) and confidence ("high") both align with the calibrated guardrail.
 Latency breakdown: retrieval 9.97s, rerank 1.82s, generation 17.61s,
 total 29.4s. Project is fully functional end-to-end through the API layer.
+
+## Cost/Latency Observability: Implemented and Verified
+- Added SQLite-backed query logging (src/observability/logger.py) and
+  a new /metrics endpoint aggregating p50/p95 latency, token totals,
+  and cache hit-rate (0% -- caching not yet implemented).
+- Verified via 2 live queries: correct latency/token capture for a
+  successful answer (total_s=47.1s), and correct "insufficient info"
+  handling for an out-of-corpus question.
+- Known gap: guardrail-declined queries don't populate total_s (early
+  return in pipeline.py before the total_s calculation), so they're
+  undercounted in latency aggregates. Minor, noted for future fix.
+- Added start_api.sh wrapper to prevent LLM_PROVIDER env var mismatches
+  on restart (root cause of several earlier debugging sessions today).
