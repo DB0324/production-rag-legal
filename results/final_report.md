@@ -166,3 +166,28 @@ readiness probes rather than fixed timeouts.
 malformed request body, and invalid strategy name were queued for
 testing; deferred due to heavy server load during this session. See
 results/experiment_log.md for status.)
+
+
+## 12. Ablation Axes 3 & 4 (post-report additions)
+
+### Axis 3: Fusion Weighting
+| Mode | Recall@1 | Recall@5 | Recall@10 | MRR |
+|---|---|---|---|---|
+| BM25 only | 0.524 | 0.652 | 0.700 | 0.583 |
+| Dense only | 0.440 | 0.560 | 0.604 | 0.494 |
+| Hybrid (RRF) | 0.532 | 0.640 | 0.684 | 0.586 |
+
+Finding: hybrid only marginally outperforms pure BM25 on this legal
+corpus (within noise on Recall@1/MRR), and dense retrieval alone is
+clearly weakest. This tempers the common assumption that hybrid always
+clearly beats either component -- legal text's reliance on exact
+citations/section numbers likely favors BM25's keyword-matching more
+than typical semantic-search domains.
+
+### Axis 4: Top-k Sensitivity
+Comparing generation_top_k=5 vs 10 (k=20 was capped by rerank_top_k=10
+and did not test a true distinct value -- documented limitation):
+increasing context from ~2,777 to ~5,088 avg input tokens (+83%) and
+latency by +28% reduced guardrail-declined questions only marginally
+(8/20 to 7/20) -- diminishing returns on additional context at this
+chunk granularity.
