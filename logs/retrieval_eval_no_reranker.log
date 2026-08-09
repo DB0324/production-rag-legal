@@ -1,0 +1,33 @@
+
+============================================================
+Evaluating strategy: fixed
+  Collection: legal_fixed
+  BM25 index: data/chunks/fixed_bm25.pkl
+  Eval set: 250 questions
+============================================================
+
+Loading embedding model 'BAAI/bge-large-en-v1.5' on: cuda
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 153/391 [00:00<00:00, 1527.87it/s]Loading weights:  78%|███████▊  | 306/391 [00:00<00:00, 1316.52it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 1338.88it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s]
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval.py", line 188, in <module>
+    main()
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval.py", line 180, in main
+    evaluate_strategy(strategy)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval.py", line 70, in evaluate_strategy
+    results = hybrid_search(
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/retrieval/hybrid_retriever.py", line 78, in hybrid_search
+    dense_results = dense_search(collection_name, query, top_k=50)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/retrieval/hybrid_retriever.py", line 40, in dense_search
+    response = client.query_points(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 423, in query_points
+    return self._client.query_points(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/local/qdrant_local.py", line 407, in query_points
+    collection = self._get_collection(collection_name)
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/local/qdrant_local.py", line 183, in _get_collection
+    raise ValueError(f"Collection {collection_name} not found")
+ValueError: Collection legal_fixed not found

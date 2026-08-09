@@ -1,0 +1,27 @@
+nohup: ignoring input
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_recursive> contains 253394 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+
+=== Testing generation_top_k=5 ===
+Loading embedding model 'BAAI/bge-large-en-v1.5' on: cuda
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:  53%|█████▎    | 207/391 [00:00<00:00, 2059.12it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 1641.52it/s]
+Loading reranker model 'BAAI/bge-reranker-v2-m3' on: cuda
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   5%|▍         | 19/393 [00:00<00:02, 159.49it/s]Loading weights:   9%|▉         | 35/393 [00:00<00:03, 90.15it/s] Loading weights:  16%|█▌        | 62/393 [00:00<00:02, 134.50it/s]Loading weights:  25%|██▌       | 100/393 [00:00<00:01, 175.59it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 574.84it/s]
+  avg_tokens_in=2776.9, avg_latency_s=29.71, declined=8/20
+
+=== Testing generation_top_k=10 ===
+  avg_tokens_in=5087.8, avg_latency_s=38.0, declined=7/20
+
+=== Testing generation_top_k=20 ===
+  avg_tokens_in=5087.8, avg_latency_s=32.25, declined=7/20
+
+=== Top-k Sensitivity Summary ===
+k= 5 | avg_tokens_in=2776.9 | avg_latency_s=29.71 | declined=8/20
+k=10 | avg_tokens_in=5087.8 | avg_latency_s=38.00 | declined=7/20
+k=20 | avg_tokens_in=5087.8 | avg_latency_s=32.25 | declined=7/20
+
+Saved to results/ablation_topk.json

@@ -1,0 +1,77 @@
+"""
+Embed and index the fixed-chunking chunk set into Qdrant.
+Processes in batches; resumable if interrupted (checks existing
+point count in the collection and skips already-indexed rows).
+Run from project root: python -m src.ingestion.run_indexing_fixed
+"""
+import os
+import time
+import pandas as pd
+from src.indexing.embed import embed_texts
+from src.indexing.qdrant_client import get_client, create_collection, upsert_chunks
+
+CHUNKS_PATH = "data/chunks/fixed_chunks.parquet"
+COLLECTION_NAME = "legal_fixed"
+BATCH_SIZE = 500  # embed + upsert this many chunks per batch
+
+
+def main():
+    df = pd.read_parquet(CHUNKS_PATH)
+    total = len(df)
+    print(f"Loaded {total} chunks from {CHUNKS_PATH}")
+
+    recreate = os.getenv("RECREATE_INDEX") == "1"
+    client = create_collection(COLLECTION_NAME, recreate=recreate)
+
+    # Resume support: check how many points already exist
+    existing_count = client.count(COLLECTION_NAME).count
+    print(f"Already indexed: {existing_count} points")
+
+    if existing_count >= total:
+        print("Collection already fully indexed. Nothing to do.")
+        return
+
+    start_row = existing_count
+    remaining_df = df.iloc[start_row:]
+    print(f"Resuming from row {start_row}, {len(remaining_df)} chunks remaining")
+
+    start_time = time.time()
+    for batch_start in range(0, len(remaining_df), BATCH_SIZE):
+        batch_end = min(batch_start + BATCH_SIZE, len(remaining_df))
+        batch_df = remaining_df.iloc[batch_start:batch_end]
+
+        texts = batch_df["text"].tolist()
+        embeddings = embed_texts(texts, batch_size=128)
+
+        # upsert with correct absolute point IDs (offset by start_row + batch_start)
+        client_local = get_client()
+        from qdrant_client.models import PointStruct
+        points = [
+            PointStruct(
+                id=start_row + batch_start + i,
+                vector=embeddings[i].tolist(),
+                payload={
+                    "chunk_id": row["chunk_id"],
+                    "doc_id": row["doc_id"],
+                    "case_title": row["case_title"],
+                    "text": row["text"],
+                    "chunk_index": int(row["chunk_index"]),
+                },
+            )
+            for i, (_, row) in enumerate(batch_df.iterrows())
+        ]
+        client_local.upsert(collection_name=COLLECTION_NAME, points=points)
+
+        done_so_far = start_row + batch_end
+        elapsed = time.time() - start_time
+        rate = (batch_end) / elapsed if elapsed > 0 else 0
+        eta_min = (len(remaining_df) - batch_end) / rate / 60 if rate > 0 else 0
+        print(f"  indexed {done_so_far}/{total} total ({batch_end}/{len(remaining_df)} this run), "
+              f"~{eta_min:.1f} min remaining")
+
+    final_count = client.count(COLLECTION_NAME).count
+    print(f"\nDone. Final point count in '{COLLECTION_NAME}': {final_count}")
+
+
+if __name__ == "__main__":
+    main()

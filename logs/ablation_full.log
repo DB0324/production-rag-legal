@@ -1,0 +1,147 @@
+nohup: ignoring input
+==============================================
+  Production RAG Legal — Ablation Pipeline
+==============================================
+
+[Step 0] Pre-flight checks...
+CUDA available: True, Device: NVIDIA RTX 6000 Ada Generation
+  ✓ data/chunks/fixed_chunks.parquet
+  ✓ data/chunks/recursive_chunks.parquet
+  ✓ data/chunks/semantic_chunks.parquet
+  ✓ data/eval/indiclegalqa_filtered.json
+
+[Step 1] Installing dependencies...
+
+==============================================
+[Step 2] Indexing recursive chunks → Qdrant + BM25
+  (~180 min for 253K chunks on GPU)
+==============================================
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/ingestion/run_indexing_recursive.py", line 83, in <module>
+    main()
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/ingestion/run_indexing_recursive.py", line 23, in main
+    df = pd.read_parquet(CHUNKS_PATH)
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pandas/io/parquet.py", line 669, in read_parquet
+    return impl.read(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pandas/io/parquet.py", line 265, in read
+    pa_table = self.api.parquet.read_table(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1896, in read_table
+    dataset = ParquetDataset(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1465, in __init__
+    [fragment], schema=schema or fragment.physical_schema,
+  File "pyarrow/_dataset.pyx", line 1479, in pyarrow._dataset.Fragment.physical_schema.__get__
+  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Could not open Parquet input source '<Buffer>': Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+
+==============================================
+[Step 3] Indexing semantic chunks → Qdrant + BM25
+  (~115 min for 164K chunks on GPU)
+==============================================
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/ingestion/run_indexing_semantic.py", line 83, in <module>
+    main()
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/ingestion/run_indexing_semantic.py", line 23, in main
+    df = pd.read_parquet(CHUNKS_PATH)
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pandas/io/parquet.py", line 669, in read_parquet
+    return impl.read(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pandas/io/parquet.py", line 265, in read
+    pa_table = self.api.parquet.read_table(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1896, in read_table
+    dataset = ParquetDataset(
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1465, in __init__
+    [fragment], schema=schema or fragment.physical_schema,
+  File "pyarrow/_dataset.pyx", line 1479, in pyarrow._dataset.Fragment.physical_schema.__get__
+  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Could not open Parquet input source '<Buffer>': Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+
+==============================================
+[Step 4] Retrieval metrics (no reranker) — 3 strategies
+==============================================
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval.py", line 188, in <module>
+    main()
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval.py", line 180, in main
+    evaluate_strategy(strategy)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval.py", line 70, in evaluate_strategy
+    results = hybrid_search(
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/retrieval/hybrid_retriever.py", line 76, in hybrid_search
+    bm25_data = load_bm25(bm25_path)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/retrieval/hybrid_retriever.py", line 15, in load_bm25
+    return pickle.load(f)
+_pickle.UnpicklingError: pickle data was truncated
+
+============================================================
+Evaluating strategy: fixed
+  Collection: legal_fixed
+  BM25 index: data/chunks/fixed_bm25.pkl
+  Eval set: 250 questions
+============================================================
+
+
+Current ablation table (3 rows):
+chunking_strategy,reranker,recall_at_1,recall_at_5,recall_at_10,recall_at_20,mrr,n_eval
+fixed,none,0.492,0.660,0.712,0.748,0.564,250
+
+==============================================
+[Step 5] Retrieval metrics (with bge-reranker-v2-m3) — 3 strategies
+  (First run downloads reranker model ~1.1GB)
+==============================================
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval_reranked.py", line 202, in <module>
+    main()
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval_reranked.py", line 194, in main
+    evaluate_strategy_reranked(strategy)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/run_retrieval_eval_reranked.py", line 74, in evaluate_strategy_reranked
+    hybrid_results = hybrid_search(
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/retrieval/hybrid_retriever.py", line 76, in hybrid_search
+    bm25_data = load_bm25(bm25_path)
+  File "/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/retrieval/hybrid_retriever.py", line 15, in load_bm25
+    return pickle.load(f)
+_pickle.UnpicklingError: pickle data was truncated
+
+============================================================
+Evaluating strategy: fixed + reranker
+  Collection: legal_fixed
+  BM25 index: data/chunks/fixed_bm25.pkl
+  Hybrid top-k: 20 → rerank to top-5
+  Eval set: 250 questions
+============================================================
+
+
+Current ablation table (6 rows):
+chunking_strategy,reranker,recall_at_1,recall_at_5,recall_at_10,recall_at_20,mrr,n_eval
+fixed,none,0.492,0.660,0.712,0.748,0.564,250
+
+==============================================
+[Step 6] Full pipeline eval (retrieve → rerank → generate)
+==============================================
+
+⚠ WARNING: LLM_PROVIDER not set. Skipping generation + RAGAS + hallucination steps.
+  Set it before running:
+    export LLM_PROVIDER=gemini
+    export GOOGLE_API_KEY=your-key
+  Then re-run steps 6-8 with:
+    bash run_generation.sh
+
+==============================================
+  RETRIEVAL ABLATION COMPLETE
+  Results: results/ablation_table.csv
+==============================================

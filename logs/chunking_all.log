@@ -1,0 +1,63 @@
+nohup: ignoring input
+Loaded 4200 documents.
+  chunked 500/4200 documents, 500 chunks so far
+  chunked 1000/4200 documents, 1000 chunks so far
+  chunked 1500/4200 documents, 1500 chunks so far
+  chunked 2000/4200 documents, 2000 chunks so far
+  chunked 2500/4200 documents, 2500 chunks so far
+  chunked 3000/4200 documents, 3000 chunks so far
+  chunked 3500/4200 documents, 3500 chunks so far
+  chunked 4000/4200 documents, 4000 chunks so far
+
+Done. Total chunks: 4200
+Avg chunks per doc: 1.0
+Avg chars per chunk: 992.0
+Min/Max chars per chunk: 674 / 1352
+Loaded 4200 documents.
+  chunked 500/4200 documents, 1000 chunks so far
+  chunked 1000/4200 documents, 2000 chunks so far
+  chunked 1500/4200 documents, 3000 chunks so far
+  chunked 2000/4200 documents, 4000 chunks so far
+  chunked 2500/4200 documents, 5000 chunks so far
+  chunked 3000/4200 documents, 6000 chunks so far
+  chunked 3500/4200 documents, 7000 chunks so far
+  chunked 4000/4200 documents, 8000 chunks so far
+
+Done. Total chunks: 8400
+Avg chunks per doc: 2.0
+Avg chars per chunk: 495.5
+Min/Max chars per chunk: 227 / 879
+Loaded 4200 documents.
+Loading embedding model on: cuda
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6431.07it/s]
+  chunked 200/4200 docs, 346 chunks so far, ~0.5 min remaining
+  chunked 400/4200 docs, 682 chunks so far, ~0.4 min remaining
+  chunked 600/4200 docs, 1020 chunks so far, ~0.4 min remaining
+  chunked 800/4200 docs, 1364 chunks so far, ~0.3 min remaining
+  chunked 1000/4200 docs, 1704 chunks so far, ~0.3 min remaining
+  chunked 1200/4200 docs, 2050 chunks so far, ~0.3 min remaining
+  chunked 1400/4200 docs, 2401 chunks so far, ~0.3 min remaining
+  chunked 1600/4200 docs, 2745 chunks so far, ~0.3 min remaining
+  chunked 1800/4200 docs, 3089 chunks so far, ~0.2 min remaining
+  chunked 2000/4200 docs, 3417 chunks so far, ~0.2 min remaining
+  chunked 2200/4200 docs, 3762 chunks so far, ~0.2 min remaining
+  chunked 2400/4200 docs, 4102 chunks so far, ~0.2 min remaining
+  chunked 2600/4200 docs, 4450 chunks so far, ~0.2 min remaining
+  chunked 2800/4200 docs, 4787 chunks so far, ~0.1 min remaining
+  chunked 3000/4200 docs, 5129 chunks so far, ~0.1 min remaining
+  chunked 3200/4200 docs, 5482 chunks so far, ~0.1 min remaining
+  chunked 3400/4200 docs, 5811 chunks so far, ~0.1 min remaining
+  chunked 3600/4200 docs, 6147 chunks so far, ~0.1 min remaining
+  chunked 3800/4200 docs, 6486 chunks so far, ~0.0 min remaining
+  chunked 4000/4200 docs, 6811 chunks so far, ~0.0 min remaining
+  chunked 4200/4200 docs, 7146 chunks so far, ~0.0 min remaining
+
+Done in 0.4 minutes. Total chunks: 7146
+Avg chunks per doc: 1.7
+Avg chars per chunk: 582.6
+Min/Max chars per chunk: 227 / 1352
+Loaded 4200 chunks from data/chunks/fixed_chunks.parquet
+Tokenizing...
+Building BM25 index...
+Saved BM25 index to data/chunks/fixed_bm25.pkl
+ALL DONE

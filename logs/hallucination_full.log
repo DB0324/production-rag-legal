@@ -1,0 +1,46 @@
+nohup: ignoring input
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_recursive> contains 253394 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+Detected strategy: semantic -> collection: legal_semantic
+
+Loaded 250 results, checking 199 valid answers
+(Skipping errors and 'insufficient information' responses)
+
+Fetching full text for 974 unique chunks from Qdrant...
+  checked 10/199 questions (64 claims, 11 unsupported, ~115.7 min remaining)
+  checked 20/199 questions (133 claims, 25 unsupported, ~148.2 min remaining)
+  checked 30/199 questions (200 claims, 38 unsupported, ~156.2 min remaining)
+  checked 40/199 questions (280 claims, 52 unsupported, ~160.8 min remaining)
+  checked 50/199 questions (364 claims, 63 unsupported, ~163.1 min remaining)
+  checked 60/199 questions (457 claims, 97 unsupported, ~161.6 min remaining)
+  checked 70/199 questions (519 claims, 106 unsupported, ~148.9 min remaining)
+  checked 80/199 questions (597 claims, 123 unsupported, ~138.8 min remaining)
+  checked 90/199 questions (691 claims, 147 unsupported, ~133.4 min remaining)
+  checked 100/199 questions (769 claims, 162 unsupported, ~121.4 min remaining)
+  checked 110/199 questions (844 claims, 175 unsupported, ~111.9 min remaining)
+  checked 120/199 questions (910 claims, 189 unsupported, ~97.9 min remaining)
+  checked 130/199 questions (993 claims, 212 unsupported, ~86.2 min remaining)
+  checked 140/199 questions (1056 claims, 219 unsupported, ~74.6 min remaining)
+  checked 150/199 questions (1136 claims, 237 unsupported, ~62.7 min remaining)
+  checked 160/199 questions (1197 claims, 247 unsupported, ~49.3 min remaining)
+  checked 170/199 questions (1267 claims, 258 unsupported, ~36.5 min remaining)
+  checked 180/199 questions (1319 claims, 262 unsupported, ~23.5 min remaining)
+  checked 190/199 questions (1387 claims, 277 unsupported, ~11.0 min remaining)
+
+=== Hallucination Check Summary ===
+  Questions checked: 199
+  Total claims: 1441
+  Unsupported claims: 291
+  Overall hallucination rate: 20.2%
+  Tokens used: 3427546
+  Saved → results/hallucination_semantic_full.json
+Exception ignored in: <function QdrantClient.__del__ at 0x776e257077f0>
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 169, in __del__
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 178, in close
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/local/qdrant_local.py", line 85, in close
+ImportError: sys.meta_path is None, Python is likely shutting down

@@ -1,0 +1,28 @@
+Loaded 4140 documents.
+Loading embedding model on: cuda
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5342.60it/s]
+  chunked 200/4140 docs, 4642 chunks so far, ~5.0 min remaining
+  chunked 400/4140 docs, 8839 chunks so far, ~4.5 min remaining
+  chunked 600/4140 docs, 13673 chunks so far, ~4.2 min remaining
+  chunked 800/4140 docs, 18649 chunks so far, ~4.0 min remaining
+  chunked 1000/4140 docs, 24171 chunks so far, ~3.9 min remaining
+  chunked 1200/4140 docs, 29783 chunks so far, ~3.7 min remaining
+  chunked 1400/4140 docs, 35156 chunks so far, ~3.5 min remaining
+  chunked 1600/4140 docs, 40212 chunks so far, ~3.2 min remaining
+  chunked 1800/4140 docs, 46158 chunks so far, ~3.0 min remaining
+  chunked 2000/4140 docs, 51567 chunks so far, ~2.8 min remaining
+  chunked 2200/4140 docs, 57369 chunks so far, ~2.5 min remaining
+  chunked 2400/4140 docs, 61259 chunks so far, ~2.2 min remaining
+  chunked 2600/4140 docs, 64577 chunks so far, ~1.9 min remaining
+  chunked 2800/4140 docs, 67774 chunks so far, ~1.7 min remaining
+  chunked 3000/4140 docs, 80549 chunks so far, ~1.5 min remaining
+  chunked 3200/4140 docs, 102158 chunks so far, ~1.4 min remaining
+  chunked 3400/4140 docs, 119147 chunks so far, ~1.2 min remaining
+  chunked 3600/4140 docs, 129928 chunks so far, ~0.9 min remaining
+  chunked 3800/4140 docs, 143860 chunks so far, ~0.6 min remaining
+  chunked 4000/4140 docs, 153699 chunks so far, ~0.2 min remaining
+
+Done in 7.6 minutes. Total chunks: 163884
+Avg chunks per doc: 39.6
+Avg chars per chunk: 1302.6
+Min/Max chars per chunk: 40 / 4342

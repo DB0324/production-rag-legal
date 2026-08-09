@@ -1,0 +1,51 @@
+nohup: ignoring input
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_recursive> contains 253394 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+
+============================================================
+Full pipeline evaluation: semantic (reranked)
+  Eval set: 250 questions
+  Output: results/raw_outputs_semantic_reranked.json
+============================================================
+
+Loading embedding model 'BAAI/bge-large-en-v1.5' on: cuda
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 148/391 [00:00<00:00, 1472.52it/s]Loading weights:  76%|███████▌  | 296/391 [00:00<00:00, 1077.54it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 1410.09it/s]
+Loading reranker model 'BAAI/bge-reranker-v2-m3' on: cuda
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 108/393 [00:00<00:00, 1065.58it/s]Loading weights:  55%|█████▍    | 215/393 [00:00<00:00, 821.90it/s] Loading weights: 100%|██████████| 393/393 [00:00<00:00, 1157.87it/s]
+  processed 10/250 (0 errors, ~137.2 min remaining)
+  processed 20/250 (0 errors, ~111.0 min remaining)
+  processed 30/250 (0 errors, ~105.8 min remaining)
+  processed 40/250 (0 errors, ~97.5 min remaining)
+  processed 50/250 (0 errors, ~93.8 min remaining)
+  processed 60/250 (0 errors, ~89.6 min remaining)
+  processed 70/250 (0 errors, ~84.7 min remaining)
+  processed 80/250 (0 errors, ~80.0 min remaining)
+  processed 90/250 (0 errors, ~72.1 min remaining)
+  processed 100/250 (0 errors, ~66.2 min remaining)
+  processed 110/250 (0 errors, ~60.9 min remaining)
+  processed 120/250 (0 errors, ~55.1 min remaining)
+  processed 130/250 (0 errors, ~50.3 min remaining)
+  processed 140/250 (0 errors, ~44.8 min remaining)
+  processed 150/250 (0 errors, ~39.9 min remaining)
+  processed 160/250 (0 errors, ~35.4 min remaining)
+  processed 170/250 (0 errors, ~30.8 min remaining)
+  processed 180/250 (0 errors, ~26.4 min remaining)
+  processed 190/250 (0 errors, ~22.4 min remaining)
+  processed 200/250 (0 errors, ~18.4 min remaining)
+  processed 210/250 (0 errors, ~14.6 min remaining)
+  processed 220/250 (0 errors, ~10.9 min remaining)
+  processed 230/250 (0 errors, ~7.2 min remaining)
+  processed 240/250 (0 errors, ~3.6 min remaining)
+  processed 250/250 (0 errors, ~0.0 min remaining)
+
+=== Summary ===
+  Questions: 250
+  Errors: 0
+  Total tokens: 704808 in, 49346 out
+  Total time: 88.4 min
+  Avg time/query: 21.2s
+  Saved → results/raw_outputs_semantic_reranked.json

@@ -1,0 +1,19 @@
+nohup: ignoring input
+==============================================
+  Full Data Rebuild Pipeline
+==============================================
+
+[Cleanup] Removing corrupted Git LFS parquet stubs...
+  OK (real file): data/processed/judgments_extracted.parquet (41895724 bytes)
+  OK (real file): data/raw/corpus_slice.parquet (5730071 bytes)
+
+[Check] Verifying raw tars...
+  MISSING: data/raw/tars/english_2018.tar
+  MISSING: data/raw/tars/english_2019.tar
+  MISSING: data/raw/tars/english_2020.tar
+  MISSING: data/raw/tars/english_2021.tar
+
+ERROR: Some tars are missing or corrupted.
+Re-download corpus from HuggingFace:
+  python -m src.ingestion.download_corpus
+Then re-run this script.

@@ -1,8 +1,17 @@
 data/raw/*
 data/processed/*
 data/chunks/*
+data/qdrant_local/*
+data/semantic_cache.json
 *.pyc
 __pycache__/
 rag-env/
 .env
 *.parquet
+*.db
+*.zip
+*_log.txt
+results/raw_outputs_*.json
+results/retrieval_misses_*.json
+results/hallucination_TEST*.json
+results/ragas_scores_TEST*.json

@@ -1,0 +1,14 @@
+Loaded 4140 documents.
+  chunked 500/4140 documents, 18258 chunks so far
+  chunked 1000/4140 documents, 38802 chunks so far
+  chunked 1500/4140 documents, 60541 chunks so far
+  chunked 2000/4140 documents, 82480 chunks so far
+  chunked 2500/4140 documents, 100312 chunks so far
+  chunked 3000/4140 documents, 127274 chunks so far
+  chunked 3500/4140 documents, 193547 chunks so far
+  chunked 4000/4140 documents, 238177 chunks so far
+
+Done. Total chunks: 253394
+Avg chunks per doc: 61.2
+Avg chars per chunk: 842.1
+Min/Max chars per chunk: 40 / 4342
