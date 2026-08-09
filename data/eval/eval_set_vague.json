@@ -1,0 +1,18 @@
+[
+  {
+    "question": "What broader issue did the Supreme Court address in its judgement regarding the administration of justice?",
+    "answer": "The Supreme Court addressed the issue of dual legal systems, highlighting the need for a uniform application of the law to ensure justice for all, regardless of political influence or resources.",
+    "case_name_qa": "Somesh Chaurasia vs State of M.P. & Anr.",
+    "case_title_corpus": "SOMESH CHAURASIA versus STATE OF M.P. & ANR",
+    "doc_id": "2021_6_692_722_EN",
+    "match_score": 100.0
+  },
+  {
+    "question": "What broader legal principles did the Supreme Court discuss in this judgement?",
+    "answer": "The Supreme Court discussed the principles of granting and canceling bail, emphasizing that the High Court must exercise its discretion judiciously, considering the nature and gravity of the accusations and the material evidence collected during the investigation.",
+    "case_name_qa": "Centrum Financial Services Limited vs. State of NCT of Delhi & Anr.",
+    "case_title_corpus": "CENTRUM FINANCIAL SERVICES LIMITED versus STATE OF NCT OF DELHI AND ANR",
+    "doc_id": "2022_8_19_34_EN",
+    "match_score": 96.875
+  }
+]

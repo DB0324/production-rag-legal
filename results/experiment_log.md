@@ -224,3 +224,23 @@ returns on additional context at this corpus's chunk granularity --
 consistent with the intuition that the reranker already surfaces the
 most relevant chunks in its top 5, and additional lower-ranked chunks
 add cost without proportionally improving coverage.
+
+## Correction: Vague-Question Theory Was Overstated
+Earlier assumed ~20-23% of eval questions were "vague" and responsible
+for lower-than-hoped retrieval scores. Built a precise filter (requires
+generic phrasing AND no case-name/date marker) and found only 2/250
+(0.8%) genuinely qualify -- exactly the 2 originally found via manual
+spot-check early in the project, not a large hidden population.
+
+Re-ran retrieval metrics on the clean n=248 subset: Recall@1 0.532->0.536,
+MRR 0.587->0.590 -- negligible change. CONCLUSION: the observed retrieval
+scores (Recall@1 ~0.53-0.61 depending on config) are NOT substantially
+explained by eval-set question quality. They reflect genuine retrieval
+difficulty on this legal corpus -- likely due to semantic similarity
+between related cases, dense/formal legal language, and the corpus
+containing many topically-similar judgments that are hard to disambiguate
+without exact citation matching. This is a more honest explanation than
+originally assumed, and is itself informative: BM25's strong showing in
+the Axis 3 fusion ablation is consistent with this -- exact-match signals
+matter more than semantic similarity for disambiguating similar legal
+cases.
