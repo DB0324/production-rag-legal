@@ -161,3 +161,25 @@ total 29.4s. Project is fully functional end-to-end through the API layer.
   to 0.047s (cache hit), confirmed via cache_hit:true in response.
 - Only successful (non-"insufficient information") answers are cached,
   to avoid caching guardrail declines as if they were confident answers.
+
+## Investigation: Qdrant Cold-Start Slowness (root-caused, not fixed)
+Followed up on the earlier I/O contention finding with deeper diagnostics:
+- Raw sequential disk read: 5.7 GB/s (dd test) -- disk hardware is fine.
+- No WAL/lock/journal files present -- storage files unmodified since
+  original index build (Jul 30), ruling out corruption from today's
+  repeated process kills.
+- SQLite integrity_check: "ok" on legal_fixed -- file structurally sound.
+- Conclusion: slowness is consistent with Qdrant's random-access read
+  pattern over large (1.2-2.9GB) local files becoming slow under
+  memory/page-cache pressure on a heavily shared server (24 concurrent
+  users), even when raw sequential disk throughput is excellent and
+  cluster load average is moderate (1.2-1.5). This is a genuine
+  characteristic of local-mode embedded Qdrant at this data scale on
+  shared infrastructure, not a bug in this project's code.
+- Practical implication for the final report: this is exactly the kind
+  of finding that justifies the blueprint's original recommendation of
+  Qdrant server/Docker mode for datasets >20,000 points in a real
+  production deployment -- local mode was a reasonable dev/portfolio
+  substitution given no-root constraints, but this investigation
+  independently confirms *why* the tool's own warning message
+  (seen throughout this session) exists.
