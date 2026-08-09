@@ -202,3 +202,25 @@ sensitive retrieval task compared to more semantically-driven domains.
 This tempers the blueprint's original assumption that hybrid clearly
 beats either component alone -- worth stating explicitly as a corpus-
 specific finding rather than a general claim.
+
+## Ablation Axis 4: Top-k Sensitivity (n=20 subsample, semantic+reranker)
+| generation_top_k | avg_tokens_in | avg_latency_s | declined/20 |
+|---|---|---|---|
+| 5  | 2776.9 | 29.71 | 8 |
+| 10 | 5087.8 | 38.00 | 7 |
+| 20 | 5087.8 | 32.25 | 7 |
+
+IMPORTANT CAVEAT: k=10 and k=20 show identical avg_tokens_in, because
+rerank_top_k (default=10) caps the number of chunks available to slice
+from BEFORE generation_top_k is applied. So this experiment validly
+compares k=5 vs k=10, but did NOT actually test true k=20 -- that would
+require also raising rerank_top_k=20 to have enough candidates. Logged
+honestly rather than misreporting k=20 as a distinct data point.
+
+Valid finding (k=5 vs k=10): near-doubling context (2777 -> 5088 tokens,
++83%) and +28% latency (29.7s -> 38.0s) bought only a marginal reduction
+in guardrail-declined questions (8/20 -> 7/20). This suggests diminishing
+returns on additional context at this corpus's chunk granularity --
+consistent with the intuition that the reranker already surfaces the
+most relevant chunks in its top 5, and additional lower-ranked chunks
+add cost without proportionally improving coverage.

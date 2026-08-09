@@ -1,0 +1,581 @@
+{
+  "k=5": {
+    "summary": {
+      "generation_top_k": 5,
+      "avg_tokens_in": 2776.9,
+      "avg_tokens_out": 148.8,
+      "avg_latency_s": 29.71,
+      "n_declined": 8,
+      "total_wall_time_s": 594.3,
+      "n_samples": 20
+    },
+    "raw": [
+      {
+        "question": "What was the High Court's decision on 21st April 2006 regarding the ex-parte decree?",
+        "gold_doc_id": "2021_9_15_22_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe context passages do not contain any specific reference to a High Court decision on 21st April 2006 regarding an ex-parte decree. The cases mentioned deal with various aspects of ex-parte decrees and their challenges, but none provide details about a particular decision made on that date.",
+        "tokens_in": 3108,
+        "tokens_out": 75,
+        "total_s": 107.679,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the High Court's judgment on the matter prior to the Supreme Court's involvement?",
+        "gold_doc_id": "2018_11_275_309_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe given context passages do not provide specific details about the High Court's judgment on any particular matter prior to the Supreme Court's involvement. The passages discuss various cases and the actions of the High Court and Supreme Court but do not give a detailed account of the High Court's judgment before the Supreme Court's intervention in each case.",
+        "tokens_in": 2646,
+        "tokens_out": 78,
+        "total_s": 18.795,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the High Court's decision regarding the custody of the minor child Pranav Acharya?",
+        "gold_doc_id": "2022_6_727_736_EN",
+        "answer": "- The High Court decided that the custody of the minor corpus\u2014Pranav Acharya\u2014be continued with the paternal grandparents. However, respondent No. 4 (the maternal aunt) was granted visitation rights, allowing Pranav to meet his maternal aunt on a regular basis and stay with her during vacations or holidays, provided it does not adversely affect his education or extra-curricular activities. The High Court also directed that there should be video calling between Pranav and his maternal aunt [SWAMINATHAN KUNCHU ACHARYA versus STATE OF GUJARAT & ORS, 2022_6_727_736_EN].\n\n- Additionally, the High Court referred to a previous case where it was noted that respondent No.1 (the father) had custody of Pranav from August 4, 2013, and that there were orders from the Canadian Court granting temporary custody to the mother [MEENAL BHARGAVA versus NAVEEN SHARMA, 2018_4_521_534_EN].",
+        "tokens_in": 2363,
+        "tokens_out": 229,
+        "total_s": 33.135,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the High Court of Calcutta decide regarding the appellant's right to protection from eviction?",
+        "gold_doc_id": "2019_17_1048_1056_EN",
+        "answer": "- The High Court of Calcutta decided that the spouse of a deceased tenant is entitled to lifetime protection from eviction in respect of premises let out for non-residential purposes under Section 2(g) of the Act. This decision was made in response to the first legal issue posed by the appellant [NASIMA NAQI versus TODI TEA COMPANY LTD. AND ORS, 2019_17_1048_1056_EN].",
+        "tokens_in": 2907,
+        "tokens_out": 98,
+        "total_s": 21.757,
+        "confidence": "high"
+      },
+      {
+        "question": "How did the Supreme Court view the High Court's setting aside of the Trial Court's extension order?",
+        "gold_doc_id": "2022_3_553_557_EN",
+        "answer": "Insufficient information in the provided sources to answer this question. The context passages do not contain any specific details regarding how the Supreme Court viewed the High Court's setting aside of the Trial Court's extension order.",
+        "tokens_in": 2400,
+        "tokens_out": 42,
+        "total_s": 15.568,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the trial court's finding regarding the delivery of goods to Sumeti Vij?",
+        "gold_doc_id": "2021_2_266_279_EN",
+        "answer": "Insufficient information in the provided sources to answer this question. The context passages do not contain any specific details about the trial court's findings regarding the delivery of goods to Sumeti Vij.",
+        "tokens_in": 3157,
+        "tokens_out": 38,
+        "total_s": 16.112,
+        "confidence": "high"
+      },
+      {
+        "question": "What were the allegations against the Returning Officer, Ashok Mensinkai, in this case?",
+        "gold_doc_id": "2021_8_297_313_EN",
+        "answer": "- The Returning Officer, Ashok Mensinkai, was alleged to have given false evidence before the Court. Specifically, he was accused of making inconsistent statements which were considered perjury by the learned Judge.\n  - [N.S. NANDIESHA REDDY versus KAVITHA MAHESH, 2021_8_297_313_EN]\n- The election petitioner alleged that Ashok Mensinkai had refused to accept nomination papers, which was termed as an improper rejection of the nomination papers.\n  - [N.S. NANDIESHA REDDY versus KAVITHA MAHESH, 2021_8_297_313_EN]",
+        "tokens_in": 2842,
+        "tokens_out": 146,
+        "total_s": 26.11,
+        "confidence": "high"
+      },
+      {
+        "question": "What principle did the Supreme Court emphasize regarding judicial interference in administrative decisions?",
+        "gold_doc_id": "2018_5_195_199_EN",
+        "answer": "- The Supreme Court emphasized that judicial interference should be limited and is generally not permissible unless certain conditions are met. Specifically:\n  - In exercise of its power of judicial review under Article 226 of the Constitution, the High Court might interfere with administrative matters only if the decision breaches fundamental or basic principles of justice or fair play or suffers from a patent or flagrant error [SANJAY KUMAR JHA v. PRAKASH CHANDRA CHAUDHARY & ORS, 2018_14_893_900_EN].\n  - Decisions must not only be tested by the application of Wednesbury principle of reasonableness but must also be free from arbitrariness and bias [ICCOMM TELE LTD v. PUNJAB STATE WATER SUPPLY & SEWERAGE BOARD & ANR, 2019_2_984_999_EN].\n  - The courts should not interfere in matters of tenders unless substantial public interest is involved or the transaction is mala fide [SILPPI CONSTRUCTIONS CONTRACTORS v. UNION OF INDIA AND ANR., ETC. ETC, 2019_10_932_948_EN].\n  - The High Court's jurisdiction under Article 226 of the Constitution or that of Administrative Tribunals is limited to the applicability of well-known principles known as 'Wednesbury principles' [M/S INDIAN OIL CORPORATION LTD v. SHRI RAJENDRA D. HARMALKAR, 2022_5_678_691_EN].",
+        "tokens_in": 2630,
+        "tokens_out": 345,
+        "total_s": 43.869,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the Division Bench of the High Court decide regarding the writ appeal filed by the University?",
+        "gold_doc_id": "2022_15_642_648_EN",
+        "answer": "Insufficient information in the provided sources to answer this question. The context passages do not contain any specific details about a writ appeal filed by the University that was decided by the Division Bench of the High Court.",
+        "tokens_in": 2637,
+        "tokens_out": 42,
+        "total_s": 14.243,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's view on the High Court's decision to de-recognize the IEM?",
+        "gold_doc_id": "2022_17_54_91_EN",
+        "answer": "- The Supreme Court found that the High Court's decision to de-recognize the IEM was unsustainable in law. Specifically:\n  - The High Court's finding that no effective steps were taken within the period of two years from the date of acknowledgment of IEM was not supported by sufficient evidence, as there were extensions granted and the appellant had not been prevented from taking steps due to court orders [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneshwar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].\n  - The High Court's conclusion that the IEM stood de-recognized before the amendment in the Sugar Control Order was not valid because the IEM had already been de-recognized due to the lapse of time and no extension recommendation from the State Government was on record [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneshwar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].",
+        "tokens_in": 2921,
+        "tokens_out": 251,
+        "total_s": 36.815,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the main legal issue in the case of State of Gujarat vs. Cadila Healthcare Ltd.?",
+        "gold_doc_id": "2022_6_819_829_EN",
+        "answer": "- The main legal issue in the case of State of Gujarat vs. Cadila Healthcare Ltd. was whether the product \"KADIPROL\" should be classified as poultry feed under Entry 25 of Schedule I or as a drug and medicine under Entry 26(1) of Schedule II Part A of the GST Act [STATE OF GUJARAT versus CADILA HEALTHCARE LTD, 2022_6_819_829_EN].",
+        "tokens_in": 3080,
+        "tokens_out": 99,
+        "total_s": 21.196,
+        "confidence": "high"
+      },
+      {
+        "question": "What clarification did the Supreme Court provide regarding the definition of a 'passenger' in this context?",
+        "gold_doc_id": "2020_7_583_602_EN",
+        "answer": "- The Supreme Court clarified that compensation is payable for death or injury of a \u2018passenger\u2019 under Section 124-A of the Railways Act. In cases where the body of the deceased is found on railway premises without any ticket, the burden lies with the Railway Administration to prove that the deceased was not a bona fide passenger.\n  - [Union of India versus Rina Devi, 2018_4_417_438_EN]\n\n- The Supreme Court also noted that in cases involving air travel, a person undertaking a journey for a fixed consideration, even if it begins and terminates at the same location, can still be considered a \"passenger.\"\n  - [Bharti AXA General Insurance Co. Ltd versus Priya Paul & Anr, 2020_7_583_602_EN]",
+        "tokens_in": 2995,
+        "tokens_out": 180,
+        "total_s": 29.485,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's response to Ms. Indira Jaising's request to expunge the remarks made against her?",
+        "gold_doc_id": "2018_12_204_207_EN",
+        "answer": "- The Supreme Court disposed of a Miscellaneous Application filed by Ms. Indira Jaising seeking the expunging/deleting of certain remarks made against her counsel in a previous case. These remarks were found to be based on arguments presented during the course of that hearing and were not disputed as having been made.\n\n[TEHSEEN POONAWALLA v. UNION OF INDIA & ANR, 2018_12_204_207_EN]",
+        "tokens_in": 2849,
+        "tokens_out": 100,
+        "total_s": 20.084,
+        "confidence": "high"
+      },
+      {
+        "question": "Did the Supreme Court remand the matter to the Food Corporation of India for fresh consideration?",
+        "gold_doc_id": "2020_13_1175_1190_EN",
+        "answer": "- Insufficient information in the provided sources to answer this question.\n\nThe passages do not explicitly state whether the Supreme Court remanded the matter to the Food Corporation of India for fresh consideration. The closest relevant information is found in [FOOD CORPORATION OF INDIA vs BRIHANMUMBAI MAHANAGAR PALIKA, 2020_4_1075_1111_EN], where it mentions that the Supreme Court allowed the appeals and set aside the impugned judgment of the High Court, remitting the matter back to the High Court for fresh decision in accordance with law. However, this does not specifically mention a remand to the Food Corporation of India.",
+        "tokens_in": 3316,
+        "tokens_out": 146,
+        "total_s": 26.094,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's decision regarding the applicability of Section 5 of the Limitation Act to appeals under Section 30 of the Act, 1993?",
+        "gold_doc_id": "2021_7_528_531_EN",
+        "answer": "- The Supreme Court held that Section 5 of the Limitation Act shall not be applicable to the appeal against the order of Recovery Officer as provided under Section 30 of the Act, 1993. This decision was based on the case of *International Asset Reconstruction Company of India Limited v. Official Liquidator of Aldrich Pharmaceuticals Limited and Ors., (2017) 16 SCC 137* [530-D-E; 531-C-D].\n\n- The Supreme Court reiterated this view in the present appeal, AVNEESH CHANDAN GADGIL & ANR versus ORIENTAL BANK OF COMMERCE & ORS., and held that Section 5 of the Limitation Act shall not be applicable to the appeal against the order of Recovery Officer as provided under Section 30 of the Act, 1993 [2021_7_528_531_EN_chunk_3; 2021_7_528_531_EN_chunk_7].\n\n- The Supreme Court further supported this decision by referring to paragraph 13 of *International Asset Reconstruction Company of India Limited v. Official Liquidator of Aldrich Pharmaceuticals Limited and Ors., (2017) 16 SCC 137*, which explicitly excluded the application of Section 5 of the Limitation Act for appeals under Section 30 of the Act, 1993 [2021_7_528_531_EN_chunk_5].",
+        "tokens_in": 2988,
+        "tokens_out": 325,
+        "total_s": 42.701,
+        "confidence": "high"
+      },
+      {
+        "question": "What prediction can be made about the implications of the Supreme Court's judgment in the Zonal Manager, Bank of India vs. Aarya K. Babu case?",
+        "gold_doc_id": "2019_11_627_639_EN",
+        "answer": "- The Supreme Court allowed both appeals with no order as to costs and directed the appellant Bank of India to provide an appointment to Smt. Aarya K. Babu as an Agricultural Field Officer or such other equivalent post if the vacancy exists as on today or in the future. However, it is clarified that this direction is issued in the peculiar facts and circumstances of this case and shall not be treated as a precedent for any other case [ZONAL MANAGER, BANK OF INDIA, ZONAL OFFICE, KOCHI & ORS versus AARYA K. BABU & ANR, 2019_11_627_639_EN].",
+        "tokens_in": 2750,
+        "tokens_out": 142,
+        "total_s": 24.081,
+        "confidence": "high"
+      },
+      {
+        "question": "How did the Andhra Pradesh High Court rule regarding the Commission's order on wheeling charges?",
+        "gold_doc_id": "2019_17_474_526_EN",
+        "answer": "- The Andhra Pradesh High Court allowed an appeal against the order dated 24.3.2002 of the Commission, setting aside the order that determined the wheeling charges for the year 2002-2003 effective from 1.4.2002 at Paise 50 per Kwh [TRANSMISSION CORPORATION OF ANDHRA PRADESH LIMITED versus M/S RAIN CALCINING LIMITED & OTHERS, 2019_17_474_526_EN].",
+        "tokens_in": 3088,
+        "tokens_out": 118,
+        "total_s": 22.222,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the final verdict of the Supreme Court in this case?",
+        "gold_doc_id": "2022_18_721_761_EN",
+        "answer": "Insufficient information in the provided sources to answer this question. The context passages do not specify a particular case's final verdict from the Supreme Court. They discuss various cases but do not provide explicit details about the final verdicts of any of them.",
+        "tokens_in": 2147,
+        "tokens_out": 50,
+        "total_s": 13.354,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the post-mortem report reveal about the victim\u2019s injuries?",
+        "gold_doc_id": "2019_14_529_545_EN",
+        "answer": "- In Case: PREET PAL SINGH versus THE STATE OF UTTAR PRADESH & ANR [2020_6_967_982_EN], the post-mortem report revealed an ante-mortem ligature mark and various internal injuries, including congested lungs and membranes, a full right heart chamber and empty left one, semi-digested food in the stomach, and congested liver, spleen, and kidneys. The cause of death was asphyxia due to hanging.\n\n- In Case: THE STATE OF JHARKHAND versus SHAILENDRA KUMAR RAI @ PANDAV RAI [2022_13_1033_1063_EN], the post-mortem report indicated multiple ulcers caused by deep burns, with scabs on the head, face, and chest. The victim's death was attributed to septicemia resulting from these burn injuries.\n\n- In Case: BHAGWAN versus STATE OF MAHARASAHTRA THROUGH SECRETARY HOME, MUMBAI, MAHARASHTRA [2019_11_135_156_EN], the post-mortem report stated that death was caused by septicaemia shock due to extensive burns.\n\n- In Case: REENA HAZARIKA versus STATE OF ASSAM [2018_13_1108_1119_EN], the post-mortem report did not provide specific details about injuries but ruled out certain causes and suggested multiple assailants, with chop wounds possibly caused by a heavy weapon.\n\n- In Case: MANOJ & ORS versus STATE OF MADHYA PRADESH [2022_9_452_580_EN], the post-mortem report indicated firearm injuries on Megha and stab wounds on Rohini and Ashlesha, with all three deaths being homicidal in nature.",
+        "tokens_in": 1698,
+        "tokens_out": 405,
+        "total_s": 43.545,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's conclusion regarding the NCLT and NCLAT's handling of the case?",
+        "gold_doc_id": "2021_12_28_56_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe given context passages do not contain any direct statements or conclusions from the Supreme Court regarding its evaluation of how the NCLT and NCLAT handled a specific case. Each passage discusses different cases and does not provide an overall conclusion by the Supreme Court on their handling.",
+        "tokens_in": 3016,
+        "tokens_out": 67,
+        "total_s": 17.442,
+        "confidence": "high"
+      }
+    ]
+  },
+  "k=10": {
+    "summary": {
+      "generation_top_k": 10,
+      "avg_tokens_in": 5087.8,
+      "avg_tokens_out": 194.8,
+      "avg_latency_s": 38.0,
+      "n_declined": 7,
+      "total_wall_time_s": 760.0,
+      "n_samples": 20
+    },
+    "raw": [
+      {
+        "question": "What was the High Court's decision on 21st April 2006 regarding the ex-parte decree?",
+        "gold_doc_id": "2021_9_15_22_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe context passages do not contain any specific reference to a High Court decision on 21st April 2006 regarding an ex-parte decree. The dates and decisions mentioned in the passages relate to different cases and different time periods.",
+        "tokens_in": 5572,
+        "tokens_out": 62,
+        "total_s": 23.367,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the High Court's judgment on the matter prior to the Supreme Court's involvement?",
+        "gold_doc_id": "2018_11_275_309_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe context passages do not provide specific details about the High Court's judgment on any particular matter before the Supreme Court's involvement. Each case mentioned deals with different aspects and does not contain comprehensive information regarding the High Court\u2019s judgment prior to the Supreme Court's review or decision.",
+        "tokens_in": 4649,
+        "tokens_out": 67,
+        "total_s": 20.67,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the High Court's decision regarding the custody of the minor child Pranav Acharya?",
+        "gold_doc_id": "2022_6_727_736_EN",
+        "answer": "- The High Court handed over the custody of the minor corpus\u2014Pranav Acharya\u2014to respondent No. 4 (maternal aunt) rather than to the appellant (paternal grandfather). However, this decision was later quashed and set aside by a higher court.\n\n  [SWAMINATHAN KUNCHU ACHARYA versus STATE OF GUJARAT & ORS, 2022_6_727_736_EN]",
+        "tokens_in": 4539,
+        "tokens_out": 98,
+        "total_s": 23.861,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the High Court of Calcutta decide regarding the appellant's right to protection from eviction?",
+        "gold_doc_id": "2019_17_1048_1056_EN",
+        "answer": "- The High Court of Calcutta decided that a spouse of a deceased tenant is entitled to lifetime protection from eviction in respect of premises let out for non-residential purposes under Section 2(g) of the West Bengal Premises Tenancy Act, 1997 [NASIMA NAQI versus TODI TEA COMPANY LTD. AND ORS, 2019_17_1048_1056_EN].\n\n- The High Court also noted that after the expiry of five years from the date of death of the original tenant, his heirs had no right to continue in possession of the premises [NASIMA NAQI versus TODI TEA COMPANY LTD. AND ORS, 2019_17_1048_1056_EN].\n\n- The High Court allowed a writ petition and quashed an order of eviction passed by appellant No.5 against respondent No.1 in another case [WEST BENGAL SMALL INDUSTRIES DEVELOPMENT CORPORATION LTD. & ORS versus M/S. SONA PROMOTERS PVT. LTD. & ORS, 2020_5_209_221_EN].",
+        "tokens_in": 5879,
+        "tokens_out": 248,
+        "total_s": 44.105,
+        "confidence": "high"
+      },
+      {
+        "question": "How did the Supreme Court view the High Court's setting aside of the Trial Court's extension order?",
+        "gold_doc_id": "2022_3_553_557_EN",
+        "answer": "- Insufficient information in the provided sources to answer this question.",
+        "tokens_in": 3999,
+        "tokens_out": 14,
+        "total_s": 14.128,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the trial court's finding regarding the delivery of goods to Sumeti Vij?",
+        "gold_doc_id": "2021_2_266_279_EN",
+        "answer": "Insufficient information in the provided sources to answer this question. The context passages do not contain specific findings from the trial court regarding the delivery of goods to Sumeti Vij.",
+        "tokens_in": 5078,
+        "tokens_out": 35,
+        "total_s": 18.337,
+        "confidence": "high"
+      },
+      {
+        "question": "What were the allegations against the Returning Officer, Ashok Mensinkai, in this case?",
+        "gold_doc_id": "2021_8_297_313_EN",
+        "answer": "- The Returning Officer, Mr. Ashok Mensinkai, was alleged to have given false evidence before the Court by providing inconsistent statements during his examination as a witness in the Election Petition. This led to the direction for criminal prosecution under Section 193 of the Indian Penal Code, 1860 [N.S. NANDIESHA REDDY versus KAVITHA MAHESH, 2021_8_297_313_EN].\n\n- The learned Judge found his statements to be inconsistent and stated that they amounted to perjury. However, the court did not find sufficient evidence of intentional falsehood or deliberate action by the Returning Officer [N.S. NANDIESHA REDDY versus KAVITHA MAHESH, 2021_8_297_313_EN].",
+        "tokens_in": 5558,
+        "tokens_out": 173,
+        "total_s": 36.084,
+        "confidence": "high"
+      },
+      {
+        "question": "What principle did the Supreme Court emphasize regarding judicial interference in administrative decisions?",
+        "gold_doc_id": "2018_5_195_199_EN",
+        "answer": "- The Supreme Court emphasized that judicial interference in administrative decisions should be limited and is permissible only if the decision breaches fundamental or basic principles of justice or fair play, or if it suffers from a patent or flagrant error. This principle is highlighted in SANJAY KUMAR JHA versus PRAKASH CHANDRA CHAUDHARY & ORS [2018_14_893_900_EN].\n\n- The Court also noted that the High Court should not interfere with administrative decisions unless there is a clear violation of law, irrationality, or procedural impropriety. This is evident from RAJEEV SURI versus DELHI DEVELOPMENT AUTHORITY & ORS [2021_15_283_714_EN], where it states that the court does not sit as a court of appeal but merely reviews the manner in which the decision was made, and that the court should not substitute its own decision without necessary expertise.\n\n- Additionally, the principle of judicial restraint is emphasized, suggesting that courts should not interfere with administrative decisions unless there are compelling reasons. This can be seen in ANIL KUMAR UPADHYAY versus THE DIRECTOR GENERAL, SSB AND OTHERS [2022_2_1106_1119_EN], where it states that the scope of judicial review is limited and confined to the applicability of well-known principles such as 'Wednesbury principles'.",
+        "tokens_in": 5174,
+        "tokens_out": 301,
+        "total_s": 46.355,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the Division Bench of the High Court decide regarding the writ appeal filed by the University?",
+        "gold_doc_id": "2022_15_642_648_EN",
+        "answer": "Based on the information provided in Passage 6:\n\n- The Division Bench partially allowed the writ appeals, holding that:\n  - The Syndicate did not have the power to take decisions dated 04.02.2020 (as communicated on 10.06.2020) and 24.06.2020, as there was no University Statute in force on that date.\n  - In the absence of a Statute, the Vice-Chancellor alone had the power under section 14(6) of the Act to make any recommendation to the Board of Governors in the matter of affiliation.\n  - The University cannot go beyond AICTE Regulations.\n\n[Case Title: G H APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY & ANR versus JAI BHARATH COLLEGE OF MANAGEMENT AND ENGINEERING TECHNOLOGY & ORS, Doc ID: 2020_13_732_761_EN]",
+        "tokens_in": 5266,
+        "tokens_out": 209,
+        "total_s": 37.009,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's view on the High Court's decision to de-recognize the IEM?",
+        "gold_doc_id": "2022_17_54_91_EN",
+        "answer": "The Supreme Court found that the High Court's decision to de-recognize the IEM was unsustainable in law. Specifically:\n\n- The Supreme Court held that the High Court erred in taking into consideration that the appellant was remiss in not implementing the IEM during the pendency of the writ petitions in the first round of litigation [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneswar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].\n\n- The Supreme Court also noted that the High Court's decision was based on a flawed interpretation of Clause 6C of the Control Order. It stated that while Clause 6C does contemplate de-recognition and forfeiture of the performance guarantee if steps are not taken within the timeline stipulated under the IEM, this does not make the provision mandatory. The Supreme Court held that unless necessary consequences of de-recognition are undertaken, there is no automatic lapsing of the IEM [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneswar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].\n\n- The Supreme Court further found that the High Court's decision was not sustainable because there was no stay on IEM or prohibition from taking effective steps due to orders of the Court in the first round of litigation. Additionally, the High Court erred by finding that the appellant had started construction activity and could not seek any equity for extension of IEM [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneswar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].",
+        "tokens_in": 5421,
+        "tokens_out": 405,
+        "total_s": 59.527,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the main legal issue in the case of State of Gujarat vs. Cadila Healthcare Ltd.?",
+        "gold_doc_id": "2022_6_819_829_EN",
+        "answer": "- The main legal issue in the case of State of Gujarat vs. Cadila Healthcare Ltd. was whether the product \"KADIPROL\" should be classified as poultry feed under Entry 25 of Schedule I or as a drug and medicine under Entry 26(1) of Schedule II Part A of the GST Act [STATE OF GUJARAT versus CADILA HEALTHCARE LTD, 2022_6_819_829_EN].",
+        "tokens_in": 4951,
+        "tokens_out": 99,
+        "total_s": 24.707,
+        "confidence": "high"
+      },
+      {
+        "question": "What clarification did the Supreme Court provide regarding the definition of a 'passenger' in this context?",
+        "gold_doc_id": "2020_7_583_602_EN",
+        "answer": "- The Supreme Court clarified that a person undertaking a journey for scenic sightseeing would still be considered a \"passenger\" even if the journey begins and terminates at the same location. This is because such a journey can be analogous to a bus ride that starts and ends in the same place but passes through various points of interest.\n  - [Bharti Axa General Insurance Co. Ltd versus Priya Paul & Anr, 2020_7_583_602_EN]\n- The Court also stated that if a body is found on railway premises without a ticket, the presumption of being a \"bonafide passenger\" cannot be drawn merely because no ticket is recovered from the body. This indicates that the absence of a ticket does not automatically disqualify someone as a passenger.\n  - [Union of India versus Rina Devi, 2018_4_417_438_EN]",
+        "tokens_in": 5259,
+        "tokens_out": 194,
+        "total_s": 35.398,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's response to Ms. Indira Jaising's request to expunge the remarks made against her?",
+        "gold_doc_id": "2018_12_204_207_EN",
+        "answer": "- Insufficient information in the provided sources to answer this question.\n\nThe context passages do not contain specific details regarding the Supreme Court's response to Ms. Indira Jaising's request to expunge remarks made against her. The closest related passage is from TEHSEEN POONAWALLA versus UNION OF INDIA & ANR [2018_12_204_207_EN], where it mentions a Miscellaneous Application by Ms. Jaising seeking the deletion of certain remarks, but does not provide information on whether such a request was granted or denied by the Supreme Court.",
+        "tokens_in": 4529,
+        "tokens_out": 123,
+        "total_s": 26.658,
+        "confidence": "high"
+      },
+      {
+        "question": "Did the Supreme Court remand the matter to the Food Corporation of India for fresh consideration?",
+        "gold_doc_id": "2020_13_1175_1190_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe passages do not contain any direct reference to the Supreme Court remanding a matter to the Food Corporation of India for fresh consideration. The closest related case is [FOOD CORPORATION OF INDIA & ORS versus ABHIJIT PAUL, 2022_8_728_744_EN], where the Supreme Court did not remand the matter but disposed of the appeals without further reference to a remand.",
+        "tokens_in": 5869,
+        "tokens_out": 102,
+        "total_s": 27.557,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's decision regarding the applicability of Section 5 of the Limitation Act to appeals under Section 30 of the Act, 1993?",
+        "gold_doc_id": "2021_7_528_531_EN",
+        "answer": "- The Supreme Court held that Section 5 of the Limitation Act shall not be applicable to the appeal against the order of Recovery Officer as provided under Section 30 of the Act, 1993. This decision was based on the judgment in International Asset Reconstruction Company of India Limited vs. Official Liquidator of Aldrich Pharmaceuticals Limited and Ors., (2017) 16 SCC 137 [2021_7_528_531_EN, Doc ID: 2021_7_528_531_EN_chunk_7].\n\n- The Supreme Court reiterated this decision in the case of Avneesh Chandan Gadgil & Anr. vs. Oriental Bank of Commerce & Ors., Civil Appeal No. 6898 of 2021 [2021_7_528_531_EN, Doc ID: 2021_7_528_531_EN_chunk_0], where it allowed the appeal and quashed the order passed by the High Court that set aside the order of the Debts Recovery Tribunal condoning the delay in preferring the appeal under Section 30 of the Act, 1993.\n\n- The Supreme Court's decision was consistent with its previous judgment in International Asset Reconstruction Company of India Limited vs. Official Liquidator of Aldrich Pharmaceuticals Limited and Ors., (2017) 16 SCC 137 [2021_7_528_531_EN, Doc ID: 2021_7_528_531_EN_chunk_4], where it held that Section 5 of the Limitation Act is specifically excluded so far as appeal under Section 30 of the Act, 1993 is concerned.",
+        "tokens_in": 5392,
+        "tokens_out": 388,
+        "total_s": 58.092,
+        "confidence": "high"
+      },
+      {
+        "question": "What prediction can be made about the implications of the Supreme Court's judgment in the Zonal Manager, Bank of India vs. Aarya K. Babu case?",
+        "gold_doc_id": "2019_11_627_639_EN",
+        "answer": "- The Supreme Court's judgment in the Zonal Manager, Bank of India vs. Aarya K. Babu case [(2019) 8 SCC 587] implies that if there is a change in qualification criteria after the notification but before the completion of the selection process and the employer seeks to adopt this change, it will be incumbent upon the employer to issue a corrigendum incorporating these changes and invite applications from those qualified as per the changed criteria. The Court held that such changes cannot be applied retrospectively for the purpose of recruitment [Zonal Manager, Bank of India & Others v. Aarya K. Babu and Another, 2019_11_627_639_EN].\n\n- However, the Supreme Court also noted that if employers themselves have permitted equivalence and continued such officers recruited, this decision should not be applied to initiate action against such officers at a distant point of time [Zonal Manager, Bank of India & Others v. Aarya K. Babu and Another, 2019_11_627_639_EN].",
+        "tokens_in": 5629,
+        "tokens_out": 230,
+        "total_s": 71.416,
+        "confidence": "high"
+      },
+      {
+        "question": "How did the Andhra Pradesh High Court rule regarding the Commission's order on wheeling charges?",
+        "gold_doc_id": "2019_17_474_526_EN",
+        "answer": "- The Andhra Pradesh High Court allowed the appeal against the order dated 24.3.2002 of the Commission, setting aside the order that determined the wheeling charges for the year 2002-2003 effective from 1.4.2002 at Paise 50 per Kwh [TRANSMISSION CORPORATION OF ANDHRA PRADESH LIMITED versus M/S RAIN CALCINING LIMITED & OTHERS, 2019_17_474_526_EN].",
+        "tokens_in": 5903,
+        "tokens_out": 118,
+        "total_s": 48.786,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the final verdict of the Supreme Court in this case?",
+        "gold_doc_id": "2022_18_721_761_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe context passages do not provide a clear final verdict of the Supreme Court from any specific case. The passages discuss various aspects such as appeals, procedures, and principles but do not explicitly state the final verdict of the Supreme Court in any particular case.",
+        "tokens_in": 4066,
+        "tokens_out": 62,
+        "total_s": 18.372,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the post-mortem report reveal about the victim\u2019s injuries?",
+        "gold_doc_id": "2019_14_529_545_EN",
+        "answer": "- Oblique ligature mark 30 cm x 1.5 cm on front and around the neck just above the thyroid cartilage, suggesting asphyxia due to ante mortem hanging [PREET PAL SINGH versus THE STATE OF UTTAR PRADESH & ANR, 2020_6_967_982_EN].\n- Multiple ulcers scattered across the body with scabs on the head, face and chest, caused by deep burns about six weeks old [THE STATE OF JHARKHAND versus SHAILENDRA KUMAR RAI @ PANDAV RAI, 2022_13_1033_1063_EN].\n- Extensive burn injuries leading to septicaemia shock and death [BHAGWAN versus STATE OF MAHARASAHTRA THROUGH SECRETARY HOME, MUMBAI, MAHARASHTRA, 2019_11_135_156_EN].\n- Numerous stab wounds across the body of the deceased, including on fingers, hands, arms, abdomen and chest, causing shock and haemorrhage leading to death [MANOJ & ORS versus STATE OF MADHYA PRADESH, 2022_9_452_580_EN].\n- Head injuries in the form of fractures as the cause of death [SUBRAMANYA versus STATE OF KARNATAKA, 2022_14_828_888_EN].\n- Incised wounds mostly on the head and neck region, certified as ante mortem injuries leading to shock and haemorrhage as the cause of death [RAMANAND @ NANDLAL BHARTI versus STATE OF UTTAR PRADESH, 2022_5_162_231_EN].\n- Laceration of the vagina and anus with blood oozing out, along with injuries on the private part, below the eyelid and above the upper lip, suggesting asphyxia due to smothering, head injuries, and sexual assault leading to instant death [DATTATRAYA @ DATTA AMBO ROKADE versus THE STATE OF MAHARASHTRA, 2019_11_295_340_EN].\n- Ante-mortem injuries including fracture of the occipital bone, burst abdomen with protruding intestine, blackened and charred body, and burnt hair on the head, leading to haemorrhage and shock as the cause of death [SATYE SINGH & ANOTHER versus STATE OF UTTARAKHAND, 2022_1_1137_1149_EN].\n- Fractures and other injuries not specified in detail, but noted as ante mortem leading to haemorrhage and shock as the cause of death [KHURSHID AHMED versus STATE OF JAMMU AND KASHMIR, 2018_6_1121_1138_EN].",
+        "tokens_in": 3098,
+        "tokens_out": 645,
+        "total_s": 73.292,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's conclusion regarding the NCLT and NCLAT's handling of the case?",
+        "gold_doc_id": "2021_12_28_56_EN",
+        "answer": "- The Supreme Court held that in the event of the NCLT, or the NCLAT, or this Court taking time to decide an application beyond the period of 270 days, the time taken in legal proceedings to decide the matter cannot be excluded. This is because excluding such time might result in a good resolution plan being shelved, leading to corporate death and consequent displacement of employees and workers.\n  - [ArcelorMittal India Private Limited versus Satish Kumar Gupta & Ors, 2018_12_362_494_EN]\n\n- The Supreme Court also concluded that the NCLT/NCLAT could have exercised jurisdiction under section 60(5)(c) of the IBC to stay the termination of a Power Purchase Agreement (PPA) by an appellant, since the appellant sought to terminate the PPA under Article 9.2.1(e) only on account of the CIRP being initiated against the Corporate Debtor.\n  - [Gujarat Urja Vikas Nigam Limited versus Mr. Amit Gupta & Ors, 2021_13_611_736_EN]\n\n- The Supreme Court further held that neither NCLT nor NCLAT in its jurisdiction over disputes arising from contracts such as the PPA can exercise power under IBC.\n  - [Gujarat Urja Vikas Nigam Limited versus Mr. Amit Gupta & Ors, 2021_13_611_736_EN]",
+        "tokens_in": 5924,
+        "tokens_out": 323,
+        "total_s": 52.292,
+        "confidence": "high"
+      }
+    ]
+  },
+  "k=20": {
+    "summary": {
+      "generation_top_k": 20,
+      "avg_tokens_in": 5087.8,
+      "avg_tokens_out": 169.6,
+      "avg_latency_s": 32.25,
+      "n_declined": 7,
+      "total_wall_time_s": 645.1,
+      "n_samples": 20
+    },
+    "raw": [
+      {
+        "question": "What was the High Court's decision on 21st April 2006 regarding the ex-parte decree?",
+        "gold_doc_id": "2021_9_15_22_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe context passages do not contain any specific reference to a High Court decision on 21st April 2006 regarding an ex-parte decree. The dates and decisions mentioned in the passages relate to different cases and different time periods.",
+        "tokens_in": 5572,
+        "tokens_out": 62,
+        "total_s": 22.286,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the High Court's judgment on the matter prior to the Supreme Court's involvement?",
+        "gold_doc_id": "2018_11_275_309_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe context passages do not provide specific details about the High Court's judgment on the matter prior to the Supreme Court's involvement. Each case discusses the Supreme Court's review or intervention but does not detail the initial judgment of the High Court before such reviews.",
+        "tokens_in": 4649,
+        "tokens_out": 63,
+        "total_s": 19.715,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the High Court's decision regarding the custody of the minor child Pranav Acharya?",
+        "gold_doc_id": "2022_6_727_736_EN",
+        "answer": "- The High Court handed over the custody of the minor corpus \u2013 Pranav Acharya to respondent No. 4 \u2013 maternal aunt rather than handing it over to the appellant \u2013 paternal grandfather.\n  - However, this decision is subject to the final outcome of the proceedings under Section 7 of the Guardians and Wards Act, pending before the competent court.\n  - The custody of minor corpus was directed to continue with the appellant \u2013 paternal grandparents, who were also directed to take care of minor \u2013 Pranav Acharya. [SWAMINATHAN KUNCHU ACHARYA versus STATE OF GUJARAT & ORS, 2022_6_727_736_EN]",
+        "tokens_in": 4539,
+        "tokens_out": 148,
+        "total_s": 27.962,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the High Court of Calcutta decide regarding the appellant's right to protection from eviction?",
+        "gold_doc_id": "2019_17_1048_1056_EN",
+        "answer": "- The High Court of Calcutta decided that a spouse of a deceased tenant is entitled to lifetime protection from eviction in respect of premises let out for non-residential purposes under Section 2(g) of the West Bengal Premises Tenancy Act, 1997 [NASIMA NAQI versus TODI TEA COMPANY LTD. AND ORS, 2019_17_1048_1056_EN].\n\n- The High Court also noted that after the expiry of five years from the date of death of the original tenant, his heirs had no right to continue in possession of the premises unless a fresh agreement was executed [NASIMA NAQI versus TODI TEA COMPANY LTD. AND ORS, 2019_17_1048_1056_EN].",
+        "tokens_in": 5879,
+        "tokens_out": 173,
+        "total_s": 34.721,
+        "confidence": "high"
+      },
+      {
+        "question": "How did the Supreme Court view the High Court's setting aside of the Trial Court's extension order?",
+        "gold_doc_id": "2022_3_553_557_EN",
+        "answer": "- Insufficient information in the provided sources to answer this question.",
+        "tokens_in": 3999,
+        "tokens_out": 14,
+        "total_s": 14.047,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the trial court's finding regarding the delivery of goods to Sumeti Vij?",
+        "gold_doc_id": "2021_2_266_279_EN",
+        "answer": "Insufficient information in the provided sources to answer this question. The context passages do not contain specific details about the trial court's findings regarding the delivery of goods to Sumeti Vij.",
+        "tokens_in": 5078,
+        "tokens_out": 37,
+        "total_s": 18.21,
+        "confidence": "high"
+      },
+      {
+        "question": "What were the allegations against the Returning Officer, Ashok Mensinkai, in this case?",
+        "gold_doc_id": "2021_8_297_313_EN",
+        "answer": "- The Returning Officer, Ashok Mensinkai, was alleged to have given false evidence before the Court. Specifically, he was accused of making inconsistent statements during his testimony as a witness in the Election Petition No. 7/2008. [N.S. NANDIESHA REDDY versus KAVITHA MAHESH, 2021_8_297_313_EN]",
+        "tokens_in": 5558,
+        "tokens_out": 88,
+        "total_s": 24.709,
+        "confidence": "high"
+      },
+      {
+        "question": "What principle did the Supreme Court emphasize regarding judicial interference in administrative decisions?",
+        "gold_doc_id": "2018_5_195_199_EN",
+        "answer": "- The Supreme Court emphasized that judicial interference in administrative decisions should be limited and is permissible only if the decision breaches fundamental or basic principles of justice or fair play, or if it suffers from any patent or flagrant error. This principle was highlighted in SANJAY KUMAR JHA versus PRAKASH CHANDRA CHAUDHARY & ORS [2018_14_893_900_EN].\n\n- Additionally, the Supreme Court noted that courts should not interfere with administrative decisions unless they are arbitrary, discriminatory, or actuated by mala fides. This was stated in M/S ICOMM TELE LTD versus PUNJAB STATE WATER SUPPLY & SEWERAGE BOARD & ANR [2019_2_984_999_EN] and M/S INDIAN OIL CORPORATION LTD versus SHRI RAJENDRA D. HARMALKAR [2022_5_678_691_EN].\n\n- The Court also mentioned that the scope of judicial review is limited to ensuring legality, rationality, and procedural propriety in administrative actions. This was discussed in ANIL KUMAR UPADHYAY versus THE DIRECTOR GENERAL, SSB AND OTHERS [2022_2_1106_1119_EN] and RAJEEV SURI versus DELHI DEVELOPMENT AUTHORITY & ORS [2021_15_283_714_EN].\n\n- Furthermore, the principle of proportionality was noted as a ground for judicial review in certain cases. This was mentioned in KERALA STATE BEVERAGES (M AND M) CORPORATION LIMITED versus P.P. SURESH & ORS, ETC. ETC. & ORS [2019_17_164_184_EN].",
+        "tokens_in": 5174,
+        "tokens_out": 388,
+        "total_s": 56.076,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the Division Bench of the High Court decide regarding the writ appeal filed by the University?",
+        "gold_doc_id": "2022_15_642_648_EN",
+        "answer": "Based on the information provided in Passage 6:\n\n- The Division Bench partially allowed the writ appeals, holding that:\n  - The Syndicate did not have the power to take decisions dated 04.02.2020 (as communicated on 10.06.2020) and 24.06.2020, as there was no University Statute in force on those dates.\n  - In the absence of a Statute, the Vice-Chancellor alone had the power under section 14(6) of the Act to make any recommendation to the Board of Governors in the matter of affiliation.\n  - The University cannot go beyond AICTE Regulations.\n\n[Case Title: G H APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY & ANR versus JAI BHARATH COLLEGE OF MANAGEMENT AND ENGINEERING TECHNOLOGY & ORS, Doc ID: 2020_13_732_761_EN]",
+        "tokens_in": 5266,
+        "tokens_out": 209,
+        "total_s": 36.516,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's view on the High Court's decision to de-recognize the IEM?",
+        "gold_doc_id": "2022_17_54_91_EN",
+        "answer": "The Supreme Court found that the High Court\u2019s decision to de-recognize the IEM was unsustainable in law. Specifically:\n\n- The High Court erred by considering that the appellant was remiss in not implementing the IEM during the pendency of the writ petitions in the first round of litigation, as there was no finding by the High Court that the decision of the Central Government was arbitrary, irrational or unjust [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneswar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].\n\n- The scheme of the Control Order shows that once an IEM is granted, the timeline has to be determined from the date of issuance. Therefore, subsequent amendments would not apply towards the already issued IEM [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneswar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].\n\n- The Latin maxim \"Actus Curiae Neminem Gravabit\" (the act of the Court will not prejudice anyone) supports that during the whole litigation history, the appellant was at the receiving end of writ petitions. Thus, the period spent in such litigation cannot be used against him [Swami Samarth Sugars and Agro Industries Ltd v. Loknete Marutrao Ghule Patil Dnyaneswar Sahakari Sakhar Karkhana Ltd & ORS, 2022_17_54_91_EN].",
+        "tokens_in": 5421,
+        "tokens_out": 357,
+        "total_s": 54.083,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the main legal issue in the case of State of Gujarat vs. Cadila Healthcare Ltd.?",
+        "gold_doc_id": "2022_6_819_829_EN",
+        "answer": "- The main legal issue in the case of State of Gujarat vs. Cadila Healthcare Ltd. was whether the product \"KADIPROL\" should be classified as poultry feed under Entry 25 of Schedule I or as a drug and medicine under Entry 26(1) of Schedule II Part A of the GST Act [STATE OF GUJARAT versus CADILA HEALTHCARE LTD, 2022_6_819_829_EN].",
+        "tokens_in": 4951,
+        "tokens_out": 99,
+        "total_s": 23.859,
+        "confidence": "high"
+      },
+      {
+        "question": "What clarification did the Supreme Court provide regarding the definition of a 'passenger' in this context?",
+        "gold_doc_id": "2020_7_583_602_EN",
+        "answer": "- The Supreme Court clarified that a person undertaking a journey for scenic sightseeing would be considered a \"passenger\" even if the journey begins and ends at the same location. This is based on the analogy to how a sightseeing bus might operate. [Bharti Axa General Insurance Co. Ltd versus Priya Paul & Anr, 2020_7_583_602_EN]\n\n- The definition of 'passenger' includes someone who travels without a ticket if the railway administration cannot prove that they were not a bona fide passenger. [Union of India versus Rina Devi, 2018_4_417_438_EN]",
+        "tokens_in": 5259,
+        "tokens_out": 145,
+        "total_s": 29.644,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's response to Ms. Indira Jaising's request to expunge the remarks made against her?",
+        "gold_doc_id": "2018_12_204_207_EN",
+        "answer": "- Insufficient information in the provided sources to answer this question.\n\nThe context passages do not contain specific details regarding the Supreme Court's response to Ms. Indira Jaising's request to expunge remarks made against her. The closest related passage is from TEHSEEN POONAWALLA versus UNION OF INDIA & ANR [2018_12_204_207_EN], where it mentions a Miscellaneous Application filed by Ms. Indira Jaising seeking the deletion of certain remarks, but does not provide information on the Court's response to this application.",
+        "tokens_in": 4529,
+        "tokens_out": 121,
+        "total_s": 25.951,
+        "confidence": "high"
+      },
+      {
+        "question": "Did the Supreme Court remand the matter to the Food Corporation of India for fresh consideration?",
+        "gold_doc_id": "2020_13_1175_1190_EN",
+        "answer": "Insufficient information in the provided sources to answer this question. The passages do not contain any direct reference to the Supreme Court remanding a matter to the Food Corporation of India for fresh consideration.",
+        "tokens_in": 5869,
+        "tokens_out": 39,
+        "total_s": 20.238,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's decision regarding the applicability of Section 5 of the Limitation Act to appeals under Section 30 of the Act, 1993?",
+        "gold_doc_id": "2021_7_528_531_EN",
+        "answer": "- The Supreme Court held that Section 5 of the Limitation Act shall not be applicable to the appeal against the order of Recovery Officer as provided under Section 30 of the Act, 1993. This decision was based on the judgment in International Asset Reconstruction Company of India Limited vs. Official Liquidator of Aldrich Pharmaceuticals Limited and Ors., (2017) 16 SCC 137 [2021_7_528_531_EN, Doc ID: 2021_7_528_531_EN_chunk_7].\n\n- The Court reiterated this decision in the case of Avneesh Chandan Gadgil & Anr. vs. Oriental Bank of Commerce & Ors., (2021) [2021_7_528_531_EN, Doc ID: 2021_7_528_531_EN_chunk_3 and chunk_0].",
+        "tokens_in": 5392,
+        "tokens_out": 209,
+        "total_s": 38.011,
+        "confidence": "high"
+      },
+      {
+        "question": "What prediction can be made about the implications of the Supreme Court's judgment in the Zonal Manager, Bank of India vs. Aarya K. Babu case?",
+        "gold_doc_id": "2019_11_627_639_EN",
+        "answer": "- The Supreme Court's judgment in the Zonal Manager, Bank of India vs. Aarya K. Babu case [(2019) 8 SCC 587] implies that if there is a change in qualification criteria after the notification but before the completion of the selection process and the employer seeks to adopt this change, it will be incumbent upon the employer to issue a corrigendum incorporating these changes and invite applications from those qualified as per the changed criteria. The Court held that such changes cannot be applied retrospectively for the purpose of recruitment [Zonal Manager, Bank of India & Others v. Aarya K. Babu and Another, 2019_11_627_639_EN].\n\n- However, if employers themselves have permitted equivalence and continued officers recruited based on such equivalency, this decision should not be applied to initiate action against such officers at a distant point of time [Zonal Manager, Bank of India & Others v. Aarya K. Babu and Another, 2019_11_627_639_EN].",
+        "tokens_in": 5629,
+        "tokens_out": 228,
+        "total_s": 41.275,
+        "confidence": "high"
+      },
+      {
+        "question": "How did the Andhra Pradesh High Court rule regarding the Commission's order on wheeling charges?",
+        "gold_doc_id": "2019_17_474_526_EN",
+        "answer": "- The Andhra Pradesh High Court allowed an appeal against the Commission's order determining wheeling charges for the year 2002-2003. It set aside the order dated 24.3.2002 of the Commission, which had fixed the wheeling charge at Paise 50 per Kwh [TRANSMISSION CORPORATION OF ANDHRA PRADESH LIMITED versus M/S RAIN CALCINING LIMITED & OTHERS, 2019_17_474_526_EN].",
+        "tokens_in": 5903,
+        "tokens_out": 116,
+        "total_s": 28.813,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the final verdict of the Supreme Court in this case?",
+        "gold_doc_id": "2022_18_721_761_EN",
+        "answer": "Insufficient information in the provided sources to answer this question.\n\nThe context passages do not provide a clear final verdict of the Supreme Court from any specific case. Each passage discusses various aspects of legal proceedings but does not explicitly state the final verdict of the Supreme Court in any particular case.",
+        "tokens_in": 4066,
+        "tokens_out": 57,
+        "total_s": 17.954,
+        "confidence": "high"
+      },
+      {
+        "question": "What did the post-mortem report reveal about the victim\u2019s injuries?",
+        "gold_doc_id": "2019_14_529_545_EN",
+        "answer": "- Oblique ligature mark 30 cm x 1.5 cm on front and around the neck just above the thyroid cartilage, indicative of hanging as a cause of death ([PREET PAL SINGH versus THE STATE OF UTTAR PRADESH & ANR, 2020_6_967_982_EN]).\n- Multiple ulcers scattered across the body with scabs on the head, face, and chest due to deep burns six weeks old ([THE STATE OF JHARKHAND versus SHAILENDRA KUMAR RAI @ PANDAV RAI, 2022_13_1033_1063_EN]).\n- 92% burn injuries leading to death due to septicaemia shock ([BHAGWAN versus STATE OF MAHARASAHTRA THROUGH SECRETARY HOME, MUMBAI, MAHARASHTRA, 2019_11_135_156_EN]).\n- Numerous stab wounds across the body of the deceased (Megha, Rohini, and Ashlesha) resulting in shock and haemorrhage as a cause of death ([MANOJ & ORS versus STATE OF MADHYA PRADESH, 2022_9_452_580_EN]).\n- Head injuries leading to the cause of death due to head fractures ([SUBRAMANYA versus STATE OF KARNATAKA, 2022_14_828_888_EN]).\n- Incised wounds mostly on the head and neck region with shock and haemorrhage as a result of ante mortem head injuries causing death ([RAMANAND @ NANDLAL BHARTI versus STATE OF UTTAR PRADESH, 2022_5_162_231_EN]).\n- Lacerations in the vagina and anus with blood oozing out, along with injuries on the private part, below the eyelid, and above the upper lip leading to asphyxia due to smothering, associated with head injuries and sexual assault ([DATTATRAYA @ DATTA AMBO ROKADE versus THE STATE OF MAHARASHTRA, 2019_11_295_340_EN]).\n- Ante-mortem injuries including a fracture of the occipital bone, a compound lower fracture of the left humerus, an abdominal burst with protruding intestine, and blackened, charred, peeling, scaring like parchment with visible muscles and burnt hair on the head, leading to haemorrhage and shock as causes of death ([SATYE SINGH & ANOTHER versus STATE OF UTTARAKHAND, 2022_1_1137_1149_EN]).\n- Head injuries and fractures documented by Dr. Raj Kumar in the post-mortem report on 19th May, 2006 ([KHURSHID AHMED versus STATE OF JAMMU AND KASHMIR, 2018_6_1121_1138_EN]).",
+        "tokens_in": 3098,
+        "tokens_out": 662,
+        "total_s": 75.413,
+        "confidence": "high"
+      },
+      {
+        "question": "What was the Supreme Court's conclusion regarding the NCLT and NCLAT's handling of the case?",
+        "gold_doc_id": "2021_12_28_56_EN",
+        "answer": "- The Supreme Court did not provide a direct conclusion on the NCLT and NCLAT's handling of any specific case based on the provided context. However, it discussed the general jurisdiction of the NCLT over contractual disputes arising from Power Purchase Agreements (PPAs) in [GUJARAT URJA VIKAS NIGAM LIMITED versus MR. AMIT GUPTA & ORS, 2021_13_611_736_EN]. The Supreme Court held that neither the NCLT nor the NCLAT can exercise jurisdiction over disputes arising from contracts such as PPAs [GUJARAT URJA VIKAS NIGAM LIMITED versus MR. AMIT GUPTA & ORS, 2021_13_611_736_EN_chunk_0].",
+        "tokens_in": 5924,
+        "tokens_out": 176,
+        "total_s": 35.568,
+        "confidence": "high"
+      }
+    ]
+  }
+}
