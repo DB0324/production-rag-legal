@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-08-08T19:03:19.774962",
+  "corpus": {
+    "source_dataset": "KanoonGPT/indian-case-laws (HuggingFace)",
+    "eval_dataset": "IndicLegalQA Dataset_10K_Revised.json (Mendeley, DOI 10.17632/gf8n8cnmvc.2)",
+    "corpus_final_parquet": "523fa47d17f4 (103520896 bytes)",
+    "eval_set_json": "0a964090e078 (148178 bytes)",
+    "corpus_doc_count": 4140,
+    "eval_qa_count": 250,
+    "date_range": "Supreme Court of India, 2018-2022"
+  },
+  "chunking": {
+    "fixed_chunks": "5fa48924d26a (101937431 bytes)",
+    "recursive_chunks": "af20da6bc437 (105250885 bytes)",
+    "semantic_chunks": "fc21f81bba50 (104606081 bytes)"
+  },
+  "models": {
+    "dense_embedding": "BAAI/bge-large-en-v1.5",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "generation_llm": "qwen2.5:7b-instruct (via Ollama)"
+  },
+  "indexes": {
+    "legal_fixed_points": 107056,
+    "legal_recursive_points": 253394,
+    "legal_semantic_points": 163884
+  },
+  "winning_config": "semantic chunking + bge-reranker-v2-m3 (see config/config.yaml)",
+  "git_commit": "ddbe01e"
+}
