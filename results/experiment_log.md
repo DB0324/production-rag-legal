@@ -183,3 +183,22 @@ Followed up on the earlier I/O contention finding with deeper diagnostics:
   substitution given no-root constraints, but this investigation
   independently confirms *why* the tool's own warning message
   (seen throughout this session) exists.
+
+## Ablation Axis 3: Fusion Weighting (pure BM25 vs pure dense vs RRF hybrid)
+Using winning chunking strategy (semantic), n=250:
+
+| Mode   | Recall@1 | Recall@5 | Recall@10 | MRR   |
+|--------|----------|----------|-----------|-------|
+| BM25   | 0.524    | 0.652    | 0.700     | 0.583 |
+| Dense  | 0.440    | 0.560    | 0.604     | 0.494 |
+| Hybrid | 0.532    | 0.640    | 0.684     | 0.586 |
+
+Finding: hybrid only marginally beats pure BM25 (within noise on R@1/MRR),
+and actually loses slightly on R@5/R@10. Pure dense retrieval is clearly
+weakest alone. Hypothesis: legal text relies heavily on exact-match
+signals (case citations, section/statute numbers) that BM25 captures
+directly, while dense embeddings add less value for this precision-
+sensitive retrieval task compared to more semantically-driven domains.
+This tempers the blueprint's original assumption that hybrid clearly
+beats either component alone -- worth stating explicitly as a corpus-
+specific finding rather than a general claim.
