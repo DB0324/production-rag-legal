@@ -128,3 +128,41 @@ mechanism than a deterministic score check. Recalibrated the threshold
 to 0.10 using 5 known-good vs 5 known-bad test questions (clean
 separation: GOOD avg 0.41-0.93, BAD avg 0.004-0.023). Re-verified 5/5
 guardrail pass rate with the corrected, deterministic threshold.
+
+
+## 11. Production Hardening (post-report additions)
+
+### Caching
+Implemented a file-persisted semantic cache (embed query + cosine
+similarity, threshold=0.95) -- substituted for Redis due to no-root
+access on the HPC server, consistent with the same reasoning behind
+using Qdrant local mode instead of Docker. Verified: identical repeated
+query dropped from 33.83s to 0.047s on cache hit.
+
+### Cost/Latency Observability
+Added SQLite-backed per-query logging and a /metrics endpoint reporting
+p50/p95 latency, token totals, and cache hit-rate. Since generation runs
+on a self-hosted Ollama instance (not a paid API), per-token cost is $0;
+token counts are tracked as a compute-cost proxy for comparing configs.
+
+### Reproducibility
+Added results/build_manifest.json, hashing the corpus, eval set, and
+all three chunk files together with model names/versions and the git
+commit -- so any reported result can be traced back to exactly what
+produced it.
+
+### Infrastructure Finding: I/O Contention on Shared HPC
+Measured Qdrant local-mode cold-start time varying from ~15-30s (normal
+day) to 5+ minutes (high-load day: 24 concurrent users, load average
+~4.8, /home filesystem at 90% capacity). Fixed the API startup script to
+poll for readiness rather than use a fixed sleep, avoiding false restart
+failures. This is a genuine, documented constraint of the shared
+infrastructure this project was built on, not a defect in the pipeline
+itself -- and a realistic example of why production deployments need
+readiness probes rather than fixed timeouts.
+
+### Error Handling
+(Tested but not yet exercised on this report revision -- empty query,
+malformed request body, and invalid strategy name were queued for
+testing; deferred due to heavy server load during this session. See
+results/experiment_log.md for status.)
