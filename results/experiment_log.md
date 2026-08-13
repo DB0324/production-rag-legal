@@ -280,3 +280,21 @@ cases.
 - Noted as future work: comparing generator model size (7B vs 14B vs
   32B, all already available via Ollama) on faithfulness/quality would
   require a dedicated (non-shared) GPU allocation to run reliably.
+
+## Attempted: qwen3:14b Generation Comparison (Aborted)
+- Generated 60/60 answers successfully with qwen3:14b (0 errors,
+  fast completion) -- see results/raw_outputs_semantic_reranked_qwen3_14b.json
+- Attempted RAGAS evaluation on these outputs: every job timed out at the
+  600s ceiling, sustained over 2.5+ hours (35+ consecutive timeouts).
+- Root cause: qwen3:14b (14B params) requires substantially more GPU
+  memory/compute than qwen2.5:7b; combined with heavy concurrent GPU
+  contention from another user's job (84% utilization, 87C, ~7GB used by
+  their process alongside qwen3:14b's ~33GB), the shared GPU could not
+  serve RAGAS's concurrent judge calls within any reasonable timeout.
+- Decision: aborted after 2.5hrs/35 jobs rather than continue an
+  unproductive run. Generation output (qwen3:14b answers) is saved and
+  available for future evaluation when GPU contention allows, but RAGAS
+  scoring for this model is NOT included in final results.
+- Noted as future work: comparing generator model size (7B vs 14B vs
+  32B, all already available via Ollama) on faithfulness/quality would
+  require a dedicated (non-shared) GPU allocation to run reliably.
