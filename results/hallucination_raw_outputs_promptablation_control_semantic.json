@@ -1,0 +1,867 @@
+{
+  "aggregate": {
+    "total_questions": 17,
+    "total_claims": 117,
+    "total_unsupported": 19,
+    "overall_hallucination_rate": 0.162,
+    "total_tokens_used": 277438
+  },
+  "per_question": [
+    {
+      "question": "What was the role of the amicus curiae, Shri Arvind P. Datar, in this case?",
+      "answer": "In the case of Advocate Association Bengaluru versus Anoop Kumar Mendiratta and Anr., Shri Arvind P. Datar, learned senior counsel, served as an amicus curiae to assist the Court. His role included ma...",
+      "claims": [
+        {
+          "claim": "Advocate Association Bengaluru versus Anoop Kumar Mendiratta and Anr. is a legal case.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1940
+        },
+        {
+          "claim": "Shri Arvind P. Datar served as an amicus curiae in the case.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1940
+        },
+        {
+          "claim": "The role of Shri Arvind P. Datar included making submissions on certain aspects of the case.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1942
+        },
+        {
+          "claim": "Shri Arvind P. Datar urged that no person in the wait list could be or ought to have been appointed unless the main list was exhausted.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1952
+        },
+        {
+          "claim": "The Supreme Council for Selection Committee (SCSC) had recommended 28 persons in the main list and 13 in the wait list.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1949
+        },
+        {
+          "claim": "Shri Arvind P. Datar submitted that the ranking indicated in the SCSC recommendations should not be deviated from.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1946
+        },
+        {
+          "claim": "Shri Arvind P. Datar submitted that the ranking indicated in the SCSC recommendations must be followed.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1943
+        },
+        {
+          "claim": "The case reference is [ADVOCATE ASSOCIATION BENGALURU v. ANOOP KUMAR MENDIRATTA AND ANR., 2022_3_575_583_EN].",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1970
+        }
+      ],
+      "n_claims": 8,
+      "n_unsupported": 2,
+      "hallucination_rate": 0.25
+    },
+    {
+      "question": "What were the allegations against the Returning Officer, Ashok Mensinkai, in this case?",
+      "answer": "The Returning Officer, Ashok Mensinkai, was alleged to have given false evidence before the Court by improperly rejecting nomination papers submitted for an election. Specifically, he was accused of p...",
+      "claims": [
+        {
+          "claim": "Ashok Mensinkai held the position of Returning Officer.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2380
+        },
+        {
+          "claim": "Ashok Mensinkai was alleged to have given false evidence before the Court.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2384
+        },
+        {
+          "claim": "The false evidence involved improperly rejecting nomination papers submitted for an election.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2381
+        },
+        {
+          "claim": "Ashok Mensinkai provided inconsistent statements during his testimony as a witness in the Election Petition.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2388
+        },
+        {
+          "claim": "The learned Judge, N.S. Nandiesha Reddy, considered these statements perjurious.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2389
+        },
+        {
+          "claim": "As a result of the findings, the learned Judge directed that a complaint be registered against Ashok Mensinkai under Section 193 of the Indian Penal Code for prosecution.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2404
+        }
+      ],
+      "n_claims": 6,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What was the Supreme Court's ruling on the Council's recommendations?",
+      "answer": "The Supreme Court ruled that the High Court had erred in accepting the recommendations of the Council without applying its own logic. The Court directed the Council to reconsider the matter afresh aft...",
+      "claims": [
+        {
+          "claim": "The Supreme Court ruled that the High Court had erred in accepting the recommendations of the Council without applying its own logic.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2033
+        },
+        {
+          "claim": "The Court directed the Council to reconsider the matter afresh after granting the appellant an opportunity of being heard.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2030
+        },
+        {
+          "claim": "The Court set aside the recommendations/order(s) passed by the Council.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2023
+        },
+        {
+          "claim": "The Court set aside the orders of the High Court impugned in the case [D.K. AGRAWAL versus COUNCIL OF THE INSTITUTE OF CHARTERED ACCOUNTANTS OF INDIA, 2021_7_1043_1062_EN].",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2071
+        },
+        {
+          "claim": "The appeals were allowed.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2014
+        },
+        {
+          "claim": "The matter was remitted back to the Council for fresh consideration and disposal in accordance with law [D.K. AGRAWAL versus COUNCIL OF THE INSTITUTE OF CHARTERED ACCOUNTANTS OF INDIA, 2021_7_1043_1062_EN].",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2073
+        }
+      ],
+      "n_claims": 6,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What principle did the Supreme Court emphasize regarding the need for reasoning in bail orders?",
+      "answer": "The Supreme Court emphasized that courts granting bail should exercise their discretion judiciously and provide reasons for their decisions, particularly when dealing with serious offences. This princ...",
+      "claims": [
+        {
+          "claim": "The Supreme Court has emphasized that courts granting bail should exercise their discretion judiciously.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2374
+        },
+        {
+          "claim": "The Supreme Court has stated that decisions on granting bail should provide reasons.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2371
+        },
+        {
+          "claim": "This principle is well-established and has been reiterated multiple times by the Supreme Court.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2373
+        },
+        {
+          "claim": "In Kalyan Chandra Sarkar v. Rajesh Ranjan [2022_3_823_841_EN], the Court mentioned that \"the court granting bail should exercise its discretion in a judicious manner and not as a matter of course.\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2414
+        },
+        {
+          "claim": "The Supreme Court, in Kalyan Chandra Sarkar v. Rajesh Ranjan [2022_3_823_841_EN], stated that orders granting bail must indicate reasons for concluding why bail was being granted.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2408
+        },
+        {
+          "claim": "In cases involving serious offences, the Supreme Court has emphasized the need for recorded reasoning in decisions granting bail.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2378
+        },
+        {
+          "claim": "The Supreme Court, in Brij Nandan Jaiswal v. Munna [2020_6_967_982_EN], highlighted that no reasons were given by the learned Judge while granting bail and it seems to have been granted almost mechanically without considering the pros and cons of the matter.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2422
+        },
+        {
+          "claim": "These principles ensure that orders are not made arbitrarily but based on well-considered judgments.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2375
+        },
+        {
+          "claim": "The Supreme Court's rulings reflect a commitment to open justice.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2369
+        }
+      ],
+      "n_claims": 9,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What was the Supreme Court's conclusion about the right to be represented by a lawyer under the Revised Circular dated 01.07.2015?",
+      "answer": "The Supreme Court concluded that there is no right to be represented by a lawyer in the in-house proceedings contained in paragraph 3 of the Revised Circular dated 01.07.2015. This conclusion was base...",
+      "claims": [
+        {
+          "claim": "The Supreme Court concluded that there is no right to be represented by a lawyer in the in-house proceedings contained in paragraph 3 of the Revised Circular dated 01.07.2015.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2571
+        },
+        {
+          "claim": "This conclusion was based on the fact that the in-house committees appointed under the Revised Circular are not vested with any judicial power.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2554
+        },
+        {
+          "claim": "The in-house committees appointed under the Revised Circular possess administrative powers to gather facts and arrive at a result.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2550
+        },
+        {
+          "claim": "The Court further stated that the expression \"legally authorised to take evidence\" in Section 30 of the Advocates Act does not apply to tribunals but rather to persons who are legally authorised to take evidence.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2573
+        },
+        {
+          "claim": "Since the in-house committees do not have judicial power, they cannot be considered tribunals.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2548
+        },
+        {
+          "claim": "A lawyer has no right under Section 30 of the Advocates Act to appear before in-house committees that do not possess judicial power.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2557
+        }
+      ],
+      "n_claims": 6,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What was the decision of the Single Judge in the writ petition filed by Nalanda College of Education?",
+      "answer": "The Single Judge allowed the writ petition and quashed and set aside the order/communication dated 16.07.2013 of the State Government. The learned Single Judge observed that the ground provided by the...",
+      "claims": [
+        {
+          "claim": "The Single Judge allowed the writ petition.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2735
+        },
+        {
+          "claim": "The Single Judge quashed and set aside the order/communication dated 16.07.2013 of the State Government.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2756
+        },
+        {
+          "claim": "The learned Single Judge observed that the ground provided by the State Government—that students after passing the B.Ed. course are unemployed, and therefore institutions should be closed—is an arbitrary exercise.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2763
+        },
+        {
+          "claim": "The State Government's argument about unemployment among graduates was deemed arbitrary by the Single Judge.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2744
+        },
+        {
+          "claim": "Instead of closing educational institutions, the State Government should promote more institutions to provide education according to the Single Judge.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2749
+        },
+        {
+          "claim": "The Single Judge directed the Northern Regional Committee to take appropriate decision on the application of the original writ petitioner.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2748
+        },
+        {
+          "claim": "The direction from the Single Judge concerned increasing the seats of the B.Ed. course.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2744
+        },
+        {
+          "claim": "The case in question is titled [THE STATE OF UTTARAKHAND v. NALANDA COLLEGE OF EDUCATION AND OTHERS].",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2758
+        },
+        {
+          "claim": "Document ID for the case is 2022_10_60_68_EN.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2749
+        }
+      ],
+      "n_claims": 9,
+      "n_unsupported": 1,
+      "hallucination_rate": 0.111
+    },
+    {
+      "question": "What was the primary issue addressed in the case of Uttar Pradesh Forest Corporation Lucknow & Ors. vs. Vijay Kumar Yadav & Anr.?",
+      "answer": "The primary issue addressed in the case of Uttar Pradesh Forest Corporation Lucknow & Ors. vs. Vijay Kumar Yadav & Anr. was whether the High Court ought to have maintained the punishment order for rec...",
+      "claims": [
+        {
+          "claim": "The case in question is titled \"Uttar Pradesh Forest Corporation Lucknow & Ors. vs. Vijay Kumar Yadav & Anr.\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 3521
+        },
+        {
+          "claim": "The primary issue addressed in the case was related to a punishment order for recovery of Rs. 2.46 lacs.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 3517
+        },
+        {
+          "claim": "A charge of causing loss to that extent (Rs. 2.46 lacs) was held to be proved by the enquiry officer.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 3520
+        },
+        {
+          "claim": "The High Court's decision regarding the maintenance of the punishment order was in question.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 3507
+        },
+        {
+          "claim": "The case reference is \"Uttar Pradesh Forest Corporation Lucknow & Ors. vs. Vijay Kumar Yadav & Anr., 2021_7_432_433_EN.\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 3536
+        }
+      ],
+      "n_claims": 5,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What legal actions did Bimla Devi take that prompted Jogi Ram to file a suit?",
+      "answer": "Bimla Devi took several actions that prompted Jogi Ram to file a suit. Specifically, after obtaining a decree of declaration in her favor against her mother, Ram Devi, on January 15, 1986 ([JOGI RAM v...",
+      "claims": [
+        {
+          "claim": "Bimla Devi obtained a decree of declaration in her favor against her mother, Ram Devi, on January 15, 1986.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2682
+        },
+        {
+          "claim": "The case referred to for the decree is [JOGI RAM v. SURESH KUMAR & ORS, Doc ID: 2022_9_766_784_EN].",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2694
+        },
+        {
+          "claim": "Bimla Devi executed a lease deed in favor of Amar Singh on June 17, 1986.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2675
+        },
+        {
+          "claim": "The lease deed was concerning the land within Ram Devi’s limited share.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2664
+        },
+        {
+          "claim": "Jogi Ram contested both the lease deed and the subsequent decree of declaration.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2664
+        },
+        {
+          "claim": "The contest by Jogi Ram took place in Civil Suit No.94/1993.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2670
+        },
+        {
+          "claim": "The suit was before the Senior Sub Judge, Karnal.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2661
+        }
+      ],
+      "n_claims": 7,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What was the date of the agreement to sell between FERRODOUS ESTATES and the respondents?",
+      "answer": "The date of the agreement to sell between FERRODOUS ESTATES (PVT.) LTD. and the respondents was 12th June 1980. This information is cited from the judgment in FERRODOUS ESTATES (PVT.) LTD versus P. GO...",
+      "claims": [
+        {
+          "claim": "The agreement to sell between FERRODOUS ESTATES (PVT.) LTD. and the respondents was dated.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2814
+        },
+        {
+          "claim": "The date of the agreement is 12th June 1980.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2806
+        },
+        {
+          "claim": "This information is cited from a judgment.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2797
+        },
+        {
+          "claim": "The case name is FERRODOUS ESTATES (PVT.) LTD versus P. GOPIRATHNAM (DEAD) & ORS.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2823
+        },
+        {
+          "claim": "The judgment can be found in [2020] 13 S.C.R. 673.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2813
+        }
+      ],
+      "n_claims": 5,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What was the Supreme Court's response to Ms. Indira Jaising's request to expunge the remarks made against her?",
+      "answer": "The Supreme Court disposed of Ms. Indira Jaising's Miscellaneous Application seeking the expunging/deleting of the remarks made against her counsel for prima facie contempt of court in TEHSEEN POONAWA...",
+      "claims": [
+        {
+          "claim": "The Supreme Court handled Ms. Indira Jaising's Miscellaneous Application.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2400
+        },
+        {
+          "claim": "The application was seeking the expunging or deleting of remarks made against her counsel for prima facie contempt of court.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2410
+        },
+        {
+          "claim": "The case in question is TEHSEEN POONAWALLA versus UNION OF INDIA & ANR.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2409
+        },
+        {
+          "claim": "The date of the judgment is 2018_12_204_207_EN.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2410
+        },
+        {
+          "claim": "The Court acknowledged that the fact such a submission was made is not in dispute.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2402
+        },
+        {
+          "claim": "The application proceeded on the basis that the observations regarding the conduct of the petitioners and intervenors attached to her.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2409
+        },
+        {
+          "claim": "No specific order or direction expunging or deleting the remarks was issued by the Court.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2404
+        }
+      ],
+      "n_claims": 7,
+      "n_unsupported": 2,
+      "hallucination_rate": 0.286
+    },
+    {
+      "question": "How did the National Consumer Disputes Redressal Commission (NCDRC) rule on the appeal?",
+      "answer": "The National Consumer Disputes Redressal Commission (NCDRC) ruled on the appeals as follows:\n\n1. In **ARUN BHATIYA versus HDFC BANK & ORS** ([2022_7_91_100_EN](2022_7_91_100_EN_chunk_3)), the NCDRC di...",
+      "claims": [
+        {
+          "claim": "The National Consumer Disputes Redressal Commission (NCDRC) ruled on the appeals as follows.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1375
+        },
+        {
+          "claim": "In ARUN BHATIYA versus HDFC BANK & ORS ([2022_7_91_100_EN](2022_7_91_100_EN_chunk_3)), the NCDRC dismissed the appeal as withdrawn with liberty to approach the appropriate forum on the request of the counsel for the C appellant.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1428
+        },
+        {
+          "claim": "In ARUN BHATIYA versus HDFC BANK & ORS ([2022_7_91_100_EN](2022_7_91_100_EN_chunk_3)), an application for review was also dismissed by the NCDRC.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1414
+        },
+        {
+          "claim": "In SAMRUDDHI CO-OPERATIVE HOUSING SOCIETY LTD versus MUMBAI MAHALAXMI CONSTRUCTION PVT. LTD ([2022_2_376_393_EN](2022_2_376_393_EN_chunk_7)), the NCDRC dismissed the complaint on the grounds that it was barred by limitation and not maintainable as a consumer dispute.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1445
+        },
+        {
+          "claim": "In BANK OF INDIA versus M/S. BRINDAVAN AGRO INDUSTRIES PVT. LTD ([2020_3_1071_1081_EN](2020_3_1071_1081_EN_chunk_5)), the NCDRC upheld the order of the State Consumer Disputes Redressal Commission.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1434
+        },
+        {
+          "claim": "The appeal filed by the appellant in BANK OF INDIA versus M/S. BRINDAVAN AGRO INDUSTRIES PVT. LTD ([2020_3_1071_1081_EN](2020_3_1071_1081_EN_chunk_5)) against the state commission's order was unsuccessful.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1430
+        },
+        {
+          "claim": "These rulings indicate that the NCDRC dismissed several appeals for various reasons, including withdrawal, limitation bars, and upholding previous decisions.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1380
+        }
+      ],
+      "n_claims": 7,
+      "n_unsupported": 2,
+      "hallucination_rate": 0.286
+    },
+    {
+      "question": "What did the trial court decide regarding compliance with Section 12A of the Commercial Courts Act, 2015?",
+      "answer": "The trial Court rejected the contention of the appellant, inter alia holding that the suit was not barred for non-compliance of Section 12A of the Act. The court stated, \"From the bare perusal of Sect...",
+      "claims": [
+        {
+          "claim": "The trial Court rejected the appellant's contention.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2509
+        },
+        {
+          "claim": "The trial Court held that the suit was not barred for non-compliance of Section 12A of the Act.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2524
+        },
+        {
+          "claim": "The court stated that from the bare perusal of Section 12A, it is crystal clear that the procedure provided is mandatory in nature.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2529
+        },
+        {
+          "claim": "If by applying the principles mentioned in Section 12A, the suit of the plaintiff is rejected, then it would have a catastrophic effect.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2529
+        },
+        {
+          "claim": "The court viewed that the legislature had no such intention to frame such stringent provisions as those found in Section 12A.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2525
+        },
+        {
+          "claim": "This decision was later overturned on appeal.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2508
+        },
+        {
+          "claim": "The case title is \"M/S. PATIL AUTOMATION PRIVATE LIMITED AND ORS versus RAKHEJA ENGINEERS PRIVATE LIMITED\".",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2528
+        },
+        {
+          "claim": "The document ID is 2022_11_808_868_EN.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2522
+        }
+      ],
+      "n_claims": 8,
+      "n_unsupported": 3,
+      "hallucination_rate": 0.375
+    },
+    {
+      "question": "Did Raj Kumar challenge the delay in analyzing the milk sample? If so, what was the court's response?",
+      "answer": "Yes, Raj Kumar did challenge the delay in analyzing the milk sample. According to the passage from RAJ KUMAR versus THE STATE OF UTTAR PRADESH ([2019_13_949_960_EN_chunk_9]), the appellant argued that...",
+      "claims": [
+        {
+          "claim": "Raj Kumar challenged the delay in analyzing the milk sample.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2112
+        },
+        {
+          "claim": "The challenge is documented in RAJ KUMAR versus THE STATE OF UTTAR PRADESH ([2019_13_949_960_EN_chunk_9]).",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2144
+        },
+        {
+          "claim": "According to the passage, Raj Kumar argued that a marginal shortfall in MSNF should be overlooked due to the delay.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2124
+        },
+        {
+          "claim": "The court rejected Raj Kumar's contention.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2109
+        },
+        {
+          "claim": "The court stated there is no material on record supporting Raj Kumar's assertion of delay.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2118
+        },
+        {
+          "claim": "The court referred to a similar case involving a 44-day delay.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2116
+        },
+        {
+          "claim": "In the similar case, a 44-day delay did not benefit the accused due to sample preservation using formalin.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2125
+        }
+      ],
+      "n_claims": 7,
+      "n_unsupported": 2,
+      "hallucination_rate": 0.286
+    },
+    {
+      "question": "What was the Supreme Court's decision regarding Stalin's conviction under Section 302 IPC?",
+      "answer": "The Supreme Court upheld Stalin's conviction under Section 302 IPC. This decision is supported by the reference to the case of Stalin vs. State, (2020) 9 SCC 524 in the context passage from THE STATE ...",
+      "claims": [
+        {
+          "claim": "The Supreme Court made a decision regarding Stalin's conviction.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1349
+        },
+        {
+          "claim": "Stalin was convicted under Section 302 IPC.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1349
+        },
+        {
+          "claim": "The case of Stalin vs. State is referenced in the context passage from THE STATE OF UTTARAKHAND versus SACHENDRA SINGH RAWAT [2022_1_529_544_EN].",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1387
+        },
+        {
+          "claim": "The decision regarding Stalin's conviction was made in (2020) 9 SCC 524.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1361
+        }
+      ],
+      "n_claims": 4,
+      "n_unsupported": 3,
+      "hallucination_rate": 0.75
+    },
+    {
+      "question": "What was the Supreme Court's interpretation of 'abandonment' in the context of the contract in the Shripati Lakhu Mane case on 30th March 2022?",
+      "answer": "In the Shripati Lakhu Mane case [2022] 2 S.C.R. 839, the Supreme Court interpreted 'abandonment' in the context of a contract as follows:\n\nThe refusal of a contractor to continue executing work unless...",
+      "claims": [
+        {
+          "claim": "In the Shripati Lakhu Mane case [2022] 2 S.C.R. 839, the Supreme Court interpreted 'abandonment' in the context of a contract.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2612
+        },
+        {
+          "claim": "The refusal of a contractor to continue executing work unless reciprocal promises are performed by the other party cannot be termed as abandonment of the contract.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2597
+        },
+        {
+          "claim": "The Court held that it is fundamental to the Law of Contract that if material alterations take place in the terms of the original contract due to any act of omission or commission on the part of one of the parties, the other party may not perform the original contract without amounting to abandonment.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2627
+        },
+        {
+          "claim": "Abandonment is generally understood as a right and not a liability or obligation.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2586
+        },
+        {
+          "claim": "The Supreme Court stated that allowing a party to abandon their obligations under a contract would be contrary to the principles of the Contract Act, 1872, specifically Section 67.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2608
+        },
+        {
+          "claim": "Section 67 of the Contract Act, 1872 states that if any promisee neglects or refuses to afford the promisor reasonable facilities for performance of his promise, the promisor is excused by such neglect or refusal as to any non-performance caused thereby.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2626
+        },
+        {
+          "claim": "The Supreme Court found that it was the respondents who made it difficult for the appellant to execute the contract as per the terms originally agreed upon.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2598
+        },
+        {
+          "claim": "The Supreme Court did not find any abandonment on the part of the appellant.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2585
+        }
+      ],
+      "n_claims": 8,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What did the Supreme Court say about the High Court's interpretation of the novation of contract?",
+      "answer": "The Supreme Court criticized the High Court for prematurely determining that there was a novation of the contract in DR. Lakshman versus The State of Karnataka & ORS ([2019] 13 S.C.R., Doc ID: 2019_13...",
+      "claims": [
+        {
+          "claim": "The Supreme Court criticized the High Court in DR. Lakshman versus The State of Karnataka & ORS ([2019] 13 S.C.R., Doc ID: 2019_13_480_488_EN).",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2808
+        },
+        {
+          "claim": "Specifically, the Supreme Court stated that whether there is a novation of the contract or not and its effect should be considered only after a full trial.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2783
+        },
+        {
+          "claim": "The Supreme Court criticized the High Court for prematurely determining that there was a novation of the contract in DR. Lakshman versus The State of Karnataka & ORS ([2019] 13 S.C.R., Doc ID: 2019_13_480_488_EN).",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2820
+        },
+        {
+          "claim": "In M/S. Meenakshi Solar Power Pvt. Ltd. versus M/S. Abhyudaya Green Economic Zones Pvt. Ltd. & ORS ([2022] 8 S.C.R., Doc ID: 2022_8_756_767_EN), the Supreme Court found that the High Court erred in dismissing an application under Section 11(6) of the Arbitration and Conciliation Act, 1996 on the ground of novation.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2860
+        },
+        {
+          "claim": "The Supreme Court held in M/S. Meenakshi Solar Power Pvt. Ltd. versus M/S. Abhyudaya Green Economic Zones Pvt. Ltd. & ORS ([2022] 8 S.C.R., Doc ID: 2022_8_756_767_EN) that such a determination should be left to the arbitrator.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2833
+        },
+        {
+          "claim": "The Supreme Court's decisions in DR. Lakshman versus The State of Karnataka & ORS ([2019] 13 S.C.R., Doc ID: 2019_13_480_488_EN) and M/S. Meenakshi Solar Power Pvt. Ltd. versus M/S. Abhyudaya Green Economic Zones Pvt. Ltd. & ORS ([2022] 8 S.C.R., Doc ID: 2022_8_756_767_EN) indicate that the Supreme Court is cautious about prematurely deciding issues related to contract novation.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2887
+        },
+        {
+          "claim": "The Supreme Court's decisions in DR. Lakshman versus The State of Karnataka & ORS ([2019] 13 S.C.R., Doc ID: 2019_13_480_488_EN) and M/S. Meenakshi Solar Power Pvt. Ltd. versus M/S. Abhyudaya Green Economic Zones Pvt. Ltd. & ORS ([2022] 8 S.C.R., Doc ID: 2022_8_756_767_EN) suggest that such determinations should be made after a full trial.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2883
+        },
+        {
+          "claim": "The Supreme Court's decisions in DR. Lakshman versus The State of Karnataka & ORS ([2019] 13 S.C.R., Doc ID: 2019_13_480_488_EN) and M/S. Meenakshi Solar Power Pvt. Ltd. versus M/S. Abhyudaya Green Economic Zones Pvt. Ltd. & ORS ([2022] 8 S.C.R., Doc ID: 2022_8_756_767_EN) indicate that such determinations should be left to the arbitrator.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2883
+        },
+        {
+          "claim": "The Supreme Court's decisions in DR. Lakshman versus The State of Karnataka & ORS ([2019] 13 S.C.R., Doc ID: 2019_13_480_488_EN) and M/S. Meenakshi Solar Power Pvt. Ltd. versus M/S. Abhyudaya Green Economic Zones Pvt. Ltd. & ORS ([2022] 8 S.C.R., Doc ID: 2022_8_756_767_EN) suggest that such determinations would impact the merits of the dispute between the parties.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2886
+        }
+      ],
+      "n_claims": 9,
+      "n_unsupported": 4,
+      "hallucination_rate": 0.444
+    },
+    {
+      "question": "What was the primary legal issue in the case of Swapan Kumar Chatterjee vs. Central Bureau of Investigation?",
+      "answer": "The primary legal issue in the case of Swapan Kumar Chatterjee vs. Central Bureau of Investigation ([2019] 3 S.C.R. 713) was whether the application for summoning a handwriting expert should have been...",
+      "claims": [
+        {
+          "claim": "The case of Swapan Kumar Chatterjee vs. Central Bureau of Investigation is reported in [2019] 3 S.C.R. 713.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1613
+        },
+        {
+          "claim": "The primary legal issue in the case was whether the application for summoning a handwriting expert should have been rejected under Section 311 of the Code of Criminal Procedure, 1973.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1618
+        },
+        {
+          "claim": "The court held that the power conferred under Section 311 Cr.P.C. should be exercised with great caution and circumspection.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1606
+        },
+        {
+          "claim": "The exercise of this power should only meet the ends of justice.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1591
+        },
+        {
+          "claim": "In the case at hand, the application for summoning the witness was considered an abuse of the process of law.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1601
+        },
+        {
+          "claim": "The court's decision regarding the application is detailed in paragraph 12 of [2019] 3 S.C.R. 713.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1610
+        }
+      ],
+      "n_claims": 6,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    }
+  ],
+  "input_file": "results/raw_outputs_promptablation_control_semantic.json"
+}

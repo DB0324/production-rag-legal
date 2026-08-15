@@ -338,3 +338,24 @@ overstated confidence.
 Result: KEEP. The citation-forcing prompt selectively refuses the cases where
 answering produces unsupported claims. Judge cost 284,958 tokens (~16.8K/question).
 Limitation: baseline is from an earlier run, not a matched control in this experiment.
+
+## E11 - Matched control for E10 (same-run comparison)
+Motivation: E10 compared contested questions against a baseline from an earlier
+run. This adds a control drawn from the SAME run, same config, same judge, same n,
+removing the cross-run confound.
+Method: sampled 17 non-contested, non-declined loose answers (random.seed=42,
+pool=82) and ran the identical claim-level hallucination checker on them.
+
+Contested: 17 questions, 141 claims, 43 unsupported -> 30.5%
+Control  : 17 questions, 117 claims, 19 unsupported -> 16.2%
+Per-question means  : 0.340 vs 0.164 (2.07x)
+Per-question medians: 0.333 vs 0.000
+Mann-Whitney U, one-sided: p = 0.0084 (significant)
+
+The median control answer contains ZERO unsupported claims, while the median
+question the strict prompt refused has a third of its claims unsupported.
+
+Result: KEEP. Confirms E10 under a cleaner design with a larger effect size
+(+14.3 pts here vs +10.3 pts against the earlier baseline). Both comparisons are
+significant; the matched design trades statistical power for a cleaner comparison
+and still clears 0.05. Judge cost 277,438 tokens.
