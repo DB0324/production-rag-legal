@@ -249,11 +249,24 @@ documented entry point.
 
 ## 13. Limitations
 
-- **RAGAS evaluated at n=60, not n=250.** A full run was measured rather than
-  estimated: a 10-question probe took 168 minutes wall clock at load average 35
-  on 64 cores (**16.8 min/question**), extrapolating to ~70 hours. The run was
-  declined as an unproductive use of contended shared infrastructure.
-  Retrieval metrics remain uncompromised at the full n=250.
+- **RAGAS evaluated at n=60, not n=250 - a costed decision, not an omission.**
+  A full run was measured rather than estimated: a 10-question probe took 168
+  minutes wall clock at load average 35 on 64 cores (**16.8 min/question**),
+  extrapolating to ~70 GPU-hours. What those hours would buy is precision, not
+  a different answer:
+
+  | Metric | Estimate | 95% CI (n=60) | 95% CI (n=250) |
+  |---|---|---|---|
+  | Faithfulness | 0.754 | ±0.087 | ±0.043 |
+  | Answer relevancy | 0.690 | ±0.083 | ±0.041 |
+  | Context precision | 0.614 | ±0.108 | ±0.053 |
+  | Context recall | 0.617 | ±0.113 | ±0.055 |
+
+  Faithfulness lies in [0.667, 0.841] at 95% confidence, and every value in
+  that interval supports the same conclusion. Roughly ±0.05 of additional
+  precision was judged not worth 70 hours on contended shared infrastructure.
+  Retrieval metrics remain uncompromised at the full n=250, and the claim-level
+  hallucination rate at n=199.
 - **Generation-level metrics were computed only for the winning configuration.**
   fixed and recursive were evaluated for retrieval only.
 - **Judge model is qwen2.5:7b-instruct**, a relatively small open model.
@@ -264,6 +277,14 @@ documented entry point.
   a clustering-aware test in both comparisons.
 - **Eval set quality is bounded by IndicLegalQA's question style**, and the
   corpus is Supreme Court only, 2018–2022.
+
+- **Chunk sizes were tuned in characters, not tokens.** 32.4% of fixed chunks,
+  6.3% of semantic and 3.3% of recursive exceed bge-large-en-v1.5's 512-token
+  limit and were silently truncated at index time. Truncation rate ranks in
+  perfect inverse order with no-reranker Recall@1, so Axis 1 partly measured
+  each strategy's collision with the encoder limit rather than chunking alone.
+  The winning configuration is minimally affected, and 6.3% cannot account for
+  the dense-vs-BM25 gap, so the Axis 3 conclusion is unaffected.
 
 ## 14. Future Work
 

@@ -15,3 +15,4 @@ results/raw_outputs_*.json
 results/retrieval_misses_*.json
 results/hallucination_TEST*.json
 results/ragas_scores_TEST*.json
+logs/

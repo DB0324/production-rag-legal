@@ -374,3 +374,27 @@ scripts behave identically.
 Result: 98GB -> 19.8GB RSS (5x), startup >350s (failed) -> 135s.
 A further measured consequence of the no-root constraint that forced local mode
 over a Qdrant server process.
+
+## E13 - Encoder truncation confound in the chunking comparison
+Motivation: dense retrieval underperformed BM25 (R@1 0.440 vs 0.524); checked
+whether chunks exceed bge-large-en-v1.5's 512-token limit, which
+sentence-transformers truncates silently.
+
+Token lengths (2,000-chunk sample per strategy):
+  fixed      median=494  p95=593  >512: 32.4%
+  semantic   median=325  p95=522  >512:  6.3%
+  recursive  median=145  p95=498  >512:  3.3%
+
+Truncation rate ranks in perfect inverse order with no-reranker R@1
+(fixed 0.504 < semantic 0.532 < recursive 0.536).
+
+Conclusion: chunk sizes were tuned in characters without checking token counts
+against the encoder limit, so Axis 1 partly measured collision with that limit
+rather than chunking strategy alone. Fixed chunking is materially affected
+(a third of chunks lose their tail from the dense index); the winning semantic
+config is not (6.3%), so the headline result stands.
+6.3% cannot account for the dense-vs-BM25 gap on semantic, so the Axis 3
+domain explanation (case names give BM25 a lexical edge) is confirmed rather
+than displaced.
+Not fixed: re-chunking under 512 tokens would require full re-indexing for a
+strategy that did not win. Documented as a limitation instead.
