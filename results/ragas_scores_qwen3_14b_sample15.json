@@ -1,0 +1,117 @@
+{
+  "aggregate": {
+    "faithfulness": 0.6333333333333334,
+    "answer_relevancy": 0.5633802913544174,
+    "context_precision": 0.6062962962650864,
+    "context_recall": 0.4777777777777778,
+    "n_samples": 15
+  },
+  "per_question": [
+    {
+      "question": "What was the Supreme Court's final decision regarding Manimaran's sentence?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the argument made by the petitioners against Clause 4.1?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7314519051648674,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the basis of the respondents' application for revocation of leave in the case?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6831704943680975,
+      "context_precision": 0.9166666666361111,
+      "context_recall": 1.0
+    },
+    {
+      "question": "How did the Supreme Court interpret the mandatory nature of prior notice under Rule 29(4) of the Copyright Rules?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8506073754431963,
+      "context_precision": 0.8055555555287036,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the final decision of the Supreme Court in 'M/s. Cheminova India Ltd. & Anr. vs. State of Punjab & Anr.'?",
+      "faithfulness": 0.8333333333333334,
+      "answer_relevancy": 0.8144316840072697,
+      "context_precision": 0.9999999999,
+      "context_recall": 0.5
+    },
+    {
+      "question": "What is the name of the appellant and the respondents in the case?",
+      "faithfulness": 0.2,
+      "answer_relevancy": 0.9118165735475546,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What did the Designated TADA Court decide regarding the compliance with Section 20-A(1) of the TADA Act?",
+      "faithfulness": null,
+      "answer_relevancy": 0.4853565448569841,
+      "context_precision": 0.9999999999,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the Supreme Court's final ruling in the case?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.3333333333333333
+    },
+    {
+      "question": "What was the Supreme Court's observation regarding the inclusion of the company as an accused in the complaint?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7359846108389858,
+      "context_precision": 0.699999999965,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What were the main arguments of the appellants against the notification of the 'Elephant Corridor'?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.822002293562894,
+      "context_precision": 0.7555555555303703,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the Supreme Court's decision regarding the High Court's ruling on Raveen Kumar's case?",
+      "faithfulness": 0.8333333333333334,
+      "answer_relevancy": 0.8470321730916769,
+      "context_precision": 0.99999999995,
+      "context_recall": 0.6666666666666666
+    },
+    {
+      "question": "How did the Supreme Court interpret the provisions of Section 326A IPC?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7487663916202308,
+      "context_precision": 0.9166666666361111,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What did the Supreme Court suggest regarding the standard of proof for the accused under Section 139 of the Act?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8200843238145032,
+      "context_precision": 0.99999999998,
+      "context_recall": 0.0
+    },
+    {
+      "question": "On what grounds did the first appellate court support the residents' objections?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the final verdict of the Supreme Court in this case?",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.6666666666666666
+    }
+  ],
+  "input_file": "results/raw_outputs_semantic_qwen3_14b_sample15.json"
+}

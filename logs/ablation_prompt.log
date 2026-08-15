@@ -1,0 +1,90 @@
+nohup: ignoring input
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_recursive> contains 253394 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+  strict prompt (repo default)
+
+=== Axis 5: strict | semantic | n=100 ===
+
+Loading embedding model 'BAAI/bge-large-en-v1.5' on: cuda
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 5150.25it/s]
+Loading reranker model 'BAAI/bge-reranker-v2-m3' on: cuda
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 4575.40it/s]
+  10/100  (~160 min left)
+  20/100  (~117 min left)
+  30/100  (~102 min left)
+  40/100  (~84 min left)
+  50/100  (~70 min left)
+  60/100  (~58 min left)
+  70/100  (~44 min left)
+  80/100  (~32 min left)
+  90/100  (~18 min left)
+  100/100  (~0 min left)
+
+=== STRICT ===
+  variant: strict
+  strategy: semantic
+  n: 100
+  guard_declined: 1
+  guard_decline_rate: 0.01
+  llm_self_declined: 17
+  llm_decline_rate: 0.17
+  answered: 82
+  citation_presence_rate: 1.085
+  avg_tokens_in: 2782.8
+  errors: 0
+  wall: 197.6 min
+Exception ignored in: <function QdrantClient.__del__ at 0x7fcc8c9ebb50>
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 169, in __del__
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 178, in close
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/local/qdrant_local.py", line 85, in close
+ImportError: sys.meta_path is None, Python is likely shutting down
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_recursive> contains 253394 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+  loose prompt patch VERIFIED
+  resuming: 2 already complete
+
+=== Axis 5: loose | semantic | n=100 ===
+
+Loading embedding model 'BAAI/bge-large-en-v1.5' on: cuda
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:  76%|███████▋  | 299/391 [00:00<00:00, 2982.86it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 3190.77it/s]
+Loading reranker model 'BAAI/bge-reranker-v2-m3' on: cuda
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  90%|████████▉ | 353/393 [00:00<00:00, 3498.19it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 3588.30it/s]
+  10/100  (~337 min left)
+  20/100  (~270 min left)
+  30/100  (~234 min left)
+  40/100  (~173 min left)
+  50/100  (~132 min left)
+  60/100  (~101 min left)
+  70/100  (~72 min left)
+  80/100  (~46 min left)
+  90/100  (~22 min left)
+  100/100  (~0 min left)
+
+=== LOOSE ===
+  variant: loose
+  strategy: semantic
+  n: 100
+  guard_declined: 1
+  guard_decline_rate: 0.01
+  llm_self_declined: 0
+  llm_decline_rate: 0.0
+  answered: 99
+  citation_presence_rate: 0.949
+  avg_tokens_in: 2691.7
+  errors: 0
+  wall: 214.6 min
+Exception ignored in: <function QdrantClient.__del__ at 0x7d91f78dfe20>
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 169, in __del__
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 178, in close
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/local/qdrant_local.py", line 85, in close
+ImportError: sys.meta_path is None, Python is likely shutting down

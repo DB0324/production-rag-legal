@@ -1,6 +1,35 @@
-INFO:     Started server process [2045676]
+INFO:     Started server process [664853]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:18: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
   _client = QdrantClient(path=QDRANT_PATH)
+INFO:     127.0.0.1:48798 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48806 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41556 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:56980 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:56984 - "POST /query HTTP/1.1" 422 Unprocessable Entity
+Loading embedding model 'BAAI/bge-large-en-v1.5' on: cuda
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   5%|▍         | 19/391 [00:00<00:02, 185.56it/s]Loading weights:  11%|█         | 43/391 [00:00<00:01, 208.56it/s]Loading weights:  16%|█▋        | 64/391 [00:00<00:01, 197.78it/s]Loading weights:  23%|██▎       | 90/391 [00:00<00:01, 207.99it/s]Loading weights:  34%|███▍      | 132/391 [00:00<00:00, 272.42it/s]Loading weights:  41%|████▏     | 162/391 [00:00<00:00, 280.99it/s]Loading weights:  53%|█████▎    | 208/391 [00:00<00:00, 317.15it/s]Loading weights:  64%|██████▍   | 251/391 [00:00<00:00, 347.66it/s]Loading weights:  73%|███████▎  | 286/391 [00:00<00:00, 348.22it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 388.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]
+Loading reranker model 'BAAI/bge-reranker-v2-m3' on: cuda
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 48/393 [00:00<00:00, 479.62it/s]Loading weights:  51%|█████     | 201/393 [00:00<00:00, 1097.04it/s]Loading weights:  79%|███████▉  | 311/393 [00:00<00:00, 976.41it/s] Loading weights: 100%|██████████| 393/393 [00:00<00:00, 1164.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 57.33it/s]
+INFO:     127.0.0.1:37732 - "POST /query HTTP/1.1" 200 OK
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 30.25it/s]
+INFO:     127.0.0.1:38996 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47132 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44208 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39814 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39828 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:39838 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:39848 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:39860 - "POST /query HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:39862 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38696 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60642 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60654 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60668 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60684 - "POST /query HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60700 - "POST /query HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:60712 - "GET /metrics HTTP/1.1" 200 OK

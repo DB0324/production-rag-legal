@@ -1,0 +1,46 @@
+nohup: ignoring input
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_recursive> contains 253394 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/ragas_eval.py:64: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; llm = llm_factory('gpt-4o-mini', client=OpenAI(api_key='...'))
+  ragas_llm = LangchainLLMWrapper(chat_llm)
+Detected strategy: semantic -> collection: legal_semantic
+Loaded 60 results, 60 valid (skipping 0 errors)
+Fetching full text for 299 unique chunks from Qdrant...
+
+Running RAGAS evaluation on 60 samples using LOCAL models (Ollama)...
+  Metrics: faithfulness, answer_relevancy, context_precision, context_recall
+
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   0%|          | 1/391 [00:00<03:21,  1.93it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 678.41it/s]
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/evaluation/ragas_eval.py:70: DeprecationWarning: LangchainEmbeddingsWrapper is deprecated and will be removed in a future version. Use the modern embedding providers instead: embedding_factory('openai', model='text-embedding-3-small', client=openai_client) or from ragas.embeddings import OpenAIEmbeddings, GoogleEmbeddings, HuggingFaceEmbeddings
+  ragas_embeddings = LangchainEmbeddingsWrapper(hf_embeddings)
+Evaluating:   0%|          | 0/240 [00:00<?, ?it/s]Exception raised in Job[0]: TimeoutError()
+Exception raised in Job[1]: TimeoutError()
+Evaluating:   0%|          | 1/240 [10:00<39:50:03, 600.01s/it]Exception raised in Job[2]: TimeoutError()
+Exception raised in Job[3]: TimeoutError()
+Evaluating:   1%|▏         | 3/240 [20:01<24:54:20, 378.31s/it]Evaluating:   2%|▏         | 5/240 [26:56<18:57:47, 290.50s/it]Exception raised in Job[4]: TimeoutError()
+Evaluating:   2%|▎         | 6/240 [30:01<17:02:24, 262.16s/it]Evaluating:   3%|▎         | 7/240 [35:28<18:08:05, 280.20s/it]Exception raised in Job[6]: TimeoutError()
+Evaluating:   3%|▎         | 8/240 [36:56<14:32:22, 225.61s/it]Evaluating:   4%|▍         | 9/240 [41:44<15:38:04, 243.65s/it]Exception raised in Job[8]: TimeoutError()
+Evaluating:   4%|▍         | 10/240 [45:28<15:12:02, 237.92s/it]Evaluating:   5%|▍         | 11/240 [50:37<16:27:58, 258.86s/it]Exception raised in Job[10]: TimeoutError()
+Evaluating:   5%|▌         | 12/240 [51:44<12:47:48, 202.05s/it]Evaluating:   5%|▌         | 13/240 [57:44<15:42:09, 249.03s/it]Exception raised in Job[12]: TimeoutError()
+Evaluating:   6%|▌         | 14/240 [1:00:37<14:12:37, 226.36s/it]Evaluating:   6%|▋         | 15/240 [1:07:15<17:20:13, 277.39s/it]Exception raised in Job[14]: TimeoutError()
+Evaluating:   7%|▋         | 16/240 [1:07:44<12:39:10, 203.35s/it]Evaluating:   7%|▋         | 17/240 [1:13:54<15:40:31, 253.06s/it]Exception raised in Job[16]: TimeoutError()
+Evaluating:   8%|▊         | 18/240 [1:17:15<14:38:38, 237.47s/it]Exception raised in Job[18]: TimeoutError()
+Evaluating:   8%|▊         | 19/240 [1:23:54<17:33:07, 285.91s/it]Exception raised in Job[19]: TimeoutError()
+Evaluating:   8%|▊         | 20/240 [1:27:15<15:54:52, 260.42s/it]Evaluating:   9%|▉         | 21/240 [1:34:55<19:28:55, 320.25s/it]Exception raised in Job[20]: TimeoutError()
+Evaluating:  10%|▉         | 23/240 [1:40:09<14:45:48, 244.92s/it]Exception raised in Job[22]: TimeoutError()
+Evaluating:  10%|█         | 24/240 [1:44:55<15:18:25, 255.12s/it]Exception raised in Job[24]: TimeoutError()
+Evaluating:  10%|█         | 25/240 [1:50:09<16:09:29, 270.56s/it]Exception raised in Job[25]: TimeoutError()
+Evaluating:  11%|█         | 26/240 [1:54:55<16:19:49, 274.72s/it]Exception raised in Job[26]: TimeoutError()
+Evaluating:  11%|█▏        | 27/240 [2:00:09<16:54:24, 285.75s/it]Exception raised in Job[27]: TimeoutError()
+Evaluating:  12%|█▏        | 28/240 [2:04:55<16:49:44, 285.78s/it]Exception raised in Job[28]: TimeoutError()
+Evaluating:  12%|█▏        | 29/240 [2:10:09<17:13:54, 294.00s/it]Exception raised in Job[29]: TimeoutError()
+Evaluating:  12%|█▎        | 30/240 [2:14:55<17:00:38, 291.61s/it]Exception raised in Job[30]: TimeoutError()
+Evaluating:  13%|█▎        | 31/240 [2:20:09<17:18:56, 298.26s/it]Exception raised in Job[31]: TimeoutError()
+Evaluating:  13%|█▎        | 32/240 [2:24:55<17:01:13, 294.58s/it]Exception raised in Job[32]: TimeoutError()
+Evaluating:  14%|█▍        | 33/240 [2:30:09<17:16:24, 300.41s/it]Evaluating:  14%|█▍        | 34/240 [2:35:31<17:33:21, 306.80s/it]Exception raised in Job[34]: TimeoutError()
+Evaluating:  15%|█▍        | 35/240 [2:40:09<16:58:59, 298.24s/it]Exception raised in Job[35]: TimeoutError()
+Evaluating:  15%|█▌        | 36/240 [2:45:31<17:18:02, 305.31s/it]

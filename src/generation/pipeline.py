@@ -15,14 +15,13 @@ from src.generation.prompt_templates import build_prompt
 from src.generation.generate import generate, extract_citations
 
 # Strategy → (collection_name, bm25_path)
-STRATEGY_CONFIG = {
-    "fixed": ("legal_fixed", "data/chunks/fixed_bm25.pkl"),
-    "recursive": ("legal_recursive", "data/chunks/recursive_bm25.pkl"),
-    "semantic": ("legal_semantic", "data/chunks/semantic_bm25.pkl"),
-}
+from src.config import strategy_config, get as _cfg
+
+# Loaded from config/config.yaml (falls back to defaults if absent)
+STRATEGY_CONFIG = strategy_config()
 
 # Default reranker score threshold below which we trigger "insufficient info"
-SUFFICIENCY_THRESHOLD = 0.10  # calibrated: GOOD questions scored 0.41-0.93 avg, BAD scored 0.004-0.023 avg (see experiment_log.md)
+SUFFICIENCY_THRESHOLD = _cfg("guardrail.sufficiency_threshold", 0.10)
 
 
 def query_pipeline(
@@ -80,6 +79,7 @@ def query_pipeline(
 
     # ── Step 3: Sufficiency guard ──
     if use_reranker and avg_score is not None and avg_score < sufficiency_threshold:
+        timings["total_s"] = round(sum(timings.values()), 3)
         return {
             "answer": "Insufficient information in the provided sources to answer this question.",
             "citations": [],

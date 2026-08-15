@@ -1,0 +1,82 @@
+{
+  "aggregate": {
+    "faithfulness": NaN,
+    "answer_relevancy": 0.6247922858883014,
+    "context_precision": 0.499999999975,
+    "context_recall": 0.5,
+    "n_samples": 10
+  },
+  "per_question": [
+    {
+      "question": "What broader issue did the Supreme Court address in its judgement regarding the administration of justice?",
+      "faithfulness": null,
+      "answer_relevancy": 0.7363448716581994,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What broader legal principles did the Supreme Court discuss in this judgement?",
+      "faithfulness": null,
+      "answer_relevancy": 0.7976807214431627,
+      "context_precision": null,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the Supreme Court's conclusion on the merit of the selection process conducted by the State Screening Committee?",
+      "faithfulness": null,
+      "answer_relevancy": 0.6052556439461688,
+      "context_precision": null,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the Supreme Court's ruling on the Council's recommendations?",
+      "faithfulness": null,
+      "answer_relevancy": 0.5945411935405088,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "question": "What did the trial court decide regarding compliance with Section 12A of the Commercial Courts Act, 2015?",
+      "faithfulness": null,
+      "answer_relevancy": 0.8111493348998126,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "question": "What was the High Court's decision regarding the charges proved by the Enquiry Officer?",
+      "faithfulness": null,
+      "answer_relevancy": 0.0,
+      "context_precision": null,
+      "context_recall": 0.0
+    },
+    {
+      "question": "What was the basis of the respondents' application for revocation of leave in the case?",
+      "faithfulness": null,
+      "answer_relevancy": 0.8254408214110557,
+      "context_precision": null,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What was the main issue in the case of North Delhi Municipal Corporation Vs. Harleen Kaur & Ors.?",
+      "faithfulness": null,
+      "answer_relevancy": 0.999999999999235,
+      "context_precision": null,
+      "context_recall": 1.0
+    },
+    {
+      "question": "What were the findings of the Controlling Authority and the Appellate Authority regarding Netram Sahu's gratuity claim?",
+      "faithfulness": null,
+      "answer_relevancy": 0.0,
+      "context_precision": null,
+      "context_recall": 0.0
+    },
+    {
+      "question": "How did the Andhra Pradesh High Court rule regarding the Commission's order on wheeling charges?",
+      "faithfulness": null,
+      "answer_relevancy": 0.8775102719848711,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    }
+  ],
+  "input_file": "results/_probe10_semantic_reranked.json"
+}

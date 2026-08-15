@@ -359,3 +359,18 @@ Result: KEEP. Confirms E10 under a cleaner design with a larger effect size
 (+14.3 pts here vs +10.3 pts against the earlier baseline). Both comparisons are
 significant; the matched design trades statistical power for a cleaner comparison
 and still clears 0.05. Judge cost 277,438 tokens.
+
+## E12 - Qdrant local-mode memory limit found by running the API
+Symptom: with all three collections indexed (524K chunks), the long-lived API
+process reached ~98GB RSS (78% of 125GB) and was killed; the readiness probe
+exceeded its 350s timeout. Eval scripts never exposed this -- each opens Qdrant,
+queries, and exits; a persistent server holds every collection resident.
+Cause: Qdrant local mode loads ALL collections in the storage directory. The
+client itself warns above 20,000 points; these collections are 5-13x that.
+Fix: serve from a pruned storage path containing only legal_semantic (the frozen
+config's collection) via a symlink + trimmed meta.json -- no re-indexing, no disk
+cost. QDRANT_PATH made overridable by env var; default unchanged so all eval
+scripts behave identically.
+Result: 98GB -> 19.8GB RSS (5x), startup >350s (failed) -> 135s.
+A further measured consequence of the no-root constraint that forced local mode
+over a Qdrant server process.

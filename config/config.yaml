@@ -1,0 +1,63 @@
+# Frozen production configuration for the Legal RAG system.
+# Every value here was chosen by a logged experiment - see results/experiment_log.md.
+
+corpus:
+  documents: 4140
+  source: Indian Supreme Court judgments 2018-2022
+
+# Winning configuration (Axes 1 & 2, n=250): semantic + bge-reranker-v2-m3
+active_strategy: semantic
+
+strategies:
+  fixed:
+    collection: legal_fixed
+    bm25_path: data/chunks/fixed_bm25.pkl
+    chunks_path: data/chunks/fixed_chunks.parquet
+  recursive:
+    collection: legal_recursive
+    bm25_path: data/chunks/recursive_bm25.pkl
+    chunks_path: data/chunks/recursive_chunks.parquet
+  semantic:
+    collection: legal_semantic
+    bm25_path: data/chunks/semantic_bm25.pkl
+    chunks_path: data/chunks/semantic_chunks.parquet
+
+qdrant:
+  # Full store for evaluation; pruned single-collection store for the API.
+  # See E12 - local mode holds every collection resident (98GB -> 19.8GB).
+  path: data/qdrant_local
+  api_path: data/qdrant_semantic_only
+
+embedding:
+  model: BAAI/bge-large-en-v1.5
+  dim: 1024
+
+retrieval:
+  rrf_k: 60          # standard RRF constant
+  hybrid_top_k: 50   # candidates fused before reranking
+
+rerank:
+  enabled: true
+  model: BAAI/bge-reranker-v2-m3
+  top_k: 10
+
+generation:
+  provider: ollama
+  model: qwen2.5:7b-instruct
+  temperature: 0.1
+  top_k: 5                # Axis 4: k=10 costs +83% tokens for negligible gain
+  prompt_variant: strict  # Axis 5: +17pts abstention, 100% citation compliance
+
+guardrail:
+  # Calibrated on 5 known-good vs 5 known-bad questions.
+  # GOOD scored 0.41-0.93 avg, BAD scored 0.004-0.023 avg.
+  sufficiency_threshold: 0.10
+
+cache:
+  enabled: true
+  similarity_threshold: 0.95
+  path: data/semantic_cache.json
+
+eval:
+  eval_set: data/eval/indiclegalqa_filtered.json
+  n_questions: 250

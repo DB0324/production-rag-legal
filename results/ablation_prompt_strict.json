@@ -7,7 +7,7 @@
   "llm_self_declined": 17,
   "llm_decline_rate": 0.17,
   "answered": 82,
-  "citation_presence_rate": 1.085,
+  "citation_presence_rate": 1.0,
   "avg_tokens_in": 2782.8,
   "errors": 0
 }

@@ -1,0 +1,28 @@
+nohup: ignoring input
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_fixed> contains 107056 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_recursive> contains 253394 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+/home/student/Dhara-Mtech/IPR/PROJECTS/production-rag-legal/src/indexing/qdrant_client.py:17: UserWarning: Local mode is not recommended for collections with more than 20,000 points. Collection <legal_semantic> contains 163884 points. Consider using Qdrant in Docker or Qdrant Cloud for better performance with large datasets.
+  _client = QdrantClient(path=QDRANT_PATH)
+Detected strategy: semantic -> collection: legal_semantic
+
+Loaded 17 results, checking 17 valid answers
+(Skipping errors and 'insufficient information' responses)
+
+Fetching full text for 85 unique chunks from Qdrant...
+  checked 10/17 questions (88 claims, 25 unsupported, ~17.2 min remaining)
+
+=== Hallucination Check Summary ===
+  Questions checked: 17
+  Total claims: 141
+  Unsupported claims: 43
+  Overall hallucination rate: 30.5%
+  Tokens used: 284958
+  Saved → results/hallucination_raw_outputs_promptablation_contested_semantic.json
+Exception ignored in: <function QdrantClient.__del__ at 0x73ce4ae864d0>
+Traceback (most recent call last):
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 169, in __del__
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 178, in close
+  File "/home/student/.conda/envs/rag-legal/lib/python3.10/site-packages/qdrant_client/local/qdrant_local.py", line 85, in close
+ImportError: sys.meta_path is None, Python is likely shutting down

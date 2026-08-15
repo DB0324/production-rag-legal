@@ -1,4 +1,5 @@
 #!/bin/bash
+export QDRANT_PATH=data/qdrant_semantic_only
 # Wrapper: sources .env before launching uvicorn, kills any stale instance,
 # and POLLS /health until the server is actually ready instead of guessing
 # with a fixed sleep -- this is the permanent fix for the repeated

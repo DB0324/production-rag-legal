@@ -6,7 +6,8 @@ and the original text/metadata as payload.
 from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
 
-QDRANT_PATH = "data/qdrant_local"
+import os
+QDRANT_PATH = os.environ.get("QDRANT_PATH", "data/qdrant_local")
 VECTOR_SIZE = 1024  # bge-large-en-v1.5 output dimension
 
 _client = None
