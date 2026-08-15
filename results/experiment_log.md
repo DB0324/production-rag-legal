@@ -298,3 +298,43 @@ cases.
 - Noted as future work: comparing generator model size (7B vs 14B vs
   32B, all already available via Ollama) on faithfulness/quality would
   require a dedicated (non-shared) GPU allocation to run reliably.
+
+## E09 - Axis 5: strict (citation-forcing) vs loose prompt
+Hypothesis: the citation-forcing prompt reduces unsupported answering by making
+the model abstain when context is inadequate.
+Config: semantic + bge-reranker-v2-m3, n=100/variant, guard ON in both arms
+(threshold 0.10), only SYSTEM_PROMPT varied. ~215 min/variant at load ~34.
+
+| Metric | Strict | Loose |
+|---|---|---|
+| Guard declined (score-based) | 1% | 1% |
+| LLM self-declined (prompt) | 17% | 0% |
+| Citation rate among answered | 100.0% (82/82) | 94.9% (94/99) |
+| Avg input tokens | 2,783 | 2,692 |
+
+Result: prompt drives all abstention (+17 pts); the 0.10 score guard fires on
+1/100 real eval questions. Confirms the section-10 finding empirically -- the
+prompt, not the deterministic check, was doing the guardrail work all along.
+Citation compliance is perfect under strict; loose still cites 94.9% unprompted,
+so citation is largely intrinsic and the instruction closes the last 5 points.
+Token cost delta +3.3% -- the guardrail is effectively free.
+Keep: strict prompt confirmed as the frozen config.
+
+## E10 - Contested-question hallucination check (Axis 5 follow-up)
+Hypothesis: the strict prompt declines questions that are specifically harder to
+answer in a grounded way -- i.e. abstention is targeted, not indiscriminate.
+Method: took the 17 questions where strict declined but loose answered, ran the
+claim-level hallucination checker on loose's answers to exactly those.
+
+Contested: 17 questions, 141 claims, 43 unsupported -> 30.5%
+Baseline : 199 questions -> 20.2%
+Per-question means: 0.340 vs 0.195 (medians 0.333 vs 0.167)
+Mann-Whitney U, one-sided: p = 0.0027 (significant)
+
+Tested on per-question rates rather than claim-level proportions because claims
+within an answer are not independent; the naive claim-level interval would have
+overstated confidence.
+
+Result: KEEP. The citation-forcing prompt selectively refuses the cases where
+answering produces unsupported claims. Judge cost 284,958 tokens (~16.8K/question).
+Limitation: baseline is from an earlier run, not a matched control in this experiment.

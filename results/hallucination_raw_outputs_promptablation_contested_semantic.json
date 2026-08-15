@@ -1,0 +1,1011 @@
+{
+  "aggregate": {
+    "total_questions": 17,
+    "total_claims": 141,
+    "total_unsupported": 43,
+    "overall_hallucination_rate": 0.305,
+    "total_tokens_used": 284958
+  },
+  "per_question": [
+    {
+      "question": "What was the High Court's decision regarding the charges proved by the Enquiry Officer?",
+      "answer": "The High Court's decision in the case involving Vijay Kumar Yadav & Anr. ([UTTRAPRADESH FOREST CORPORATION LUCKNOW & ORS versus VIJAY KUMAR YADAV & ANR, 2021_7_432_433_EN]) modified the impugned judgm...",
+      "claims": [
+        {
+          "claim": "The High Court made a decision in the case involving Vijay Kumar Yadav & Anr.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2167
+        },
+        {
+          "claim": "The case is titled [UTTRAPRADESH FOREST CORPORATION LUCKNOW & ORS versus VIJAY KUMAR YADAV & ANR, 2021_7_432_433_EN].",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2199
+        },
+        {
+          "claim": "The High Court's decision modified the impugned judgment and order.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2162
+        },
+        {
+          "claim": "The modification maintained the order of punishment for recovery of Rs. 2,46,922.56.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2173
+        },
+        {
+          "claim": "The charge which was also held to be proved by the Enquiry Officer was recovered.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2165
+        },
+        {
+          "claim": "In another case, [THE STATE OF UTTAR PRADESH AND ORS versus RAJIT SINGH, 2022_1_790_797_EN], the High Court upheld the order of the Tribunal.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2201
+        },
+        {
+          "claim": "The Tribunal had set aside the order of punishment imposed by the Disciplinary Authority.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2164
+        },
+        {
+          "claim": "The High Court's decision in [THE STATE OF UTTAR PRADESH AND ORS versus RAJIT SINGH, 2022_1_790_797_EN] was based on the Doctrine of Equality.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2201
+        },
+        {
+          "claim": "Rajit Singh was not found to be warranted for action as other officers involved in the incident were exonerated.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2171
+        },
+        {
+          "claim": "[M. L. SINGLA versus PUNJAB NATIONAL BANK AND ANR, 2018_11_455_469_EN] and [THE STATE OF UTTAR PRADESH AND ORS versus RAJIT SINGH, 2022_1_790_797_EN] show that the High Court examined the findings of the Labour Court and Enquiry Officer on merits.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2244
+        },
+        {
+          "claim": "The High Court's approach in these cases involved entering into the factual arena.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2163
+        },
+        {
+          "claim": "In [M. L. SINGLA versus PUNJAB NATIONAL BANK AND ANR, 2018_11_455_469_EN], the High Court reversed the finding of the Labour Court on Charge-I and restored that of the Enquiry Officer.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2208
+        },
+        {
+          "claim": "The High Court sustained the dismissal order based on the proved charge in [M. L. SINGLA versus PUNJAB NATIONAL BANK AND ANR, 2018_11_455_469_EN].",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2198
+        },
+        {
+          "claim": "In [STATE BANK OF INDIA & ANR versus K.S. VISHWANATH, 2022_4_143_161_EN], the High Court upheld the findings of the Enquiry Officer.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2197
+        },
+        {
+          "claim": "The Enquiry Officer found that the delinquent officer was complicit in a fraudulent cash remittance.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2169
+        },
+        {
+          "claim": "The High Court proved the charge against K.S. Vishwanath based on evidence.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2165
+        },
+        {
+          "claim": "The High Court's decisions varied depending on the case.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2159
+        },
+        {
+          "claim": "Generally, the High Court respected the findings of the Enquiry Officer when those findings were supported by evidence.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2169
+        }
+      ],
+      "n_claims": 18,
+      "n_unsupported": 6,
+      "hallucination_rate": 0.333
+    },
+    {
+      "question": "What are the key legal provisions discussed in this judgment?",
+      "answer": "The key legal provisions discussed in the judgment relate to biometric locking and unlocking mechanisms under the Aadhaar Act. Specifically, Regulation 11(1) and (4) of the Aadhaar (Targeted Delivery ...",
+      "claims": [
+        {
+          "claim": "The judgment discusses key legal provisions related to biometric locking and unlocking mechanisms under the Aadhaar Act.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1012
+        },
+        {
+          "claim": "Regulation 11(1) of the Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Regulations, 2016, is mentioned in the judgment.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1033
+        },
+        {
+          "claim": "Regulation 11(4) of the same regulations is also mentioned in the judgment.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1010
+        },
+        {
+          "claim": "Regulation 11(1) allows Aadhaar number holders to permanently lock their biometrics.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1011
+        },
+        {
+          "claim": "Regulation 11(1) permits temporary unlocking of biometrics when needed for authentication.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1010
+        },
+        {
+          "claim": "Regulation 11(4) empowers the Unique Identification Authority of India (UIDAI) to remove permanent locks on biometric data without specified grounds.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1023
+        },
+        {
+          "claim": "The judgment views the lack of specified grounds in Regulation 11(4) as problematic from a privacy perspective.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1015
+        },
+        {
+          "claim": "The judgment emphasizes the importance of stringent legal and technical safeguards to protect privacy related to biometric data.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1012
+        }
+      ],
+      "n_claims": 8,
+      "n_unsupported": 1,
+      "hallucination_rate": 0.125
+    },
+    {
+      "question": "What was the trial court's finding regarding the delivery of goods to Sumeti Vij?",
+      "answer": "The trial court found that there was no proof that the material/goods were ever sent or received by Sumeti Vij. The complainant failed to discharge its burden of proving that the materials/goods were ...",
+      "claims": [
+        {
+          "claim": "The trial court found that there was no proof that the material/goods were ever sent or received by Sumeti Vij.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2705
+        },
+        {
+          "claim": "The complainant failed to discharge its burden of proving that the materials/goods were received by Sumeti Vij.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2703
+        },
+        {
+          "claim": "Cheques were issued as security against the alleged receipt of materials/goods by Sumeti Vij.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2700
+        },
+        {
+          "claim": "The legal case in question is titled \"SUMETI VIJ versus M/S PARAMOUNT TECH FAB INDUSTRIES\".",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2706
+        },
+        {
+          "claim": "The reference number for the legal document is 2021_2_266_279_EN.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2706
+        }
+      ],
+      "n_claims": 5,
+      "n_unsupported": 2,
+      "hallucination_rate": 0.4
+    },
+    {
+      "question": "What might be the impact of this judgment on future settlement agreements in intellectual property disputes?",
+      "answer": "The judgment in GARWARE WALL ROPES LTD versus COASTAL MARINE CONSTRUCTIONS & ENGINEERING LTD ([2019] 5 SCC 607, Doc ID: 2019_5_579_617_EN) could have significant implications for future settlement agr...",
+      "claims": [
+        {
+          "claim": "The judgment in GARWARE WALL ROPES LTD versus COASTAL MARINE CONSTRUCTIONS & ENGINEERING LTD ([2019] 5 SCC 607, Doc ID: 2019_5_579_617_EN) could have significant implications for future settlement agreements in intellectual property disputes.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2298
+        },
+        {
+          "claim": "The judgment clarifies that an arbitration agreement can be separate from the main contract and still be enforceable if it meets certain criteria.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2255
+        },
+        {
+          "claim": "Clause 3 of the \"Heads of Agreement\" in this case provided that any dispute arising out of or in connection with a memorandum of understanding and negotiations relating to an Intellectual Property Licence Agreement (IPLA) would be arbitrable.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2277
+        },
+        {
+          "claim": "This ruling suggests that parties can enter into separate agreements for arbitration even if there is no formal contract, as long as the agreement meets the necessary elements.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2259
+        },
+        {
+          "claim": "The judgment encourages parties involved in intellectual property disputes to include clear arbitration clauses in their settlement agreements.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2248
+        },
+        {
+          "claim": "Clear and specific arbitration clauses are important to avoid ambiguity in such agreements.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2243
+        },
+        {
+          "claim": "The case highlights the need for careful drafting to ensure that the arbitration agreement is enforceable.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2247
+        },
+        {
+          "claim": "An enforceable arbitration agreement must be legally binding, governed by a specific law, and provide for the resolution of disputes through an impartial tribunal with decision-making authority over the parties involved.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2265
+        },
+        {
+          "claim": "This judgment may lead to more robust and explicit inclusion of arbitration clauses in settlement agreements related to intellectual property disputes.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2251
+        },
+        {
+          "claim": "The judgment streamlines dispute resolution processes.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2237
+        }
+      ],
+      "n_claims": 10,
+      "n_unsupported": 7,
+      "hallucination_rate": 0.7
+    },
+    {
+      "question": "What was the key evidence presented by the prosecution?",
+      "answer": "The key evidence presented by the prosecution in the case of CHUNTHURAM versus STATE OF CHHATTISGARH included:\n\n1. **Motive**: The State argued that the appellant had a motive for the crime due to his...",
+      "claims": [
+        {
+          "claim": "The key evidence presented by the prosecution in the case of CHUNTHURAM versus STATE OF CHHATTISGARH included motive.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1804
+        },
+        {
+          "claim": "The State argued that the appellant had a motive for the crime due to his relationship with the deceased's brother.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1797
+        },
+        {
+          "claim": "The key evidence presented by the prosecution in the case of CHUNTHURAM versus STATE OF CHHATTISGARH included recovery of weapons and wearing articles.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1809
+        },
+        {
+          "claim": "The weapons used in the assault were recovered from the place pointed out by the accused, though they were not linked directly to the crime.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1802
+        },
+        {
+          "claim": "The key evidence presented by the prosecution in the case of CHUNTHURAM versus STATE OF CHHATTISGARH included eyewitness testimony.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1805
+        },
+        {
+          "claim": "Bhagat Ram (PW-4) testified that he heard the deceased cry for help and saw him being assaulted by Chunthuram and another person.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1806
+        },
+        {
+          "claim": "The court noted significant deficiencies in the prosecution's case in the case of CHUNTHURAM versus STATE OF CHHATTISGARH.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1805
+        },
+        {
+          "claim": "The recovered weapons were never linked to the crime in the case of CHUNTHURAM versus STATE OF CHHATTISGARH.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1804
+        },
+        {
+          "claim": "There was no chemical analyst report confirming the presence of blood on the exhibits in the case of CHUNTHURAM versus STATE OF CHHATTISGARH.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1809
+        },
+        {
+          "claim": "Vital forensic evidence, such as a seized shirt worn by the co-accused (acquitted by High Court), was withheld in the case of CHUNTHURAM versus STATE OF CHHATTISGARH.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1821
+        },
+        {
+          "claim": "The key evidence presented by the prosecution in the case of MOHAMMAD IRFAN versus STATE OF KARNATAKA included recovery of incriminating articles.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1808
+        },
+        {
+          "claim": "The key evidence presented by the prosecution in the case of MOHAMMAD IRFAN versus STATE OF KARNATAKA included connectivity to conspiracy.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1805
+        },
+        {
+          "claim": "Evidence linking those articles to a conspiracy between the accused persons was part of the key evidence presented by the prosecution in the case of MOHAMMAD IRFAN versus STATE OF KARNATAKA.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1815
+        },
+        {
+          "claim": "The key evidence presented by the prosecution in the case of MOHAMMAD IRFAN versus STATE OF KARNATAKA included conduct of accused persons.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1806
+        },
+        {
+          "claim": "Their conduct in relation to such conspiracy was part of the key evidence presented by the prosecution in the case of MOHAMMAD IRFAN versus STATE OF KARNATAKA.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1811
+        },
+        {
+          "claim": "The key evidence presented by the prosecution in the case of KALABHAI HAMIRBHAI KACHHOT versus STATE OF GUJARAT included medical evidence confirming that all injuries were ante mortem.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1819
+        },
+        {
+          "claim": "Testimonies from injured witnesses and an investigation officer supporting the accused's involvement were part of the key evidence presented by the prosecution in the case of KALABHAI HAMIRBHAI KACHHOT versus STATE OF GUJARAT.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1826
+        },
+        {
+          "claim": "Serological reports matching blood groups on the deceased’s clothes with those of the accused were part of the key evidence presented by the prosecution in the case of KALABHAI HAMIRBHAI KACHHOT versus STATE OF GUJARAT.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1827
+        }
+      ],
+      "n_claims": 18,
+      "n_unsupported": 0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "question": "What was the final verdict of the Supreme Court in this case?",
+      "answer": "The context provided does not specify a single final verdict from the Supreme Court for any particular case. However, based on the information given:\n\n1. In **ILMO DEVI & ANR versus UNION OF INDIA** (...",
+      "claims": [
+        {
+          "claim": "In ILMO DEVI & ANR versus UNION OF INDIA ([2021_6_1158_1175_EN](2021_6_1158_1175_EN_chunk_14)), the Supreme Court did not interfere with the High Court's judgment and dismissed the appeals, keeping the question of law open.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1758
+        },
+        {
+          "claim": "In AMINUDDIN versus STATE OF UTTAR PRADESH & ANR ([2022_19_271_280_EN](2022_19_271_280_EN_chunk_17)), the Supreme Court did not pronounce on the merits of the case and made it clear that their observations would not prejudice the interests of the parties or affect the final verdict by the Trial Court.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1774
+        },
+        {
+          "claim": "In YUM! RESTAURANTS (MARKETING) PRIVATE LIMITED versus COMMISSIONER OF INCOME TAX, DELHI ([2020_11_136_169_EN](2020_11_136_169_EN_chunk_20)), the Supreme Court upheld the final judgment of the High Court in favor of the Revenue and against the assessee.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1766
+        },
+        {
+          "claim": "In MANOJ SURYAVANSHI versus STATE OF CHHATTISGARH ([2020_4_1_43_EN](2020_4_1_43_EN_chunk_73)), the Supreme Court did not commute the death sentence to life imprisonment, emphasizing that fair trial is a fundamental right.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1753
+        },
+        {
+          "claim": "In SANJAY MARUTIRAO PATIL versus UNION OF INDIA AND OTHERS ([2020_3_329_347_EN](2020_3_329_347_EN_chunk_31)), the Supreme Court upheld the respondent's action in exercising the power under Section 20 of the Army Act.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1757
+        }
+      ],
+      "n_claims": 5,
+      "n_unsupported": 3,
+      "hallucination_rate": 0.6
+    },
+    {
+      "question": "What was the Supreme Court's final ruling in the case?",
+      "answer": "The provided context passages do not explicitly state a clear final ruling from the Supreme Court for any of the cases mentioned. However, they provide insights into the court's approach and reasoning...",
+      "claims": [
+        {
+          "claim": "The context passages do not explicitly state a clear final ruling from the Supreme Court for any of the cases mentioned.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2414
+        },
+        {
+          "claim": "In URMILA DEVI & ORS versus BRANCH MANAGER, NATIONAL INSURANCE COMPANY LTD. & ANR [2020_3_498_513_EN], the Court did not express a final opinion on whether the respondent could support the decree under appeal by contending that another finding of the High Court was erroneous.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2465
+        },
+        {
+          "claim": "In LOK PRAHARI, THROUGH ITS GENERAL SECRETARY S. N. SHUKLA versus UNION OF INDIA & OTHERS [2018_2_892_939_EN], the Court did not provide a final ruling but recognized that the Election Commission of India's proposal to amend Form 26 was thoroughly examined and considered by the Ministry.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2470
+        },
+        {
+          "claim": "In MUNICIPAL CORPORATION OF GREATER MUMBAI versus PANKAJ ARORA (SECRETARY) AND OTHERS [2018_1_609_617_EN], the Court ruled that the High Court misconstrued its earlier order and misapplied the principle of res judicata.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2461
+        },
+        {
+          "claim": "In SANDEEP ALIAS KALA [2022_18_468_493_EN], the Court did not provide a final ruling but discussed the procedural aspects related to the deletion of certain clauses from the Supreme Court Rules and their impact on criminal appeals.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2450
+        },
+        {
+          "claim": "In JUSTICE K. S. PUTTASWAMY (RETD.) versus UNION OF INDIA & ORS [2018_8_1_1076_EN], the Court held that the President's order under Article 217(3) is not binding upon the court if it appears to be passed on collateral considerations or if natural justice was not observed.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2472
+        },
+        {
+          "claim": "Given the nature of the provided passages, a clear final ruling from the Supreme Court cannot be extracted directly.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2413
+        }
+      ],
+      "n_claims": 7,
+      "n_unsupported": 2,
+      "hallucination_rate": 0.286
+    },
+    {
+      "question": "What directions did the Supreme Court give regarding the complaints filed by M/s Gimpex Private Limited?",
+      "answer": "The Supreme Court directed the High Courts to identify pending revisions arising out of complaints filed under Section 138 of the Negotiable Instruments Act, 1881, and refer them to mediation at the e...",
+      "claims": [
+        {
+          "claim": "The Supreme Court directed High Courts.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2243
+        },
+        {
+          "claim": "The direction was regarding pending revisions arising out of complaints filed under Section 138 of the Negotiable Instruments Act, 1881.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2266
+        },
+        {
+          "claim": "These revisions were to be referred to mediation at the earliest.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2248
+        },
+        {
+          "claim": "The Court requested that Courts before which appeals against judgments in complaints under Section 138 are pending should make an effort.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2261
+        },
+        {
+          "claim": "This effort was to settle disputes through mediation.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2245
+        }
+      ],
+      "n_claims": 5,
+      "n_unsupported": 1,
+      "hallucination_rate": 0.2
+    },
+    {
+      "question": "What were the findings of the first inquiry officer regarding the charges against Jayantibhai Raojibhai Patel?",
+      "answer": "According to the case [JAYANTIBHAI RAOJIBHAI PATEL versus MUNICIPAL COUNCIL, NARKHED & ORS, 2019_11_483_494_EN], the first inquiry officer found that the charge of misappropriation of funds against Ja...",
+      "claims": [
+        {
+          "claim": "The case in question is titled \"JAYANTIBHAI RAOJIBHAI PATEL versus MUNICIPAL COUNCIL, NARKHED & ORS\".",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1919
+        },
+        {
+          "claim": "The case reference number is 2019_11_483_494_EN.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1901
+        },
+        {
+          "claim": "An inquiry was conducted against Jayantibhai Raojibhai Patel regarding a charge of misappropriation of funds.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1902
+        },
+        {
+          "claim": "The first inquiry officer found that the charge of misappropriation of funds against Jayantibhai Raojibhrai Patel was not substantiated.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1908
+        },
+        {
+          "claim": "The passage mentions \"Service law: Termination of service – Payment of back wages – On facts, enquiry conducted against appellant-headmaster C for alleged misappropriation of funds and appellant found not guilty.\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1918
+        },
+        {
+          "claim": "According to the passage, Jayantibhai Raojibhai Patel was found not guilty of the charge of misappropriation of funds.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1906
+        }
+      ],
+      "n_claims": 6,
+      "n_unsupported": 1,
+      "hallucination_rate": 0.167
+    },
+    {
+      "question": "What was the final decision of the Supreme Court regarding Rana Pratap Singh's right to continue on his post?",
+      "answer": "The final decision of the Supreme Court in this case was that Rana Pratap Singh did not have a valid right to continue on his post as Junior Accounts Clerk. The High Court's dismissal of the writ peti...",
+      "claims": [
+        {
+          "claim": "The Supreme Court made a final decision in the case regarding Rana Pratap Singh's right to continue as Junior Accounts Clerk.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2693
+        },
+        {
+          "claim": "The High Court dismissed the writ petition filed by Shiv Kumar Rai.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2680
+        },
+        {
+          "claim": "The reappointment order following the dismissal of Shiv Kumar Rai's writ petition was significant in the Supreme Court's decision.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2690
+        },
+        {
+          "claim": "The Division Bench of the High Court ruled that since Shiv Kumar Rai's writ petition was dismissed on 15.09.2001, his reversion had attained finality.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2706
+        },
+        {
+          "claim": "The finality of Shiv Kumar Rai's reversion created no vacancy for Rana Pratap Singh to occupy.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2690
+        },
+        {
+          "claim": "There was no basis for Rana Pratap Singh's continuance in the post of Junior Accounts Clerk according to the Supreme Court's decision.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2696
+        }
+      ],
+      "n_claims": 6,
+      "n_unsupported": 2,
+      "hallucination_rate": 0.333
+    },
+    {
+      "question": "What was the initial civil suit related to in this case?",
+      "answer": "The initial civil suit related to the declaration of title and recovery of possession as well as mesne profits in relation to the suit properties. This is evident from the facts provided in Case: K. N...",
+      "claims": [
+        {
+          "claim": "The initial civil suit was related to the declaration of title.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1977
+        },
+        {
+          "claim": "The initial civil suit sought recovery of possession.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1974
+        },
+        {
+          "claim": "The initial civil suit requested mesne profits.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1974
+        },
+        {
+          "claim": "This information is derived from Case: K. NAGARAJAPPA & ORS versus H. NARASIMHA REDDY [2021_6_109_119_EN].",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2010
+        },
+        {
+          "claim": "The case document states that \"the plaintiff/respondent and purchaser herein filed a suit for declaration of title and recovery of possession as well as mesne profits in relation to suit properties (hereafter called “the first suit”).\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2010
+        }
+      ],
+      "n_claims": 5,
+      "n_unsupported": 1,
+      "hallucination_rate": 0.2
+    },
+    {
+      "question": "What was the Supreme Court's decision regarding the issue of limitation in this case?",
+      "answer": "In the case of AARIFABEN YUNUSBHAI PATEL & ORS versus MUKUL THAKOREBHAI AMIN & ORS [2020_4_944_953_EN], the Supreme Court held that the High Court should have decided the issue of limitation, as it is...",
+      "claims": [
+        {
+          "claim": "In the case of AARIFABEN YUNUSBHAI PATEL & ORS versus MUKUL THAKOREBHAI AMIN & ORS [2020_4_944_953_EN], the Supreme Court held that the High Court should have decided the issue of limitation.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2182
+        },
+        {
+          "claim": "The Supreme Court observed in AARIFABEN YUNUSBHAI PATEL & ORS versus MUKUL THAKOREBHAI AMIN & ORS [2020_4_944_953_EN] that the High Court's decision to ignore this issue was erroneous.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2180
+        },
+        {
+          "claim": "The Supreme Court directed in AARIFABEN YUNUSBHAI PATEL & ORS versus MUKUL THAKOREBHAI AMIN & ORS [2020_4_944_953_EN] that the matter be remanded for a decision on both the issue of limitation and the merits.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2186
+        },
+        {
+          "claim": "In M/S. UTTARAKHAND PURV SAINIK KALYAN NIGAM LIMITED versus NORTHERN COAL FIELD LIMITED [2019_14_999_1010_EN], the Supreme Court reiterated that the issue of limitation is a jurisdictional issue.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2180
+        },
+        {
+          "claim": "The Supreme Court in M/S. UTTARAKHAND PURV SAINIK KALYAN NIGAM LIMITED versus NORTHERN COAL FIELD LIMITED [2019_14_999_1010_EN] stated that the issue of limitation should be decided by the arbitral tribunal under Section 16 of the Arbitration and Conciliation Act, 1996.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2202
+        },
+        {
+          "claim": "In SUKHBIRI DEVI & ORS versus UNION OF INDIA & ORS [2022_13_523_542_EN], the Supreme Court emphasized that a cause of action arises only when there is a clear and unequivocal threat to infringe the right asserted in the suit.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2182
+        },
+        {
+          "claim": "The Supreme Court held in SUKHBIRI DEVI & ORS versus UNION OF INDIA & ORS [2022_13_523_542_EN] that merely having an adverse entry in revenue records does not give rise to a cause of action.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2175
+        },
+        {
+          "claim": "In MAHINDRA AND MAHINDRA FINANCIAL SERVICES LTD versus MAHESHBHAI TINABHAI RATHOD & ORS [2021_12_94_102_EN], the Supreme Court held that Section 34(3) of the Arbitration and Conciliation Act, 1996 excludes the provisions of Section 5 of the Limitation Act, 1963.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2210
+        },
+        {
+          "claim": "The Supreme Court set aside the High Court's decision in M SIDDIQ (D) THR LRS versus V. MAHANT SURESH DAS & ORS [2019_18_1_867_EN].",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2166
+        },
+        {
+          "claim": "In M SIDDIQ (D) THR LRS versus V. MAHANT SURESH DAS & ORS [2019_18_1_867_EN], the Supreme Court directed that the issue of limitation be decided by the arbitral tribunal.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2173
+        },
+        {
+          "claim": "The Supreme Court has consistently held in these cases that the issue of limitation is a jurisdictional issue to be decided either by the arbitral tribunal or the appropriate court, depending on the context.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2153
+        },
+        {
+          "claim": "Based on these cases, the specific decision in AARIFABEN YUNUSBHAI PATEL & ORS versus MUKUL THAKOREBHAI AMIN & ORS [2020_4_944_953_EN] directed that both the issue of limitation and merits be decided by remanding the matter.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2188
+        }
+      ],
+      "n_claims": 12,
+      "n_unsupported": 1,
+      "hallucination_rate": 0.083
+    },
+    {
+      "question": "What was the Supreme Court's directive regarding the children's passports?",
+      "answer": "The Supreme Court directed that the children's passports be returned to the Plaintiff/Mother or alternatively arranged for and surrendered to the Indian Court or a US Consulate in India. This is evide...",
+      "claims": [
+        {
+          "claim": "The Supreme Court issued a directive.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2291
+        },
+        {
+          "claim": "The directive concerned the return of children's passports.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2294
+        },
+        {
+          "claim": "The Plaintiff/Mother was identified as one party involved in the directive.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2298
+        },
+        {
+          "claim": "An alternative arrangement for the passports was suggested, involving the Indian Court.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2298
+        },
+        {
+          "claim": "Another alternative arrangement mentioned was surrendering the passports to a US Consulate in India.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2301
+        },
+        {
+          "claim": "The directive is documented in the case RAJESWARI CHANDRASEKAR GANESH versus THE STATE OF TAMIL NADU & ORS.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2318
+        },
+        {
+          "claim": "The case reference number is [2022] 5 S.C.R.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2301
+        },
+        {
+          "claim": "The document ID for the case is 2022_5_232_290_EN.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2308
+        }
+      ],
+      "n_claims": 8,
+      "n_unsupported": 4,
+      "hallucination_rate": 0.5
+    },
+    {
+      "question": "What was the Supreme Court's decision in this appeal?",
+      "answer": "The Supreme Court's decision in the case State of Andhra Pradesh & Ors. versus B. Ranga Reddy (D) by LRS & Ors., [2019] 10 S.C.R. (Doc ID: 2019_10_143_174_EN), held that the High Court's decision in A...",
+      "claims": [
+        {
+          "claim": "The Supreme Court made a decision in the case State of Andhra Pradesh & Ors. versus B. Ranga Reddy (D) by LRS & Ors.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1984
+        },
+        {
+          "claim": "This decision was documented as [2019] 10 S.C.R., with Document ID: 2019_10_143_174_EN.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1989
+        },
+        {
+          "claim": "The case involved a High Court's decision in Appeal No. 8 regarding the justification of Respondent 1 being declared a duly elected candidate.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1978
+        },
+        {
+          "claim": "The Supreme Court upheld the validity of the High Court's decision in Appeal No. 8.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1968
+        },
+        {
+          "claim": "The appellant could not challenge the finding that he held an office of profit in his subsequent appeal (Appeal No. 7).",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1975
+        },
+        {
+          "claim": "The Supreme Court emphasized that since the decision regarding the invalidity of the appellant's election stood, further challenges were not permissible.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1974
+        },
+        {
+          "claim": "Respondent 1 was declared a duly elected candidate based on the High Court's decision.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1967
+        }
+      ],
+      "n_claims": 7,
+      "n_unsupported": 4,
+      "hallucination_rate": 0.571
+    },
+    {
+      "question": "What sections of the Indian Penal Code were invoked in the FIR filed by M/s Neeharika Infrastructure Pvt. Ltd.?",
+      "answer": "The FIR filed by M/s Neeharika Infrastructure Pvt. Ltd. invoked Sections 384, 386, and 387 read with Section 34 of the Indian Penal Code (IPC). This can be inferred from the context provided in [THE S...",
+      "claims": [
+        {
+          "claim": "M/s Neeharika Infrastructure Pvt. Ltd. filed an FIR.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1881
+        },
+        {
+          "claim": "The FIR invoked Sections 384, 386, and 387 of the Indian Penal Code (IPC).",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1893
+        },
+        {
+          "claim": "The FIR also invoked Section 34 of the IPC.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1878
+        },
+        {
+          "claim": "The context for this information is provided in [THE STATE OF MAHARASHTRA versus PANKAJ JAGSHI GANGAR, Doc ID: 2021_9_307_316_EN].",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1914
+        },
+        {
+          "claim": "The document states that \"the allegations against the respondent – accused are very serious in nature.\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1884
+        },
+        {
+          "claim": "The document specifies that these serious allegations pertain to offences under Sections 384, 386, 387 read with Section 34 of the IPC.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1903
+        }
+      ],
+      "n_claims": 6,
+      "n_unsupported": 1,
+      "hallucination_rate": 0.167
+    },
+    {
+      "question": "What were the significant legal questions addressed by the Supreme Court in this case?",
+      "answer": "The context passages provided do not explicitly mention any cases where the Supreme Court directly addressed significant legal questions. However, they provide examples of substantial questions of law...",
+      "claims": [
+        {
+          "claim": "The context passages provided do not explicitly mention any cases where the Supreme Court directly addressed significant legal questions.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1207
+        },
+        {
+          "claim": "In MANGAYARKARASI versus M. YUVARAJ [2020_2_1036_1046_EN], the High Court did not frame any substantial questions of law as the issues raised did not qualify for re-appreciation of evidence.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1246
+        },
+        {
+          "claim": "In MADHUKAR NIVRUTTI JAGTAP & ORS versus SMT. PRAMILABAI CHANDULAL PARANDEKAR [2019_10_31_72_EN], the High Court formulated three substantial questions of law.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1247
+        },
+        {
+          "claim": "The first substantial question in MADHUKAR NIVRUTTI JAGTAP & ORS versus SMT. PRAMILABAI CHANDULAL PARANDEKAR [2019_10_31_72_EN] is: \"Whether, in a suit for specific performance of agreement, the plaintiff has to give notice to the defendant before the last date specified in the agreement or after the last date but within reasonable time thereafter?\"",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1283
+        },
+        {
+          "claim": "The second substantial question in MADHUKAR NIVRUTTI JAGTAP & ORS versus SMT. PRAMILABAI CHANDULAL PARANDEKAR [2019_10_31_72_EN] is: \"What is the true nature of the suit transaction, viz. whether it is an agreement of sale or whether it is a security agreement?\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1271
+        },
+        {
+          "claim": "The third substantial question in MADHUKAR NIVRUTTI JAGTAP & ORS versus SMT. PRAMILABAI CHANDULAL PARANDEKAR [2019_10_31_72_EN] is: \"If the sale transactions executed in favour of defendant A nos.4 to 6 during the pendency of the suit were hit by the doctrine of lis pendente lite, could the transfer of the suit land to defendant nos.4 to 6 be held to be illegal and void ab initio?\"",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1304
+        },
+        {
+          "claim": "In STATE OF RAJASTHAN & ORS versus SHIV DAYAL & ANR [2019_10_243_250_EN], it was suggested that the High Court should have framed appropriate substantial questions of law arising in the case and answered them on their respective merits.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1251
+        },
+        {
+          "claim": "In ILLOTH VALAPPIL AMBUNHI (D) BY LRS versus KUNHAMBU KARANAVAN [2019_13_670_680_EN], it was noted that a mere error in framing a question of law would not render the judgment liable to be set aside if a substantial question of law existed and had been answered by the High Court.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1271
+        },
+        {
+          "claim": "In NARAYANA GRAMANI & ORS versus MARIAMMAL & ORS [2018_9_430_440_EN], it was highlighted that the High Court could have framed additional substantial questions to examine the ownership issue of the suit land and the issues of res judicata independently.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1255
+        },
+        {
+          "claim": "These cases do not directly involve the Supreme Court addressing significant legal questions.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 1201
+        },
+        {
+          "claim": "The examples provided illustrate how High Courts frame and consider substantial questions of law in their judgments.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 1205
+        }
+      ],
+      "n_claims": 11,
+      "n_unsupported": 4,
+      "hallucination_rate": 0.364
+    },
+    {
+      "question": "What was the High Court's decision on 21st April 2006 regarding the ex-parte decree?",
+      "answer": "The context provided does not contain any information about a High Court decision on 21st April 2006 regarding an ex-parte decree. The cases mentioned in the context passages are from different years ...",
+      "claims": [
+        {
+          "claim": "The provided context does not contain any information about a High Court decision on 21st April 2006 regarding an ex-parte decree.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2652
+        },
+        {
+          "claim": "The cases mentioned in the context passages are from different years and do not include this specific date or decision.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2642
+        },
+        {
+          "claim": "The structure of the questions and the format of the provided contexts suggest that the question might be referring to a case where a High Court dealt with an ex-parte decree.",
+          "supported": true,
+          "raw_verdict": "SUPPORTED",
+          "tokens_used": 2655
+        },
+        {
+          "claim": "Without additional information or a relevant passage, it is not possible to provide a precise answer regarding the specific date mentioned.",
+          "supported": false,
+          "raw_verdict": "NOT_SUPPORTED",
+          "tokens_used": 2644
+        }
+      ],
+      "n_claims": 4,
+      "n_unsupported": 3,
+      "hallucination_rate": 0.75
+    }
+  ],
+  "input_file": "results/raw_outputs_promptablation_contested_semantic.json"
+}

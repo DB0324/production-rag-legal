@@ -1,0 +1,13 @@
+{
+  "variant": "loose",
+  "strategy": "semantic",
+  "n": 100,
+  "guard_declined": 1,
+  "guard_decline_rate": 0.01,
+  "llm_self_declined": 0,
+  "llm_decline_rate": 0.0,
+  "answered": 99,
+  "citation_presence_rate": 0.949,
+  "avg_tokens_in": 2691.7,
+  "errors": 0
+}
