@@ -66,6 +66,10 @@ investigation.
 cp .env.example .env   # if provided, else create manually:
 export LLM_PROVIDER=ollama
 export LLM_MODEL="qwen2.5:7b-instruct"
+
+# Serving only: pruned single-collection Qdrant store (see startup note).
+# start_api.sh sets this for you; eval scripts use the full store by default.
+export QDRANT_PATH=data/qdrant_semantic_only
 ```
 
 ---
@@ -87,8 +91,11 @@ python -m src.ingestion.run_recursive_chunking
 python -m src.ingestion.run_semantic_chunking
 
 # 3. Indexing (embed + push to local Qdrant + build BM25)
+#    Each script embeds its strategy and builds that strategy's BM25 index.
+#    ~180 min (recursive) / ~115 min (semantic) on GPU.
 python -m src.ingestion.run_indexing_fixed
-python -m src.indexing.bm25_index
+python -m src.ingestion.run_indexing_recursive
+python -m src.ingestion.run_indexing_semantic
 
 # 4. Evaluation
 python -m src.evaluation.retrieval_metrics
@@ -113,13 +120,25 @@ curl -X POST http://127.0.0.1:8000/query \
   -d '{"question": "your question here"}'
 ```
 
-**Note on startup time**: this project uses Qdrant in local/embedded mode
-(not Docker) due to no-root access on the original development machine.
-Cold-start time (loading 3 collections, ~524K points total) has been
-observed to vary from ~15s to 5+ minutes depending on shared-server disk
-cache pressure -- see `results/experiment_log.md` for the full
-investigation. `start_api.sh` polls for readiness rather than using a
-fixed timeout to handle this.
+**Note on startup time and memory**: this project uses Qdrant in
+local/embedded mode (not Docker) due to no-root access on the original
+development machine. Local mode loads **every collection in the storage
+directory into memory**. With all three indexed (~524K points), the API
+process reached ~98GB resident and was killed.
+
+`start_api.sh` therefore sets `QDRANT_PATH=data/qdrant_semantic_only`, a
+pruned store containing only `legal_semantic` (the frozen config's
+collection) via a trimmed `meta.json` plus a symlink -- no re-indexing, no
+extra disk. Result: **98GB -> 19.8GB resident, startup 135s** instead of
+exceeding a 350s readiness timeout.
+
+Cold start still varies from ~15s to several minutes with shared-server
+disk cache pressure, so `start_api.sh` polls for readiness rather than
+sleeping a fixed interval. See `results/experiment_log.md` (E12) for the
+full investigation.
+
+Evaluation scripts keep using the full store (`data/qdrant_local`) by
+default -- they open Qdrant, query, and exit, so they never hit this.
 
 ---
 
