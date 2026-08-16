@@ -398,3 +398,46 @@ domain explanation (case names give BM25 a lexical edge) is confirmed rather
 than displaced.
 Not fixed: re-chunking under 512 tokens would require full re-indexing for a
 strategy that did not win. Documented as a limitation instead.
+
+## E14 - Generation-level comparison across chunking strategies (n=100, strict prompt)
+Closes the section-13 limitation that generation metrics existed only for the
+winning config. Matched n=100, frozen settings, semantic arm reused from E09.
+
+| strategy | context hit | guard dec | llm dec | answered | citation | avg tokens in |
+|---|---|---|---|---|---|---|
+| fixed | 0.79 | 2 | 12 | 86 | 1.000 | 3384.5 |
+| recursive | 0.77 | 2 | 16 | 82 | 1.000 | 2293.7 |
+| semantic | 0.81 | 1 | 17 | 82 | 1.000 | 2868.4 |
+
+Findings:
+1. Citation compliance is 100% for ALL three strategies -- the Axis 5 result is
+   not specific to semantic; it is a property of the prompt.
+2. Semantic gives the best context hit rate at 15% fewer tokens than fixed.
+   Fixed costs +47% tokens over recursive for +2pts context hit. Semantic is the
+   best cost/quality trade, strengthening the frozen-config choice.
+3. Guardrail calibration against evidence presence (cross-tab, not marginals):
+
+| strategy | answered w/ evidence | declined w/o | ANSWERED W/O EVIDENCE | declined w/ | aligned |
+|---|---|---|---|---|---|
+| fixed | 75 | 10 | 11 | 4 | 85% |
+| recursive | 68 | 9 | 14 | 9 | 77% |
+| semantic | 72 | 9 | 10 | 9 | 81% |
+
+Abstention precision/recall: fixed 71%/48%, recursive 50%/39%, semantic 50%/47%.
+About half of all context failures still produce an answer, and 10-14% of
+questions per strategy are answered with no gold document in context at all.
+This is consistent with, and plausibly drives, the 20.2% hallucination rate.
+
+This does NOT contradict E10/E11: when the guardrail fires it fires on genuinely
+harder questions (good precision of firing), but it does not fire often enough
+(poor coverage). Good targeting, poor recall.
+
+Method note: an initial read of the MARGINALS suggested semantic's declines
+almost exactly matched its context misses (18 vs 19, gap of 1 vs fixed's 7).
+The cross-tab showed this was two errors cancelling. Marginals were not
+sufficient; the confusion matrix was.
+
+Caveat: "gold doc in chunks_used" is a proxy for answerability, not ground truth
+-- a question may be answerable from another document, or the retrieved gold
+chunk may not contain the relevant passage. The answered-without-evidence column
+is the robust one.

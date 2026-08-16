@@ -267,8 +267,30 @@ documented entry point.
   precision was judged not worth 70 hours on contended shared infrastructure.
   Retrieval metrics remain uncompromised at the full n=250, and the claim-level
   hallucination rate at n=199.
-- **Generation-level metrics were computed only for the winning configuration.**
-  fixed and recursive were evaluated for retrieval only.
+- **Generation-level metrics now cover all three strategies** (n=100, strict
+  prompt, frozen settings). Citation compliance is 100% for every strategy, so
+  the Axis 5 result is a property of the prompt rather than of semantic
+  chunking. Semantic gives the best context hit rate (0.81 vs 0.79 fixed, 0.77
+  recursive) at 15% fewer input tokens than fixed, confirming it as the best
+  cost/quality trade. RAGAS remains n=60 and semantic-only, since scoring the
+  other two carries the same ~70-hour cost.
+- **The guardrail has good targeting but poor coverage.** Cross-tabulating
+  abstention against whether the gold document actually reached the generator:
+
+  | Strategy | Answered w/ evidence | Declined w/o | Answered w/o evidence | Declined w/ |
+  |---|---|---|---|---|
+  | fixed | 75 | 10 | 11 | 4 |
+  | recursive | 68 | 9 | 14 | 9 |
+  | semantic | 72 | 9 | 10 | 9 |
+
+  Abstention precision/recall: fixed 71%/48%, recursive 50%/39%, semantic
+  50%/47%. About half of all context failures still produce an answer, and
+  10-14% of questions per strategy are answered with no gold document in
+  context at all - plausibly a major driver of the 20.2% hallucination rate.
+  This does not contradict section 9.3: when the guardrail fires it fires on
+  genuinely harder questions, but it does not fire often enough. Note that
+  "gold document present in context" is a proxy for answerability, not ground
+  truth.
 - **Judge model is qwen2.5:7b-instruct**, a relatively small open model.
   Verdicts may differ from a GPT-4-class judge, and no human-audit agreement
   rate was computed.
@@ -290,6 +312,8 @@ documented entry point.
 
 - Run RAGAS on the full n=250 with a dedicated, non-shared GPU allocation
 - Human-audit agreement rate against the LLM judge (~50 samples)
+- Raise the sufficiency threshold above 0.10 and map the abstention
+  precision/recall trade-off - current recall against context failure is ~47%
 - Query rewriting / HyDE — retrieval misses are the dominant error source, and
   Axis 3 showed BM25 carrying most of the retrieval weight
 - Compare generator model size (7B / 14B / 32B, all available locally) on

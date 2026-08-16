@@ -1,0 +1,32 @@
+[
+  {
+    "strategy": "fixed",
+    "n": 100,
+    "context_hit_rate": 0.79,
+    "guard_declined": 2,
+    "llm_declined": 12,
+    "answered": 86,
+    "citation_rate": 1.0,
+    "avg_tokens_in": 3384.5
+  },
+  {
+    "strategy": "recursive",
+    "n": 100,
+    "context_hit_rate": 0.77,
+    "guard_declined": 2,
+    "llm_declined": 16,
+    "answered": 82,
+    "citation_rate": 1.0,
+    "avg_tokens_in": 2293.7
+  },
+  {
+    "strategy": "semantic",
+    "n": 100,
+    "context_hit_rate": 0.81,
+    "guard_declined": 1,
+    "llm_declined": 17,
+    "answered": 82,
+    "citation_rate": 1.0,
+    "avg_tokens_in": 2868.4
+  }
+]
